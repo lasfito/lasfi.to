@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: aprende-reglas-seguridad-firestore
-enlaceyt: https://youtu.be/PQc4aVuSr48
+enlaceyt: https://youtube.com/embed/PQc4aVuSr48
 date: 2022-04-27T20:39:47.325Z
 title: Aprende a utilizar las Reglas de Seguridad de Firestore
 metaDescription: 'Aprende cómo configurar reglas de seguridad y proteger tu base

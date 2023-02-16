@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: zoom-pellizco-pinch-react-native
-enlaceyt: https://youtu.be/tbZAgA-qH74
+enlaceyt: https://youtube.com/embed/tbZAgA-qH74
 date: 2022-04-27T20:30:17.465Z
 title: Zoom con Gesto de Pellizco (Pinch) en React Native
 metaDescription: >

@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: crea-ecommerce-firebase-stripe
-enlaceyt: https://youtu.be/ScJ7FdHufm8
+enlaceyt: https://youtube.com/embed/ScJ7FdHufm8
 date: 2022-04-28T18:38:38.567Z
 title: Cómo Crear E-Commerce con Firebase y Stripe
 metaDescription: 'Aprende cómo crear una tienda e-Commerce con Firebase y Stripe

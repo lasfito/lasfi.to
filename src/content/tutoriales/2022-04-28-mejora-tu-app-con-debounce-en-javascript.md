@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: mejora-app-debounce-javascript
-enlaceyt: https://youtu.be/W1sOOTjtfh0
+enlaceyt: https://youtube.com/embed/W1sOOTjtfh0
 date: 2022-04-28T21:49:37.812Z
 title: Mejora tu App con Debounce en JavaScript
 metaDescription: >

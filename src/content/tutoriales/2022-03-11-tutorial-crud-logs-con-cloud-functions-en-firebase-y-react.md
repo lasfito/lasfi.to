@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: crud-logs-firebase-cloud-functions
-enlaceyt: https://www.youtube.com/watch?v=eG0jOOlkyVg
+enlaceyt: https://www.youtube.com/embed/eG0jOOlkyVg
 date: 2022-03-11T00:26:34.669Z
 title: Tutorial CRUD + Logs con Cloud Functions en Firebase y React
 metaDescription: 'Aprende cómo crear una aplicación CRUD con autenticación y

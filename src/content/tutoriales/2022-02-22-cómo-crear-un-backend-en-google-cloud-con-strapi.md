@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: crea-backend-google-cloud-strapi
-enlaceyt: https://www.youtube.com/watch?v=BHly5BDJ04s
+enlaceyt: https://www.youtube.com/embed/BHly5BDJ04s
 date: 2022-02-22T00:09:02.438Z
 title: Cómo crear un backend en Google Cloud con Strapi
 tag:

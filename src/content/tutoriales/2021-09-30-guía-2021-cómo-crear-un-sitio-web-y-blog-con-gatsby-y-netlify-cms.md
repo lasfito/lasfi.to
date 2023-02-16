@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: guia-gatsby-blog-netlify
-enlaceyt: https://www.youtube.com/watch?v=oE9GGrdrH1U
+enlaceyt: https://www.youtube.com/embed/oE9GGrdrH1U
 date: 2021-09-30T18:01:46.986Z
 title: Guía 2021 - Cómo crear un sitio web y blog con Gatsby y Netlify CMS
 tag:

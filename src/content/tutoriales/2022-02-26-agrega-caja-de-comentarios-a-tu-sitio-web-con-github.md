@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: caja-comentarios-sitio-web-github
-enlaceyt: https://youtu.be/dxHTKkVtffM
+enlaceyt: https://youtube.com/embed/dxHTKkVtffM
 date: 2022-02-26T19:07:47.611Z
 title: Agrega caja de comentarios a tu sitio web con GitHub
 tag:

@@ -21,7 +21,9 @@ export default defineConfig({
 		mdx(),
 		sitemap(),
 		react(),
-		tailwind(),
+		tailwind({
+			applyBaseStyles: false,
+		}),
 		partytown({
 			config: {
 				forward: ['dataLayer.push'],

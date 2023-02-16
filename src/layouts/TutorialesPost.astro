@@ -5,6 +5,7 @@ import PageHTML from './PageHTML.astro';
 import { AcercaAutor } from '../components/AcercaAutor';
 import { TagsInBlog } from '../components/TagsInBlog';
 import { VideoGadget } from '../components/VideoGadget';
+import ReactPlayer from 'react-player/youtube';
 
 type Props = CollectionEntry<'tutoriales'>['data'];
 
@@ -35,7 +36,7 @@ const {
 
 		<TagsInBlog tags={tag} />
 
-		{enlaceyt ? <VideoGadget url={enlaceyt} /> : <img src={thumbnail} />}
+		<VideoGadget url={enlaceyt} />
 	</section>
 	<div class="blog">
 		<article class="post-content">

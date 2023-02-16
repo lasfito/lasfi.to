@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--primario: hsl(207, 68%, 50%);
+		--hermano: hsl(207, 51%, 68%);
+		--acento: hsl(359, 89%, 64%);
+
+		--fondo: hsl(0, 0%, 100%);
+		--fondo-jr: hsl(0, 0%, 97%);
+		--texto-str: hsl(0, 0%, 10%);
+		--texto-sft: hsl(0, 0%, 25%);
+		--code: #222222;
+
+		/* misc */
+		--ola: url('../assets/img/oladay.png');
+
+		--scrollbar: hsl(205, 21%, 17%);
+		--ola-color: var(--hermano);
+		--sombras: rgba(0, 0, 0, 0.4);
+		--boton: hsl(359, 59%, 64%);
+		--hover: var(--textostr);
+		--trans: 1s;
+		--check1: var(--hermano);
+		--check2: var(--fondojr);
+
+		scroll-padding-top: 5.5rem;
+		scroll-behavior: smooth;
+	}
+}
+
+@layer utilities {
+	.fancy {
+		@apply relative cursor-pointer overflow-hidden font-bold text-pink-500 z-10;
+	}
+
+	.app-form-control {
+		width: 100%;
+		padding: 10px 0;
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--hermano);
+		color: var(--textosft);
+		font-size: 14px;
+		text-transform: uppercase;
+		outline: none;
+		transition: border-color 0.2s;
+	}
+
+	.app-form-control::placeholder {
+		color: #666;
+	}
+	.app-form-control:focus {
+		border-bottom-color: var(--acento);
+	}
+
+	.btn-proyectos {
+		font-size: 1rem;
+		box-sizing: border-box;
+		border: none;
+		background: none;
+		border-radius: 4px;
+	}
+	.btn-tag {
+		cursor: pointer;
+		margin: 5px 10px;
+		width: 10rem;
+		height: 2rem;
+		font-size: 0.5rem;
+		box-sizing: border-box;
+		border: none;
+		background: none;
+		color: var(--textostr);
+		border-radius: 2px;
+	}
+	.btn-proyectos:hover {
+		transform: translateY(-15%);
+	}
+
+	.btn-prime:hover {
+		background: var(--hover);
+	}
+	.btn-prime {
+		background: var(--boton);
+		color: #fff !important;
+	}
+	.btn-prime a {
+		text-decoration: none;
+		color: #fff;
+	}
+	.btn-secu a {
+		text-decoration: none;
+		color: var(--textostr);
+	}
+	.btn-secu {
+		border: 1px solid var(--hermano);
+		color: var(--textostr);
+	}
+}

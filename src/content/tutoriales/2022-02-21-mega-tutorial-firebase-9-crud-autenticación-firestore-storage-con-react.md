@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: firebase-9-crud-react
-enlaceyt: https://www.youtube.com/watch?v=PGPiefJK8LU
+enlaceyt: https://www.youtube.com/embed/PGPiefJK8LU
 date: 2022-02-21T23:25:44.536Z
 title: Mega Tutorial Firebase 9 - CRUD (Autenticación + Firestore + Storage) con React
 tag:

@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-crear-pwa-react
-enlaceyt: https://youtu.be/kMucD68rkio
+enlaceyt: https://youtube.com/embed/kMucD68rkio
 date: 2022-04-28T18:25:08.582Z
 title: Cómo Crear PWA con React — Mega Tutorial
 metaDescription: 'Aprende cómo convertir tu sitio/aplicación web en una

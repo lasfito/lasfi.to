@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: carrusel-slider-animado-react-native-60-fps
-enlaceyt: https://www.youtube.com/watch?v=hD5Hi_XG4lc
+enlaceyt: https://www.youtube.com/embed/hD5Hi_XG4lc
 date: 2022-03-10T23:56:35.529Z
 title: Carrusel (slider) Animado en React Native a 60 FPS
 metaDescription: 'Aprende cómo crear un carrusel (slider) animado en React

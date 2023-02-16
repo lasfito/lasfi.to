@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: road-map-desarrollador-web-frontend
-enlaceyt: https://www.youtube.com/watch?v=KwR6u5SDo_k
+enlaceyt: https://www.youtube.com/embed/KwR6u5SDo_k
 date: 2022-03-11T02:24:07.568Z
 title: Cómo ser Desarrollador Web FRONTEND - Road Map 2022
 metaDescription: 'Aprende cómo convertirte en y conseguir trabajo de Frontend

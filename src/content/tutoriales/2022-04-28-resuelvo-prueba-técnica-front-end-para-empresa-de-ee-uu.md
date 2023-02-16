@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: resuelvo-prueba-tecnica-gringa
-enlaceyt: https://youtu.be/-xbe8Fw1-d0
+enlaceyt: https://youtube.com/embed/-xbe8Fw1-d0
 date: 2022-04-28T17:32:57.403Z
 title: Resuelvo Prueba Técnica Front End para empresa de EE. UU.
 metaDescription: 'En este video desarrollo una aplicación web con #React y

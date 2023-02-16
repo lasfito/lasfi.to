@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-crear-columnas-css
-enlaceyt: https://www.youtube.com/watch?v=QbliZCG4Rtg
+enlaceyt: https://www.youtube.com/embed/QbliZCG4Rtg
 date: 2021-07-20T04:15:46.099Z
 title: Cómo crear columnas en css sin flexbox ni grid
 tag:

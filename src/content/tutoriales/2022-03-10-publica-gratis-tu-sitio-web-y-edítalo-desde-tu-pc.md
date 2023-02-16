@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: publica-gratis-sitio-web-edita-desde-PC
-enlaceyt: https://youtu.be/dW7BDrJbzz0
+enlaceyt: https://youtube.com/embed/dW7BDrJbzz0
 date: 2022-03-10T23:41:16.194Z
 title: Publica gratis tu sitio web y edítalo desde tu PC
 metaDescription: 'Aprende cómo publicar tu proyecto en internet (producción) y

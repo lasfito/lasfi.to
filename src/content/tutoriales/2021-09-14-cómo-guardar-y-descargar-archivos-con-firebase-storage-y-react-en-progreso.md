@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: guardar-firebase-storage-react
-enlaceyt: https://www.youtube.com/watch?v=HSA4nxlZUyg
+enlaceyt: https://www.youtube.com/embed/HSA4nxlZUyg
 date: 2021-09-14T19:54:42.288Z
 title: 'Cómo guardar y descargar archivos con Firebase Storage y React '
 tag:

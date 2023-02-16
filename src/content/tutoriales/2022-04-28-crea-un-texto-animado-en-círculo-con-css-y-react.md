@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: crea-texto-animado-en-círculo
-enlaceyt: https://youtu.be/SxcnmmoioN8
+enlaceyt: https://youtube.com/embed/SxcnmmoioN8
 date: 2022-04-28T18:17:26.148Z
 title: Crea un Texto Animado en Círculo con CSS y React
 metaDescription: >

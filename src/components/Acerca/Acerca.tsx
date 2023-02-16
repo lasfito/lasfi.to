@@ -2,10 +2,10 @@ import { AcercaCard } from '../AcercaCard';
 
 const Acerca = () => (
 	<section>
-		<div className="acerca" id="acerca-top">
+		<div className="bg-ola-color text-texto-sft" id="acerca-top">
 			<AcercaCard />
 		</div>
-		<div className="ola-abajo">
+		<div>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
 				<path
 					fill="var(--ola-color)"

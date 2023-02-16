@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-crear-pestanas-navegacion-react-native
-enlaceyt: https://www.youtube.com/watch?v=WMOPvJot0yI
+enlaceyt: https://www.youtube.com/embed/WMOPvJot0yI
 date: 2021-10-04T18:17:24.872Z
 title: Cómo crear pestañas de navegación en React Native
 tag:

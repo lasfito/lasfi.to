@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-hospedar-react-app-firebase
-enlaceyt: https://www.youtube.com/watch?v=kOgZ8i2dZ7k
+enlaceyt: https://www.youtube.com/embed/kOgZ8i2dZ7k
 date: 2021-07-27T05:01:54.100Z
 title: Cómo hospedar tu aplicación de react en Firebase hosting
 tag:

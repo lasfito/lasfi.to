@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-crear-pdf-en-react
-enlaceyt: https://www.youtube.com/watch?v=D05ptoe7brY
+enlaceyt: https://www.youtube.com/embed/D05ptoe7brY
 date: 2022-02-21T23:55:43.386Z
 title: Crea, Visualiza y Descarga PDFs en React
 tag:

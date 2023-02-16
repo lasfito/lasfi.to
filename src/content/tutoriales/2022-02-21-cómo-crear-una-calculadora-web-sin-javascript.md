@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-crear-calculadora-sin-javascript
-enlaceyt: https://www.youtube.com/watch?v=kQ5PkkkYVeI
+enlaceyt: https://www.youtube.com/embed/kQ5PkkkYVeI
 date: 2022-02-21T23:16:04.195Z
 title: Cómo crear una calculadora web sin JavaScript
 tag:

@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: algoritmo-primer-positivo-faltante
-enlaceyt: https://youtu.be/tSykFigZeLo
+enlaceyt: https://youtube.com/embed/tSykFigZeLo
 date: 2022-04-28T19:26:52.087Z
 title: Entrevista Técnica en Uber - Primer Positivo Faltante
 metaDescription: 'Aprende cómo resolver este problema técnico (algoritmos) paso

@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-utilizar-autenticacion-firebase-react
-enlaceyt: https://www.youtube.com/watch?v=znf4CYedrJ4
+enlaceyt: https://www.youtube.com/embed/znf4CYedrJ4
 date: 2021-09-20T22:15:16.561Z
 title: 'Cómo utilizar la autenticación de Firebase (con React) '
 tag:

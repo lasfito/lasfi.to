@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: crea-ventana-modal-popup-html
-enlaceyt: https://youtu.be/ZMhEVSvSwwk
+enlaceyt: https://youtube.com/embed/ZMhEVSvSwwk
 date: 2022-04-28T19:17:37.924Z
 title: Crea una Ventana Modal (PopUp) con HTML
 metaDescription: 'Aprende cómo crear una ventana modal estilo pop-up responsiva

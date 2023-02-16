@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: como-mejorar-rendimiento-react
-enlaceyt: https://youtu.be/AyuTxN2aj_0
+enlaceyt: https://youtube.com/embed/AyuTxN2aj_0
 date: 2022-04-27T20:02:56.711Z
 title: Cómo mejorar el rendimiento de React
 metaDescription: 'Aprende cómo optimizar y mejorar el rendimiento de tu

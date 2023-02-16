@@ -1,7 +1,7 @@
 ---
 template: tutoriales
 url: mejora-tu-codigo-con-throttle
-enlaceyt: https://youtu.be/wbrWeZemAxM
+enlaceyt: https://youtube.com/embed/wbrWeZemAxM
 date: 2022-04-28T21:59:02.098Z
 title: Estrangula y mejora tu código con Throttle
 metaDescription: 'Aprende cómo optimizar tus funciones con el efecto Throttle en
