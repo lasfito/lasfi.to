@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+import PageHTML from '../../layouts/PageHTML.astro';
+
+const posts = (await getCollection('tutoriales')).sort(
+	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+);
+---
+
+<PageHTML
+	title="Tutoriales"
+	description="Tutoriales sobre desarrollo web"
+	image="/placeholder-social.jpg"
+	lang="es-MX"
+	type="website"
+	date="2021-01-01"
+>
+	<div class="fondo-pts">
+		<div class="buffer"></div>
+
+		<section class="contenedor margenes">
+			<h1 class="txt-gde margenes txt-str">Blog</h1>
+		</section>
+		<div class="contenedor">
+			{
+				posts.map(post => (
+					<li>
+						<FormattedDate date={post.data.date} />
+						<a href={`/tutoriales/${post.data.url}/`}>{post.data.title}</a>
+					</li>
+				))
+			}
+		</div>
+	</div>
+</PageHTML>

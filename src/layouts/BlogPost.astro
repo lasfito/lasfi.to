@@ -1,51 +1,53 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+
+import PageHTML from './PageHTML.astro';
+import { AcercaAutor } from '../components/AcercaAutor';
+import { TagsInBlog } from '../components/TagsInBlog';
+import { VideoGadget } from '../components/VideoGadget';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {
+	title,
+	description,
+	date,
+	updatedDate,
+	enlaceyt,
+	thumbnail,
+	heroImage,
+	tag,
+} = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-				border-top: 1px solid #ddd;
-				margin: 1rem 0;
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+<PageHTML
+	title={title}
+	description={description}
+	image="/placeholder-social.jpg"
+	lang="es-MX"
+	type="article"
+	date={date}
+>
+	<section class="flex-col m-b contenedor">
+		<div class="buffer"></div>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="title">{title}</h1>
-				<FormattedDate date={pubDate} />
-				{
-					updatedDate && (
-						<div class="last-updated-on">
-							Last updated on <FormattedDate date={updatedDate} />
-						</div>
-					)
-				}
-				<hr />
-				<slot />
-			</article>
-		</main>
-		<Footer />
-	</body>
-</html>
+		<h1 class="post-title">{title}</h1>
+
+		<TagsInBlog tags={tag} />
+
+		{enlaceyt ? <VideoGadget url={enlaceyt} /> : <img src={thumbnail} />}
+	</section>
+	<div class="blog">
+		<article class="post-content">
+			<slot />
+		</article>
+	</div>
+
+	<AcercaAutor />
+	<section class="contenedor buffer">
+		<h3>Comentarios</h3>
+
+		<div>añadir componente discordmentarios</div>
+	</section>
+	<div class="buffer"></div>
+</PageHTML>

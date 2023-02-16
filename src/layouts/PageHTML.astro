@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { Layout } from '../components/Layout';
+
+const {
+	title,
+	description,
+	image = '/placeholder-social.jpg',
+	lang = 'es-MX',
+	type = 'article',
+	date = '2021-01-01',
+} = Astro.props;
+const anoActual = new Date().getFullYear();
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+	<head>
+		<BaseHead
+			title={title}
+			description={description}
+			image={image}
+			date={date}
+			type={type}
+		/>
+	</head>
+	<body>
+		<Layout client:idle>
+			<slot />
+		</Layout>
+	</body>
+</html>

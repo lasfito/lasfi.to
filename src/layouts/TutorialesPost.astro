@@ -1,0 +1,53 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+import PageHTML from './PageHTML.astro';
+import { AcercaAutor } from '../components/AcercaAutor';
+import { TagsInBlog } from '../components/TagsInBlog';
+import { VideoGadget } from '../components/VideoGadget';
+
+type Props = CollectionEntry<'tutoriales'>['data'];
+
+const {
+	title,
+	description,
+	date,
+	updatedDate,
+	enlaceyt,
+	thumbnail,
+	heroImage,
+	tag,
+} = Astro.props;
+---
+
+<PageHTML
+	title={title}
+	description={description}
+	image="/placeholder-social.jpg"
+	lang="es-MX"
+	type="article"
+	date={date}
+>
+	<section class="flex-col m-b contenedor">
+		<div class="buffer"></div>
+
+		<h1 class="post-title">{title}</h1>
+
+		<TagsInBlog tags={tag} />
+
+		{enlaceyt ? <VideoGadget url={enlaceyt} /> : <img src={thumbnail} />}
+	</section>
+	<div class="blog">
+		<article class="post-content">
+			<slot />
+		</article>
+	</div>
+
+	<AcercaAutor />
+	<section class="contenedor buffer">
+		<h3>Comentarios</h3>
+
+		<div>añadir componente discordmentarios</div>
+	</section>
+	<div class="buffer"></div>
+</PageHTML>

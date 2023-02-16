@@ -1,0 +1,28 @@
+---
+import Luis from '../assets/img/luisMugShot.png';
+import PageHTML from '../layouts/PageHTML.astro';
+---
+
+<PageHTML
+	title="Quééé"
+	description="Página no encontrada"
+	image="/placeholder-social.jpg"
+	lang="es-MX"
+	type="website"
+	date="2021-01-01"
+>
+	<section class="about-author buffer">
+		<div class="cont">
+			<div>
+				<h1>Not Found</h1>
+				<p>
+					Qué raro, no encontré lo que buscabas. ¿Regresamos{' '}
+					<a href="/" class="fancy"> al inicio?</a>
+				</p>
+			</div>
+			<div class="foto-autor">
+				<img src={Luis} />
+			</div>
+		</div>
+	</section>
+</PageHTML>

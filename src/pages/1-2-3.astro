@@ -1,0 +1,41 @@
+---
+import { NewsLetter } from '../components/NewsLetter';
+import Luis from '../assets/img/luisMugShot.png';
+import PageHTML from '../layouts/PageHTML.astro';
+---
+
+<PageHTML
+	title="Senior en un dos por tres"
+	description="El boletín para desarrolladores web."
+	image="/placeholder-social.jpg"
+	lang="es-MX"
+	type="website"
+	date="2021-01-01"
+>
+	<section class="about-author buffer">
+		<div class="cont">
+			<div>
+				<div>
+					<h3>1 - 2 - 3</h3>
+					<p>
+						¡Hola! Todos los jueves envío un boletín a más de{' '}
+						<strong>578</strong> desarrolladores web interesados en JavaScript, React,
+						Node y tecnologías relacionadas.
+						<br />
+						<br />
+						Cada boletín incluye 3 artículos "curados" por mí, 2 recursos de desarrollo
+						y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos
+						y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más
+						el spam que yo.{' '}
+					</p>
+				</div>
+				<div class="flex-row">
+					<NewsLetter cta="  Únete al NewsLetter " />
+				</div>
+			</div>
+			<div class="foto-autor">
+				<img src={Luis} />
+			</div>
+		</div>
+	</section>
+</PageHTML>
