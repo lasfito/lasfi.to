@@ -2,7 +2,7 @@ import OlaComp from '../OlaComp/OlaComp';
 
 const Footer = () => {
 	return (
-		<footer className="global-footer w-full md:w-9/12 mx-auto py-8 rounded-t-xl flex flex-col items-center justify-evenly text-center px-8 ">
+		<footer className="bg-fondo text-texto-str w-full md:w-9/12 mx-auto py-8 rounded-t-xl flex flex-col items-center justify-evenly text-center px-8 ">
 			<p className=" text-lg">
 				© 2021 – Hoy (no fío, mañana sí) Copyright Lasfito. Todos los derechos
 				reservados.

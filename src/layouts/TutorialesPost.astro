@@ -1,54 +1,54 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type {CollectionEntry} from "astro:content";
 
-import PageHTML from './PageHTML.astro';
-import { AcercaAutor } from '../components/AcercaAutor';
-import { TagsInBlog } from '../components/TagsInBlog';
-import { VideoGadget } from '../components/VideoGadget';
-import ReactPlayer from 'react-player/youtube';
+import PageHTML from "./PageHTML.astro";
+import {AcercaAutor} from "../components/AcercaAutor";
+import {TagsInBlog} from "../components/TagsInBlog";
+import {VideoGadget} from "../components/VideoGadget";
+import ReactPlayer from "react-player/youtube";
 
-type Props = CollectionEntry<'tutoriales'>['data'];
+type Props = CollectionEntry<"tutoriales">["data"];
 
 const {
-	title,
-	description,
-	date,
-	updatedDate,
-	enlaceyt,
-	thumbnail,
-	heroImage,
-	tag,
+  title,
+  description,
+  date,
+  updatedDate,
+  enlaceyt,
+  thumbnail,
+  heroImage,
+  tag,
 } = Astro.props;
 ---
 
 <PageHTML
-	title={title}
-	description={description}
-	image="/placeholder-social.jpg"
-	lang="es-MX"
-	type="article"
-	date={date}
+  title={title}
+  description={description}
+  image="/placeholder-social.jpg"
+  lang="es-MX"
+  type="article"
+  date={date}
 >
-	<section class="flex-col m-b contenedor">
-		<div class="buffer"></div>
+  <section class="m-b mx-auto max-w-5xl flex-col">
+    <div class="mt-20"></div>
 
-		<h1 class="post-title">{title}</h1>
+    <h1 class="post-title">{title}</h1>
 
-		<TagsInBlog tags={tag} />
+    <TagsInBlog tags={tag} />
 
-		<VideoGadget url={enlaceyt} />
-	</section>
-	<div class="blog">
-		<article class="post-content">
-			<slot />
-		</article>
-	</div>
+    <VideoGadget url={enlaceyt} />
+  </section>
+  <div class="blog">
+    <article class="post-content">
+      <slot />
+    </article>
+  </div>
 
-	<AcercaAutor />
-	<section class="contenedor buffer">
-		<h3>Comentarios</h3>
+  <AcercaAutor />
+  <section class="mx-auto mt-20 max-w-5xl">
+    <h3>Comentarios</h3>
 
-		<div>añadir componente discordmentarios</div>
-	</section>
-	<div class="buffer"></div>
+    <div>añadir componente discordmentarios</div>
+  </section>
+  <div class="mt-20"></div>
 </PageHTML>

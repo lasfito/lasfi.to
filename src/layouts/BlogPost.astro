@@ -1,53 +1,55 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type {CollectionEntry} from "astro:content";
 
-import PageHTML from './PageHTML.astro';
-import { AcercaAutor } from '../components/AcercaAutor';
-import { TagsInBlog } from '../components/TagsInBlog';
-import { VideoGadget } from '../components/VideoGadget';
+import PageHTML from "./PageHTML.astro";
+import {AcercaAutor} from "../components/AcercaAutor";
+import {TagsInBlog} from "../components/TagsInBlog";
+import {VideoGadget} from "../components/VideoGadget";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
 const {
-	title,
-	description,
-	date,
-	updatedDate,
-	enlaceyt,
-	thumbnail,
-	heroImage,
-	tag,
+  title,
+  description,
+  date,
+  updatedDate,
+  enlaceyt,
+  thumbnail,
+  heroImage,
+  tag,
 } = Astro.props;
 ---
 
 <PageHTML
-	title={title}
-	description={description}
-	image="/placeholder-social.jpg"
-	lang="es-MX"
-	type="article"
-	date={date}
+  title={title}
+  description={description}
+  image="/placeholder-social.jpg"
+  lang="es-MX"
+  type="article"
+  date={date}
 >
-	<section class="flex-col m-b contenedor">
-		<div class="buffer"></div>
+  <section class="m-b mx-auto max-w-5xl flex-col">
+    <div class="mt-20"></div>
 
-		<h1 class="post-title">{title}</h1>
+    <h1 class="text-5xl text-texto-str">{title}</h1>
 
-		<TagsInBlog tags={tag} />
+    <TagsInBlog tags={tag} />
 
-		{enlaceyt ? <VideoGadget url={enlaceyt} /> : <img src={thumbnail} />}
-	</section>
-	<div class="blog">
-		<article class="post-content">
-			<slot />
-		</article>
-	</div>
+    {enlaceyt ? <VideoGadget url={enlaceyt} /> : <img src={thumbnail} />}
+  </section>
 
-	<AcercaAutor />
-	<section class="contenedor buffer">
-		<h3>Comentarios</h3>
+  <article
+    id="blog"
+    class="prose mx-auto flex max-w-[70ch] flex-col items-stretch justify-around px-4 text-left text-xl leading-[35px]"
+  >
+    <slot />
+  </article>
 
-		<div>añadir componente discordmentarios</div>
-	</section>
-	<div class="buffer"></div>
+  <AcercaAutor />
+  <section class="mx-auto mt-20 max-w-5xl">
+    <h3>Comentarios</h3>
+
+    <div>añadir componente discordmentarios</div>
+  </section>
+  <div class="mt-20"></div>
 </PageHTML>

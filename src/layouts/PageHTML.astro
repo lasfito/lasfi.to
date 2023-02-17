@@ -1,78 +1,78 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import { Layout } from '../components/Layout';
+import BaseHead from "../components/BaseHead.astro";
+import {Layout} from "../components/Layout";
 
 const {
-	title,
-	description,
-	image = '/placeholder-social.jpg',
-	lang = 'es-MX',
-	type = 'article',
-	date = '2021-01-01',
+  title,
+  description,
+  image = "/placeholder-social.jpg",
+  lang = "es-MX",
+  type = "article",
+  date = "2021-01-01",
 } = Astro.props;
 const anoActual = new Date().getFullYear();
 ---
 
 <!DOCTYPE html>
 <html lang={lang}>
-	<head>
-		<BaseHead
-			title={title}
-			description={description}
-			image={image}
-			date={date}
-			type={type}
-		/>
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      date={date}
+      type={type}
+    />
 
-		<style>
-			html {
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-					Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-					'Segoe UI Symbol';
-			}
-		</style>
-	</head>
+    <style>
+      html {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+      }
+    </style>
+  </head>
 
-	<body class="text-texto-sft">
-		<Layout client:idle>
-			<slot />
-		</Layout>
-		<script>
-			// get dark mode preference from local storage
-			const prefersDark: 'enabled' | 'disabled' = JSON.parse(
-				localStorage.getItem('darkMode') || 'disabled'
-			);
+  <body class="overflow-x-hidden text-texto-sft">
+    <Layout client:idle>
+      <slot />
+    </Layout>
+    <script>
+      // get dark mode preference from local storage
+      const prefersDark: "enabled" | "disabled" = JSON.parse(
+        localStorage.getItem("darkMode") || "disabled"
+      );
 
-			function userPreferesDarkMode() {
-				return localStorage.getItem('darkMode') === 'enabled';
-			}
+      function userPreferesDarkMode() {
+        return localStorage.getItem("darkMode") === "enabled";
+      }
 
-			function setThemePreference(value: 'enabled' | 'disabled') {
-				localStorage.setItem('darkMode', value || 'disabled');
-			}
+      function setThemePreference(value: "enabled" | "disabled") {
+        localStorage.setItem("darkMode", value || "disabled");
+      }
 
-			const enableDarkMode = () => {
-				document.body.classList.add('oscuro');
-			};
+      const enableDarkMode = () => {
+        document.body.classList.add("oscuro");
+      };
 
-			const disableDarkMode = () => {
-				document.body.classList.remove('oscuro');
-			};
+      const disableDarkMode = () => {
+        document.body.classList.remove("oscuro");
+      };
 
-			function setTheme() {
-				// If the user already visited and enabled darkMode
-				// start things off with it on
-				if (userPreferesDarkMode()) {
-					enableDarkMode();
-				} else {
-					disableDarkMode();
-				}
-			}
+      function setTheme() {
+        // If the user already visited and enabled darkMode
+        // start things off with it on
+        if (userPreferesDarkMode()) {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      }
 
-			document.addEventListener('DOMContentLoaded', function (event) {
-				// Your code to run since DOM is loaded and ready
-				setTheme();
-			});
-		</script>
-	</body>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        // Your code to run since DOM is loaded and ready
+        setTheme();
+      });
+    </script>
+  </body>
 </html>

@@ -1,41 +1,43 @@
 ---
-import { NewsLetter } from '../components/NewsLetter';
-import Luis from '../assets/img/luisMugShot.png';
-import PageHTML from '../layouts/PageHTML.astro';
+import {NewsLetter} from "../components/NewsLetter";
+import Luis from "../assets/img/luisMugShot.png";
+import PageHTML from "../layouts/PageHTML.astro";
 ---
 
 <PageHTML
-	title="Senior en un dos por tres"
-	description="El boletín para desarrolladores web."
-	image="/placeholder-social.jpg"
-	lang="es-MX"
-	type="website"
-	date="2021-01-01"
+  title="Senior en un dos por tres"
+  description="El boletín para desarrolladores web."
+  image="/placeholder-social.jpg"
+  lang="es-MX"
+  type="website"
+  date="2021-01-01"
 >
-	<section class="bg-fondo-jr w-full py-8 my-20">
-		<div class="contenedor flex justify-center items-center mx-auto gap-5">
-			<div>
-				<div>
-					<h3 class="font-bold text-3xl text-center">1 - 2 - 3</h3>
-					<p class="max-w-[35ch] mt-4 text-texto-sft text-xl text-justify">
-						¡Hola! Todos los jueves envío un boletín a más de{' '}
-						<strong>578</strong> desarrolladores web interesados en JavaScript, React,
-						Node y tecnologías relacionadas.
-						<br />
-						<br />
-						Cada boletín incluye 3 artículos "curados" por mí, 2 recursos de desarrollo
-						y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos
-						y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más
-						el spam que yo.{' '}
-					</p>
-				</div>
-				<div class="flex flex-row my-10">
-					<NewsLetter cta="Únete al NewsLetter" client:idle />
-				</div>
-			</div>
-			<div>
-				<img src={Luis} class="w-[200px] h-auto" />
-			</div>
-		</div>
-	</section>
+  <section class="my-20 w-full bg-fondo-jr py-8">
+    <div
+      class="mx-auto mx-auto flex max-w-5xl items-center justify-center gap-5"
+    >
+      <div>
+        <div>
+          <h3 class="text-center text-3xl font-bold">1 - 2 - 3</h3>
+          <p class="mt-4 max-w-[35ch] text-justify text-xl text-texto-sft">
+            ¡Hola! Todos los jueves envío un boletín a más de{" "}
+            <strong>578</strong> desarrolladores web interesados en JavaScript, React,
+            Node y tecnologías relacionadas.
+            <br />
+            <br />
+            Cada boletín incluye 3 artículos "curados" por mí, 2 recursos de desarrollo
+            y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos
+            y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más
+            el spam que yo.{" "}
+          </p>
+        </div>
+        <div class="my-10 flex flex-row">
+          <NewsLetter cta="Únete al NewsLetter" client:idle />
+        </div>
+      </div>
+      <div>
+        <img src={Luis} class="h-auto w-[200px]" />
+      </div>
+    </div>
+  </section>
 </PageHTML>
