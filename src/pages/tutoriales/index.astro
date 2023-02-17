@@ -5,7 +5,7 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import PageHTML from '../../layouts/PageHTML.astro';
 
 const posts = (await getCollection('tutoriales')).sort(
-	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
 
@@ -17,21 +17,24 @@ const posts = (await getCollection('tutoriales')).sort(
 	type="website"
 	date="2021-01-01"
 >
-	<div class="fondo-pts">
-		<div class="buffer"></div>
+	<div class="buffer"></div>
 
-		<section class="contenedor margenes">
-			<h1 class="txt-gde margenes txt-str">Blog</h1>
-		</section>
-		<div class="contenedor">
-			{
-				posts.map(post => (
-					<li>
-						<FormattedDate date={post.data.date} />
-						<a href={`/tutoriales/${post.data.url}/`}>{post.data.title}</a>
-					</li>
-				))
-			}
-		</div>
+	<section class="contenedor mx-auto">
+		<h1 class="text-4xl mx-auto mb-20 text-primario">Tutoriales</h1>
+	</section>
+	<div class="contenedor pb-40">
+		{
+			posts.map(post => (
+				<li class="flex items-center gap-4 my-5 text-xl">
+					<FormattedDate date={post.data.date} />
+					<a
+						class="text-texto-str text-2xl hover:underline hover:text-primario"
+						href={`/tutoriales/${post.data.url}/`}
+					>
+						{post.data.title}
+					</a>
+				</li>
+			))
+		}
 	</div>
 </PageHTML>

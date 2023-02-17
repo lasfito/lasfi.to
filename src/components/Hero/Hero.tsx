@@ -10,10 +10,10 @@ const Hero = () => (
 			id="top"
 		>
 			<section className="flex flex-col items-center justify-end  ">
-				<h3 id="js02" className="text-primario font-light">
+				<h3 id="js02" className="text-primario text-3xl font-light">
 					¡Hola, soy Lasfito!
 				</h3>
-				<h1 id="js03">
+				<h1 id="js03" className="text-4xl my-3">
 					Y soy <strong>ingeniero de software </strong>
 				</h1>
 
@@ -25,6 +25,7 @@ const Hero = () => (
 				<div className="md:hidden">
 					<SpinningText size={325} text=" Frontend • Software • Engineer •">
 						<img
+							id="gotMilk.png"
 							className="max-w-[80%] h-auto w-auto animate-bounce"
 							src={GotMilk}
 							alt="Cartoon drawing of myself"
@@ -34,7 +35,7 @@ const Hero = () => (
 				<div className="hidden md:block">
 					<SpinningText size={450} text=" Frontend • Software • Engineer •">
 						<img
-							className="max-w-[80%] h-auto w-auto animate-cereal"
+							className="max-w-[80%] h-auto w-auto animate-cereal drop-shadow-2xl"
 							src={GotMilk}
 							alt="Cartoon drawing of myself"
 						/>

@@ -13,7 +13,7 @@ const Header = ({ toggleMenu }: HeaderProps) => {
 				</p>
 			</a>
 			<div
-				className={`fixed top-5 right-3  md:mr-20  z-40 menu-icon`}
+				className={`fixed top-5 right-3  md:mr-20  z-40 text-texto-sft`}
 				onClick={e => toggleMenu(e)}
 			>
 				<BiMenuAltRight fontSize={40} className="cursor-pointer" />

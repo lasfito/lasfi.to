@@ -20,13 +20,13 @@ function ModalContact({
 	return (
 		<div
 			onClick={e => toggleContact(e)}
-			className={`modal-contact absolute top-0 left-0 right-0 bottom-0  w-screen h-screen z-50 glassmorph-dark grid place-items-center opacity-0 ${
+			className={`transition-all ease-in-out duration-500 transform absolute top-0 left-0 right-0 bottom-0  w-screen h-screen z-50 glassmorph-dark grid place-items-center opacity-0 ${
 				isContactShown ? 'opacity-100' : ' pointer-events-none'
 			}  `}
 			style={{ top: `${scrolledY}px` }}
 		>
 			<div
-				className=" flex-col w-[90vw] md:w-[33vw] h-screen modal"
+				className="  w-[90vw] md:w-[33vw] h-screen flex flex-col justify-center modal"
 				id="modal-contact"
 			>
 				<AcercaCard />

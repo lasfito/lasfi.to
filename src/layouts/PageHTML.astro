@@ -23,10 +23,56 @@ const anoActual = new Date().getFullYear();
 			date={date}
 			type={type}
 		/>
+
+		<style>
+			html {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+					Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+					'Segoe UI Symbol';
+			}
+		</style>
 	</head>
-	<body>
+
+	<body class="text-texto-sft">
 		<Layout client:idle>
 			<slot />
 		</Layout>
+		<script>
+			// get dark mode preference from local storage
+			const prefersDark: 'enabled' | 'disabled' = JSON.parse(
+				localStorage.getItem('darkMode') || 'disabled'
+			);
+
+			function userPreferesDarkMode() {
+				return localStorage.getItem('darkMode') === 'enabled';
+			}
+
+			function setThemePreference(value: 'enabled' | 'disabled') {
+				localStorage.setItem('darkMode', value || 'disabled');
+			}
+
+			const enableDarkMode = () => {
+				document.body.classList.add('oscuro');
+			};
+
+			const disableDarkMode = () => {
+				document.body.classList.remove('oscuro');
+			};
+
+			function setTheme() {
+				// If the user already visited and enabled darkMode
+				// start things off with it on
+				if (userPreferesDarkMode()) {
+					enableDarkMode();
+				} else {
+					disableDarkMode();
+				}
+			}
+
+			document.addEventListener('DOMContentLoaded', function (event) {
+				// Your code to run since DOM is loaded and ready
+				setTheme();
+			});
+		</script>
 	</body>
 </html>

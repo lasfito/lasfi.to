@@ -6,8 +6,8 @@ module.exports = {
 			colors: {
 				primario: 'var(--primario)',
 				acento: 'var(--acento)',
-				'texto-str': 'var(--textostr)',
-				'texto-sft': 'var(--textostr)',
+				'texto-str': 'var(--texto-str)',
+				'texto-sft': 'var(--texto-sft)',
 				'ola-color': 'var(--ola-color)',
 				'fondo-jr': 'var(--fondo-jr)',
 				fondo: 'var(--fondo)',
@@ -49,6 +49,7 @@ module.exports = {
 				'ola-jr': 'ola 10s linear infinite reverse',
 				'ola-slow': 'ola 20s linear infinite',
 				cereal: 'cereal linear 3s infinite',
+				spin: 'spin ',
 			},
 		},
 	},

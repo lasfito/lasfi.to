@@ -37,7 +37,7 @@ const Layout = ({ children }: LayoutProps) => {
 	}
 
 	return (
-		<div className={`relative w-screen fondo-pts  min-h-screen  `}>
+		<div className={`relative w-screen fondo-pts min-h-screen  `}>
 			<ModalMenu
 				isModalShown={isModalShown}
 				toggleMenu={toggleMenu}

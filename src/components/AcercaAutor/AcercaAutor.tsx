@@ -2,13 +2,14 @@ import { Luis } from '../../assets/img';
 import { NewsLetter } from '../NewsLetter/';
 
 function AcercaAutor() {
+	// todo: refactor with 1-2-3
 	return (
-		<section className="about-author  ">
-			<div className="cont ">
+		<section className="bg-fondo-jr w-full py-8">
+			<div className="max-w-[1024px] mx-auto flex justify-center items-center">
 				<div>
 					<div>
 						<h3>Acerca del autor</h3>
-						<p>
+						<p className="max-w-[35ch] text-texto-sft my-5">
 							¡Hola! Me llamo Adrián, pero todos me conocen como Lasfito. Soy
 							desarrollador front-end y escribo artículos y tutoriales sobre
 							JavaScript, desarrollo web y diseño.

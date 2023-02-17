@@ -1,6 +1,7 @@
 ---
-import { AcercaPage } from '../components/AcercaPage';
+import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import PageHTML from '../layouts/PageHTML.astro';
+import { SHORT_RESUME_ES } from '../consts';
 ---
 
 <PageHTML
@@ -11,5 +12,55 @@ import PageHTML from '../layouts/PageHTML.astro';
 	type="website"
 	date="2021-01-01"
 >
-	<AcercaPage client:load />
+	<section
+		class="h-[90vh] flex flex-col max-w-[70ch] mx-auto leading-loose justify-evenly items-center"
+	>
+		<h1 class="text-primario text-3xl font-bold">
+			¿Quién es <strong>Lasfito</strong> ?
+		</h1>
+
+		<h2 class="text-4xl my-5">Resumen</h2>
+		<p class="text-xl">
+			{SHORT_RESUME_ES}
+		</p>
+
+		<h2 class="text-4xl">Contacto</h2>
+
+		<div class="text-texto-sft my-4 z-10">
+			<ul class="flex flex-col no-underline text-xl">
+				<li class="my-3">
+					<a
+						href="https://www.linkedin.com/in/lasfito/"
+						target="_blank"
+						class="snake flex items-center gap-4"
+						rel="noreferrer"
+						class="flex w-[500px] items-center"
+					>
+						<FaLinkedinIn />
+						Revisa mi perfil en Linkedin
+					</a>
+				</li>
+				<li class="my-3">
+					<a
+						href="https://github.com/lasfito"
+						target="_blank"
+						class="snake flex items-center gap-4"
+						rel="noreferrer"
+					>
+						<FaGithub />
+						Echa un vistazo a mi perfil en Github
+					</a>
+				</li>
+				<li class="my-3">
+					<a
+						href="mailto:hola@lasfi.to"
+						class="snake flex items-center gap-4"
+						rel="noreferrer"
+					>
+						<FaEnvelope />O envíame un correo
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
 </PageHTML>

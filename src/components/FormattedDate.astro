@@ -2,10 +2,10 @@
 const { date } = Astro.props;
 ---
 
-<time datetime={date.toISOString()}>
+<time datetime={date.toISOString()} class="opacity-60">
 	{
 		date &&
-			date?.toLocaleDateString('en-us', {
+			date?.toLocaleDateString('es-MX', {
 				year: 'numeric',
 				month: 'short',
 				day: 'numeric',

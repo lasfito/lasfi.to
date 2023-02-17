@@ -9,8 +9,8 @@ type Props = {
 
 function MacWindow({ children, id, title }: Props) {
 	return (
-		<div className={`max-w-[700px] m-auto p-2 rounded-xl`} id={id}>
-			<div className="relative bg-fondo-jr rounded-xl">
+		<div className="max-w-[700px] m-auto p-2 rounded-xl " id={id}>
+			<div className="relative bg-fondo-jr rounded-xl shadow-2xl">
 				<div className="flex items-center py-[10px] px-[20px] bg-primario rounded-t-xl">
 					<div className="flex-auto">
 						<div className="inline-block w-2 h-2 mr-[3px] rounded-[8px] bg-red-500"></div>

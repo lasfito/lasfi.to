@@ -18,7 +18,7 @@ function ThemeIcon() {
 	return (
 		<ClientOnly>
 			<div
-				className="fixed  bottom-3 right-3 md:bottom-10 md:right-10  cursor-pointer h-20px w-20px theme-icon z-30 p-3"
+				className="fixed  bottom-3 right-3 md:bottom-10 md:right-10  cursor-pointer h-20px w-20px bg-texto-sft rounded-full text-xl text-fondo z-30 p-3"
 				onClick={cambiarTema}
 			>
 				{isDark ? <FaRegSun /> : <FaRegMoon />}

@@ -33,12 +33,7 @@ function AcercaCard() {
 					<br />
 					¿Eres desarrollador y/o buscas mejorar tus habilidades? Entonces echa
 					un vistazo a mis tutoriales, mi canal de YouTube y regístrate en{' '}
-					<a
-						className="fancy"
-						href="http://s.1-2-3.dev"
-						target="_blank"
-						rel="noopener"
-					>
+					<a className="fancy" href="/1-2-3" target="_blank" rel="noopener">
 						mi boletín
 					</a>
 					.

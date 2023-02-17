@@ -12,12 +12,12 @@ import PageHTML from '../layouts/PageHTML.astro';
 	type="website"
 	date="2021-01-01"
 >
-	<section class="about-author buffer">
-		<div class="cont">
+	<section class="bg-fondo-jr w-full py-8 my-20">
+		<div class="contenedor flex justify-center items-center mx-auto gap-5">
 			<div>
 				<div>
-					<h3>1 - 2 - 3</h3>
-					<p>
+					<h3 class="font-bold text-3xl text-center">1 - 2 - 3</h3>
+					<p class="max-w-[35ch] mt-4 text-texto-sft text-xl text-justify">
 						¡Hola! Todos los jueves envío un boletín a más de{' '}
 						<strong>578</strong> desarrolladores web interesados en JavaScript, React,
 						Node y tecnologías relacionadas.
@@ -29,12 +29,12 @@ import PageHTML from '../layouts/PageHTML.astro';
 						el spam que yo.{' '}
 					</p>
 				</div>
-				<div class="flex-row">
-					<NewsLetter cta="  Únete al NewsLetter " />
+				<div class="flex flex-row my-10">
+					<NewsLetter cta="Únete al NewsLetter" client:idle />
 				</div>
 			</div>
-			<div class="foto-autor">
-				<img src={Luis} />
+			<div>
+				<img src={Luis} class="w-[200px] h-auto" />
 			</div>
 		</div>
 	</section>

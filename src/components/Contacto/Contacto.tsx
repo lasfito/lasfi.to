@@ -2,7 +2,7 @@ import { MacWindow } from '../MacWindow';
 
 const Contacto = () => (
 	<section>
-		<div className="background" id="contactame">
+		<div className="min-h-screen items-center justify-center" id="contactame">
 			<MacWindow title="Contáctame" id="contactame-form">
 				<div className="flex ">
 					<div className="flex-1 w-screen p-12">
