@@ -30,7 +30,7 @@ function ModalContact({
         className="  modal flex h-screen w-[90vw] flex-col justify-center md:w-[33vw]"
         id="modal-contact"
       >
-        <AcercaCard id="MODAL-ACERCA" />
+        <AcercaCard id="MODAL-ACERCA" short={true} />
       </div>
     </div>
   );

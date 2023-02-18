@@ -1,7 +1,7 @@
 ---
 import {getCollection} from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
 import PageHTML from "../../layouts/PageHTML.astro";
+import CollectionTemplate from "../../layouts/CollectionTemplate.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -16,24 +16,5 @@ const posts = (await getCollection("blog")).sort(
   type="website"
   date="2021-01-01"
 >
-  <div class="mt-20"></div>
-
-  <section class="mx-auto mx-auto max-w-5xl">
-    <h1 class="mx-auto mb-20 text-4xl text-primario">Blog</h1>
-  </section>
-  <div class="mx-auto max-w-5xl pb-40">
-    {
-      posts.map((post) => (
-        <li class="my-5 flex items-center gap-4 text-xl">
-          <FormattedDate date={post.data.date} />
-          <a
-            class="text-2xl text-texto-str hover:text-primario hover:underline"
-            href={`/blog/${post.data.url}/`}
-          >
-            {post.data.title}
-          </a>
-        </li>
-      ))
-    }
-  </div>
+  <CollectionTemplate title="Blog" posts={posts} />
 </PageHTML>

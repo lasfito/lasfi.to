@@ -36,7 +36,7 @@ const HomeHero = () => (
         </SpinningText>
       </div>
       <div className="hidden md:block">
-        <SpinningText size={350} text="Full-Stack • Software • Engineer • ">
+        <SpinningText size={450} text="Full-Stack • Software • Engineer • ">
           <img
             className="h-auto  w-5/6 animate-cereal drop-shadow-2xl"
             src={GotMilk}

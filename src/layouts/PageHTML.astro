@@ -10,7 +10,6 @@ const {
   type = "article",
   date = "2021-01-01",
 } = Astro.props;
-const anoActual = new Date().getFullYear();
 ---
 
 <!DOCTYPE html>
@@ -31,40 +30,66 @@ const anoActual = new Date().getFullYear();
     </Layout>
     <script>
       // get dark mode preference from local storage
-      const prefersDark: "enabled" | "disabled" = JSON.parse(
-        localStorage.getItem("darkMode") || "disabled"
-      );
-
-      function userPreferesDarkMode() {
-        return localStorage.getItem("darkMode") === "enabled";
-      }
+      // const prefersDark: "enabled" | "disabled" = JSON.parse(
+      //   localStorage.getItem("darkMode") || "disabled"
+      // );
 
       function setThemePreference(value: "enabled" | "disabled") {
-        localStorage.setItem("darkMode", value || "disabled");
+        const themeStr = JSON.stringify({
+          darkMode: value,
+        });
+
+        localStorage.setItem("theme", themeStr);
       }
 
-      const enableDarkMode = () => {
-        document.body.classList.add("oscuro");
-      };
+      setThemePreference("enabled");
 
-      const disableDarkMode = () => {
-        document.body.classList.remove("oscuro");
-      };
+      function getThemeFromLocalStorage() {
+        const themeStr = localStorage.getItem("theme");
+        if (!themeStr) {
+          return null;
+        }
 
-      function setTheme() {
-        // If the user already visited and enabled darkMode
-        // start things off with it on
-        if (userPreferesDarkMode()) {
-          enableDarkMode();
-        } else {
-          disableDarkMode();
+        try {
+          return JSON.parse(themeStr);
+        } catch (err) {
+          return null;
         }
       }
 
-      document.addEventListener("DOMContentLoaded", function (event) {
-        // Your code to run since DOM is loaded and ready
-        setTheme();
-      });
+      console.log(getThemeFromLocalStorage());
+
+      // function userPreferesDarkMode() {
+      //   return prefersDark === "enabled";
+      // }
+
+      // function setThemePreference(value: "enabled" | "disabled") {
+      //   localStorage.setItem("darkMode", value || "disabled");
+      // }
+
+      // const enableDarkMode = () => {
+      //   document.body.classList.add("oscuro");
+      // };
+
+      // const disableDarkMode = () => {
+      //   document.body.classList.remove("oscuro");
+      // };
+
+      // function setTheme() {
+
+      //   if (userPreferesDarkMode()) {
+      //     console.log("userPreferesDarkMode");
+      //     enableDarkMode();
+      //   } else {
+      //     console.log("userPreferesLightMode");
+      //     disableDarkMode();
+      //   }
+      // }
+
+      // document.addEventListener("DOMContentLoaded", function (event) {
+
+      //   setTheme();
+      // });
     </script>
   </body>
 </html>

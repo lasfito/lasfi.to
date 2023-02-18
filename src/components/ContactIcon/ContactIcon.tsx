@@ -1,4 +1,3 @@
-import React from "react";
 import {FaQuestion} from "react-icons/fa/index.js";
 
 interface ContactIconProps {
@@ -9,7 +8,7 @@ function ContactIcon({toggleContact}: ContactIconProps) {
   return (
     <div
       data-testid="CONTACT-ICON"
-      className="h-20px  w-20px fixed bottom-3 left-3 z-30 cursor-pointer rounded-full bg-texto-sft p-3 text-xl text-fondo md:bottom-10 md:left-10"
+      className="fixed  bottom-3 left-3 z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-texto-sft p-3 text-xl text-fondo md:bottom-10 md:left-10 md:h-16 md:w-16 md:text-3xl"
       onClick={(e) => toggleContact(e)}
     >
       <FaQuestion />

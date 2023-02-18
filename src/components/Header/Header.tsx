@@ -17,7 +17,7 @@ const Header = ({toggleMenu}: HeaderProps) => {
         <BiMenuAltRight fontSize={40} className="cursor-pointer" />
       </div>
       <nav className=" hidden font-bold text-texto-str md:block">
-        <ul className="flex flex-row items-center justify-center gap-4">
+        <ul className="flex flex-row items-center justify-center gap-4 text-xl">
           <li className="hover:text-primario hover:underline">
             <a href="/acerca">Acerca</a>
           </li>

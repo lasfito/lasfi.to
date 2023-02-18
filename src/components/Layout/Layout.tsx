@@ -38,7 +38,7 @@ const Layout = ({children}: LayoutProps) => {
 
   return (
     <div className="relative w-full ">
-      {/* <ModalMenu
+      <ModalMenu
         isModalShown={isModalShown}
         toggleMenu={toggleMenu}
         scrolledY={scrolledY}
@@ -49,13 +49,13 @@ const Layout = ({children}: LayoutProps) => {
         toggleContact={toggleContact}
         scrolledY={scrolledY}
         setScrolledY={setScrolledY}
-      /> */}
+      />
 
       <Header toggleMenu={toggleMenu} />
       {children}
-      {/* <ThemeIcon />
-      <ContactIcon toggleContact={(e) => toggleContact(e)} /> */}
-      {/* <Footer /> */}
+      <ThemeIcon />
+      <ContactIcon toggleContact={(e) => toggleContact(e)} />
+      <Footer />
     </div>
   );
 };

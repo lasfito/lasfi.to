@@ -3,9 +3,10 @@ import {MacWindow} from "../MacWindow";
 
 interface AcercaCardProps {
   id: string;
+  short?: boolean;
 }
 
-function AcercaCard({id}: AcercaCardProps) {
+function AcercaCard({id, short = false}: AcercaCardProps) {
   return (
     <MacWindow id={id} title="Acerca de mí">
       <div className="mx-auto">
@@ -32,20 +33,29 @@ function AcercaCard({id}: AcercaCardProps) {
           </a>
           <br />
           <br />
-          ¿Eres desarrollador y/o buscas mejorar tus habilidades? Entonces echa
-          un vistazo a mis{" "}
-          <a href="/tutoriales" target="blank" rel="noopener" className="fancy">
-            tutoriales{" "}
-          </a>{" "}
-          y mi canal de{" "}
-          <a
-            href="https://youtube.com/@lasfito"
-            target="_blank"
-            rel="noopener"
-            className="fancy"
-          >
-            YouTube.
-          </a>
+          {!short && (
+            <div>
+              ¿Eres desarrollador y/o buscas mejorar tus habilidades? Entonces
+              echa un vistazo a mis{" "}
+              <a
+                href="/tutoriales"
+                target="blank"
+                rel="noopener"
+                className="fancy"
+              >
+                tutoriales{" "}
+              </a>{" "}
+              y mi canal de{" "}
+              <a
+                href="https://youtube.com/@lasfito"
+                target="_blank"
+                rel="noopener"
+                className="fancy"
+              >
+                YouTube.
+              </a>
+            </div>
+          )}
         </p>
       </div>
     </MacWindow>
