@@ -5,7 +5,7 @@ import PageHTML from "./PageHTML.astro";
 import {AcercaAutor} from "../components/AcercaAutor";
 import {TagsInBlog} from "../components/TagsInBlog";
 import {VideoGadget} from "../components/VideoGadget";
-import {DiscordButton} from "../components/DiscordButton";
+import {DiscordButton} from "../components/DiscordButton/";
 
 type Props = CollectionEntry<"blog">["data"] & {
   slug: string;
@@ -71,7 +71,7 @@ const acercaAutor =
         target="_blank"
         rel="noopener noreferrer"
         class="text-primario underline hover:text-acento"
-        href={`https://github.com/lasfito/lasfito-astro/tree/master/src/content/blog/${slug}.md`}
+        href={`https://github.com/lasfito/lasfi.to/tree/master/src/content/blog/${slug}.md`}
       >
         levantar un pull request</a
       >

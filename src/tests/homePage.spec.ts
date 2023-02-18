@@ -18,9 +18,6 @@ test("home page renders correctly", async ({page}) => {
   expect(windowAcerca).toBeTruthy();
   await heroButton.click();
 
-  // take a screenshot a name it with the browser name of the current test
-  await page.screenshot({path: `screenshots/${new Date().toString()}.png`});
-
   const windowContact = page.getByTestId("CONTACT-FORM");
   expect(windowContact).toBeTruthy();
 
