@@ -1,7 +1,9 @@
 ---
-import {NewsLetter} from "../components/NewsLetter";
-import Luis from "../assets/img/luisMugShot.png";
 import PageHTML from "../layouts/PageHTML.astro";
+import {AcercaAutor} from "../components/AcercaAutor";
+
+const acercaBody =
+  "¡Hola! Todos los jueves envío un boletín a más de  desarrolladores web interesados en JavaScript, React, Node y tecnologías relacionadas.Cada boletín incluye 3 artículos curados por mí, 2 recursos de desarrollo y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más el spam que yo.";
 ---
 
 <PageHTML
@@ -12,32 +14,5 @@ import PageHTML from "../layouts/PageHTML.astro";
   type="website"
   date="2021-01-01"
 >
-  <section class="my-20 w-full bg-fondo-jr py-8">
-    <div
-      class="mx-auto mx-auto flex max-w-5xl items-center justify-center gap-5"
-    >
-      <div>
-        <div>
-          <h3 class="text-center text-3xl font-bold">1 - 2 - 3</h3>
-          <p class="mt-4 max-w-[35ch] text-justify text-xl text-texto-sft">
-            ¡Hola! Todos los jueves envío un boletín a más de{" "}
-            <strong>578</strong> desarrolladores web interesados en JavaScript, React,
-            Node y tecnologías relacionadas.
-            <br />
-            <br />
-            Cada boletín incluye 3 artículos "curados" por mí, 2 recursos de desarrollo
-            y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos
-            y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más
-            el spam que yo.{" "}
-          </p>
-        </div>
-        <div class="my-10 flex flex-row">
-          <NewsLetter cta="Únete al NewsLetter" client:idle />
-        </div>
-      </div>
-      <div>
-        <img src={Luis} class="h-auto w-[200px]" />
-      </div>
-    </div>
-  </section>
+  <AcercaAutor title="1-2-3" body={acercaBody} />
 </PageHTML>

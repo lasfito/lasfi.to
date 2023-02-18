@@ -80,3 +80,6 @@ This theme is based off of the lovely [Bear Blog](https://github.com/HermanMarti
 - [ ] Add PWA (?)
 - [ ] Netlify CMS (?)
 - [ ] Image assets
+- [ ] Cambiar URL slug content
+- [ ] Dark theme prose
+- [ ] Formatear tutoriales content

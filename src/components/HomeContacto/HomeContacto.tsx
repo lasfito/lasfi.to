@@ -3,7 +3,7 @@ import {MacWindow} from "../MacWindow";
 const Contacto = () => (
   <section>
     <div className="min-h-screen items-center justify-center" id="contactame">
-      <MacWindow title="Contáctame" id="contactame-form">
+      <MacWindow title="Contáctame" id="CONTACT-FORM">
         <div className="flex ">
           <div className="w-screen flex-1 p-12">
             <form

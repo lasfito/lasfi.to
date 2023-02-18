@@ -1,5 +1,6 @@
 ---
 import {Luis} from "../assets/img";
+import {AcercaAutor} from "../components/AcercaAutor";
 import PageHTML from "../layouts/PageHTML.astro";
 ---
 
@@ -11,18 +12,10 @@ import PageHTML from "../layouts/PageHTML.astro";
   type="website"
   date="2021-01-01"
 >
-  <section class="about-author mt-20">
-    <div class="cont">
-      <div>
-        <h1>Gracias</h1>
-        <p>
-          He recibido tu mensaje. Dentro de pronto me pondré en contacto al
-          correo que indicaste.
-        </p>
-      </div>
-      <div>
-        <img src={Luis} class="h-auto w-[200px]" />
-      </div>
-    </div>
-  </section>
+  <AcercaAutor
+    title="Gracias"
+    body={"He recibido tu mensaje y dentro de pronto te escribo de vuelta."}
+    includeNewsLetter={false}
+    backHome={true}
+  />
 </PageHTML>

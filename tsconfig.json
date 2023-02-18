@@ -4,6 +4,5 @@
 		"strictNullChecks": true,
 		"jsx": "react-jsx",
 		"jsxImportSource": "react"
-		/* 		"verbatimModuleSyntax": true */
 	}
 }

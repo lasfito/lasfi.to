@@ -1,5 +1,5 @@
 ---
-import Luis from "../assets/img/luisMugShot.png";
+import {AcercaAutor} from "../components/AcercaAutor";
 import PageHTML from "../layouts/PageHTML.astro";
 ---
 
@@ -11,18 +11,10 @@ import PageHTML from "../layouts/PageHTML.astro";
   type="website"
   date="2021-01-01"
 >
-  <section class="about-author mt-20">
-    <div class="cont">
-      <div>
-        <h1>Not Found</h1>
-        <p>
-          Qué raro, no encontré lo que buscabas. ¿Regresamos{" "}
-          <a href="/" class="fancy"> al inicio?</a>
-        </p>
-      </div>
-      <div>
-        <img class="h-auto w-[200px]" src={Luis} />
-      </div>
-    </div>
-  </section>
+  <AcercaAutor
+    title="Quééé"
+    body={"No encontramos lo que buscabas, pero puedes regresar a la página principal."}
+    includeNewsLetter={false}
+    backHome={true}
+  />
 </PageHTML>

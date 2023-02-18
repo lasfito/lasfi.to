@@ -4,8 +4,8 @@ url: mejora-tu-codigo-con-throttle
 enlaceyt: https://youtube.com/embed/wbrWeZemAxM
 date: 2022-04-28T21:59:02.098Z
 title: Estrangula y mejora tu código con Throttle
-metaDescription: 'Aprende cómo optimizar tus funciones con el efecto Throttle en
-  JavaScript #tutorial #javascript #webdev'
+metaDescription: "Aprende cómo optimizar tus funciones con el efecto Throttle en
+  JavaScript #tutorial #javascript #webdev"
 tag:
   - Programación
   - JavaScript
@@ -17,33 +17,7 @@ thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/
 
 ## Transcripción
 
-hola chicos que tal bienvenidos el día
-
-arts y aquí lo que haré en cobán es
-
-vending arts es igual a ok y ahora si no
-
-la voy a
-
-aumento función pero no es nada solo
-
-a ejecutar y ya está ok entonces no hay
-
-pasa nada porque y lo tengo mal escrito
-
-entonces que no es nada que me va a
-
-bach o función original ok y entonces
-
-lo que haremos es nos hace falta algo
-
-tenemos un problema primero no tengo que
-
-tengo pendientes en ese caso sí tengo
-
-uno bueno pues está según este segundo
-
-que hay que saber es que vas a tener una
+hola chicos que tal bienvenidos el día arts y aquí lo que haré en cobán es vending arts es igual a ok y ahora si no la voy a aumento función pero no es nada solo a ejecutar y ya está ok entonces no hay pasa nada porque y lo tengo mal escrito entonces que no es nada que me va a bach o función original ok y entonces lo que haremos es nos hace falta algo tenemos un problema primero no tengo que tengo pendientes en ese caso sí tengo uno bueno pues está según este segundo que hay que saber es que vas a tener una
 
 o envolvente o envolved ahora que esta
 
