@@ -1,8 +1,8 @@
 import {AcercaCard} from "../AcercaCard";
 
 const Acerca = () => (
-  <section>
-    <div className="bg-ola-color text-texto-sft" id="acerca-top">
+  <section className="w-full ">
+    <div className="bg-ola-color px-5" id="acerca-top">
       <AcercaCard id="ACERCA-HERO" />
     </div>
     <div>

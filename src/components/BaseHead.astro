@@ -1,33 +1,33 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/tailwind.css';
+import "../styles/tailwind.css";
 
-import GoogleTag from './GoogleTag.astro';
+import GoogleTag from "./GoogleTag.astro";
 //@ts-ignore
-import { Schema } from 'astro-seo-schema';
+import {Schema} from "astro-seo-schema";
 
 export interface Props {
-	title: string;
-	description: string;
-	image?: string;
-	date?: string;
-	lang?: 'es' | 'en';
-	type?: 'article' | 'website';
+  title: string;
+  description: string;
+  image?: string;
+  date?: string;
+  lang?: "es" | "en";
+  type?: "article" | "website";
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const {
-	title,
-	description,
-	image = '/placeholder-social.jpg',
-	lang = 'es',
-	type = 'article',
-	date = '2021-01-01',
+  title,
+  description,
+  image = "/placeholder-social.jpg",
+  lang = "es",
+  type = "article",
+  date = "2021-01-01",
 } = Astro.props;
 
-const mixedTitle = title + ' - Lasfito';
+const mixedTitle = title + " - Lasfito";
 ---
 
 <!-- Global Metadata -->
@@ -63,22 +63,22 @@ const mixedTitle = title + ' - Lasfito';
 
 <!-- SCHEMA.ORG -->
 <Schema
-	item={{
-		'@context': 'https://schema.org',
-		'@type': type === 'article' ? 'Article' : 'WebSite',
-		headline: title,
-		description: description,
-		image: image,
-		author: {
-			'@type': 'Person',
-			name: 'Lasfito',
-		},
-		publisher: {
-			'@type': 'Person',
-			name: 'Lasfito',
-		},
-		datePublished: date,
-	}}
+  item={{
+    "@context": "https://schema.org",
+    "@type": type === "article" ? "Article" : "WebSite",
+    headline: title,
+    description: description,
+    image: image,
+    author: {
+      "@type": "Person",
+      name: "Lasfito",
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Lasfito",
+    },
+    datePublished: date,
+  }}
 />
 
 <GoogleTag />

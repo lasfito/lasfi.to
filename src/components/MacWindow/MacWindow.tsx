@@ -10,7 +10,7 @@ type Props = {
 function MacWindow({children, id, title}: Props) {
   return (
     <div
-      className="m-auto max-w-[700px] rounded-xl p-2 "
+      className="m-auto  w-full rounded-xl p-2 md:max-w-[700px] "
       id={id}
       data-testid={id}
     >
@@ -30,7 +30,7 @@ function MacWindow({children, id, title}: Props) {
             <div className="">.</div>
           </div>
         </div>
-        <div className="flex flex-col py-3 px-8 text-xl">{children}</div>
+        <div className="flex flex-col py-3 px-5 text-xl">{children}</div>
       </div>
     </div>
   );

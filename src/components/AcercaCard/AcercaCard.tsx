@@ -17,22 +17,19 @@ function AcercaCard({id}: AcercaCardProps) {
       </div>
       <div className="py-5 text-center">
         <p className="mx-auto max-w-[50ch] ">
-          <span>
-            Me llamo Adrián, ingeniero bilingüe de software con amplia
-            experiencia en
-          </span>
-          <strong> JavaScript</strong> para desarrollo full stack.
+          Me llamo Adrián y he desarrollado software para la web durante más de
+          3 años. Poseo amplia experiencia en JavaScript, TypeScript, React,
+          React Native y Node.js.
           <br />
           <br />
-          ¿Eres reclutador o buscas contratarme? Entonces{" "}
+          ¿Eres reclutador o buscas contratarme? Entonces puedes{" "}
           <a href="/#contactame" className="fancy">
-            contáctame
+            contáctarme
           </a>{" "}
-          o lee{" "}
+          o leer mi{" "}
           <a href="/acerca" className="fancy">
-            acerca de mí
+            bio.
           </a>
-          .
           <br />
           <br />
           ¿Eres desarrollador y/o buscas mejorar tus habilidades? Entonces echa

@@ -1,0 +1,12 @@
+This material is licensed use under Creative Commons [Attribution-NonCommercial-ShareAlike (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license and provided "as is" and without any warranty or representation of any kind, whether express, implied, or statutory. This includes, without limitation, warranties of merchantability, fitness for a particular purpose, non-infringement, title, or quiet enjoyment. The entire risk of use, quality, or performance of this material is with you. The author or publisher will not be liable for any damages arising out of or in connection with the use of this material, whether in contract, tort, or otherwise.
+
+_You are free to:_
+
+- _Share_ — copy and redistribute the material in any medium or format
+- _Adapt_ — remix, transform, and build upon the material
+
+_Under the following terms:_
+
+- _Attribution_ — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- _NonCommercial_ — You may not use the material for commercial purposes.
+- _ShareAlike_ — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
