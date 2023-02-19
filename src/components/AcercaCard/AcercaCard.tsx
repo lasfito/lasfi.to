@@ -25,7 +25,7 @@ function AcercaCard({id, short = false}: AcercaCardProps) {
           <br />
           ¿Eres reclutador o buscas contratarme? Entonces puedes{" "}
           <a href="/#contactame" className="fancy">
-            contáctarme
+            contactarme
           </a>{" "}
           o leer mi{" "}
           <a href="/acerca" className="fancy">

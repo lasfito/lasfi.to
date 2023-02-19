@@ -19,7 +19,7 @@ Todos los comandos se ejecutan desde una terminal en la raíz del proyecto.
 ## Todos
 
 - [ ] Doble CSS stylesheet
-- [ ] Fix dark mode blinking
+- [ ] Fix dark mode blinking - turbo links (?)
 - [ ] Add a search bar(?)
 - [ ] Fix mobile
 - [ ] Playwright tests

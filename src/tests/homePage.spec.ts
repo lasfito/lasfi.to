@@ -23,6 +23,6 @@ test("home page renders correctly", async ({page}) => {
 
   await page
     .locator("#acerca-top")
-    .getByRole("link", {name: "contáctame"})
+    .getByRole("link", {name: "contactarme"})
     .click();
 });
