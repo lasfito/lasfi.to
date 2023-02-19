@@ -1,11 +1,11 @@
 ---
-template: tutoriales
+type: tutoriales
 url: manual-supervivencia-javascript-principiantes
 enlaceyt: https://youtube.com/embed/jM1PoDMnbsA
 date: 2022-04-28T21:32:23.070Z
 title: Manual de Supervivencia JavaScript para Principiantes
-metaDescription: 'Aprende todo lo que necesitas saber sobre JavaScript para
-  adentrarte al mundo del desarrollo #javascript #crashcourse #curso #webdev '
+metaDescription: "Aprende todo lo que necesitas saber sobre JavaScript para
+  adentrarte al mundo del desarrollo #javascript #crashcourse #curso #webdev "
 tag:
   - JavaScript
   - Desarrollo 101

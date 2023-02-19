@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: como-usar-array-reduce
 date: 2021-07-20T18:53:43.961Z
 title: ¿Cómo usar array reduce?
@@ -27,20 +27,20 @@ Esto es, como habrás notado, bastante difícil de explicar en texto. Así que s
 
 ```javascript
 const items = [
-	{ nombre: 'Arroz', precio: 5 },
-	{ nombre: 'Libro', precio: 20 },
-	{ nombre: 'Pollo', precio: 10 },
-	{ nombre: 'Monitor', precio: 100 },
+  {nombre: "Arroz", precio: 5},
+  {nombre: "Libro", precio: 20},
+  {nombre: "Pollo", precio: 10},
+  {nombre: "Monitor", precio: 100},
 ];
 
 const precioTotal = items.reduce((total, item) => {
-	return total + item.precio;
+  return total + item.precio;
 }, 0);
 console.log(precioTotal); // 135
 
 // precioTotal también puede ser escrito así:
 const reducer = function (total, item) {
-	return total + item.precio;
+  return total + item.precio;
 };
 const precioTotal = items.reduce(reducer, 0);
 console.log(precioTotal); // 135
@@ -65,17 +65,17 @@ Este es el caso de uso más simple para reducir, pero puede volverse un poco má
 
 ```javascript
 const gente = [
-	{ nombre: 'Mateo', edad: 26 },
-	{ nombre: 'Marcos', edad: 31 },
-	{ nombre: 'Lucas', edad: 42 },
-	{ nombre: 'Juan', edad: 42 },
+  {nombre: "Mateo", edad: 26},
+  {nombre: "Marcos", edad: 31},
+  {nombre: "Lucas", edad: 42},
+  {nombre: "Juan", edad: 42},
 ];
 
 const genteAgrupadaPorEdad = gente.reduce((genteAgrupada, persona) => {
-	const edad = persona.edad;
-	if (genteAgrupada[edad] == null) genteAgrupada[edad] = [];
-	genteAgrupada[edad].push(persona);
-	return genteAgrupada;
+  const edad = persona.edad;
+  if (genteAgrupada[edad] == null) genteAgrupada[edad] = [];
+  genteAgrupada[edad].push(persona);
+  return genteAgrupada;
 }, {});
 console.log(genteAgrupadaPorEdad);
 /*
@@ -109,7 +109,7 @@ A continuación se muestra un ejemplo de la salida de un `array` simple.
 const numeros = [13, 2, 5];
 
 const sum = numeros.reduce((total, numero, index, array) => {
-	return total + numero;
+  return total + numero;
 }, 0);
 console.log(sum); // 20
 ```
@@ -126,7 +126,7 @@ Otra cosa interesante de la reducción es que el valor inicial es opcional. Si n
 const numeros = [13, 2, 5];
 
 const sum = numeros.reduce((total, numero, index, array) => {
-	return total + numero;
+  return total + numero;
 });
 console.log(sum); // 20
 ```

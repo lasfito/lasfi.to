@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: hoisting-101-para-principiantes
 date: 2021-07-10T03:03:53.289Z
 title: Hoisting 101 para principiantes
@@ -18,10 +18,10 @@ thumbnail: /assets/hoisting-101-destacada.png
 De entrada, hoisting, del inglés (to hoist) significa izar o levantar. En términos simples, el _hoisting_ es el mecanismo que te permite definir una función en la parte inferior de tu archivo y aún así usarla en la parte superior del archivo antes de que se defina.
 
 ```javascript
-loguear('hola');
+loguear("hola");
 
 function loguear(texto) {
-	console.log(texto);
+  console.log(texto);
 }
 ```
 
@@ -36,10 +36,10 @@ Lo más probable es que te hayas encontrado con este comportamiento antes sin si
 Entonces, ya hemos determinado que el _hoisting_ moverá tus funciones a la parte superior del archivo, ¿pero qué pasa con las _arrow functions_ (funciones de flecha)?
 
 ```javascript
-loguear('hola');
+loguear("hola");
 
-const loguear = texto => {
-	console.log(texto);
+const loguear = (texto) => {
+  console.log(texto);
 };
 ```
 
@@ -50,10 +50,10 @@ Esta es una de las razones principales por las que uso funciones normales en lug
 Si estás familiarizado con el _hoisting_, es posible que sepas que las variables definidas con la palabra clave `var` también son "alzadas". Podríamos entonces pensar que si declaramos una función de flecha con una variable `var` "alzaríamos" dicha función. Sin embargo, JavaScript no funciona de esa manera.
 
 ```javascript
-loguear('hola');
+loguear("hola");
 
-var loguear = texto => {
-	console.log(texto);
+var loguear = (texto) => {
+  console.log(texto);
 };
 ```
 
@@ -62,10 +62,10 @@ Esto volverá a arrojar un error, ya que mientras las variables definidas con `v
 ```javascript
 let loguear = undefined;
 
-loguear('hola');
+loguear("hola");
 
-loguear = texto => {
-	console.log(texto);
+loguear = (texto) => {
+  console.log(texto);
 };
 ```
 

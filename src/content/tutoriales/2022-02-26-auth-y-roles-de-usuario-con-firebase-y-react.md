@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: auth-roles-usuarios-firebase-react
 enlaceyt: https://youtube.com/embed/6O2yYpIG8R8
 date: 2022-02-26T19:19:26.215Z

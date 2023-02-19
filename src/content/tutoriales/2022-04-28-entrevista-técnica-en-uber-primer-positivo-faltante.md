@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: algoritmo-primer-positivo-faltante
 enlaceyt: https://youtube.com/embed/tSykFigZeLo
 date: 2022-04-28T19:26:52.087Z
 title: Entrevista Técnica en Uber - Primer Positivo Faltante
-metaDescription: 'Aprende cómo resolver este problema técnico (algoritmos) paso
-  a paso y prepárate para tu próxima entrevista en Uber #leetcode #algoritmos '
+metaDescription: "Aprende cómo resolver este problema técnico (algoritmos) paso
+  a paso y prepárate para tu próxima entrevista en Uber #leetcode #algoritmos "
 tag:
   - Algoritmos
   - JavaScript
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo resolver este problema técnico (algoritmos) paso a
-  paso y prepárate para tu próxima entrevista en Uber '
+introThumbnail: "Aprende cómo resolver este problema técnico (algoritmos) paso a
+  paso y prepárate para tu próxima entrevista en Uber "
 keyword: Algoritmo Primer Positivo Faltante
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/34-primer-positivo-faltante.png?alt=media&token=51c39bdd-e754-4e1f-a107-ccf44a756d71
 ---

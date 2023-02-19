@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-crear-calculadora-sin-javascript
 enlaceyt: https://www.youtube.com/embed/kQ5PkkkYVeI
 date: 2022-02-21T23:16:04.195Z

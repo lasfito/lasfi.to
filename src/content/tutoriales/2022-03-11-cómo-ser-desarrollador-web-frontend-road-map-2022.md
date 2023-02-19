@@ -1,19 +1,19 @@
 ---
-template: tutoriales
+type: tutoriales
 url: road-map-desarrollador-web-frontend
 enlaceyt: https://www.youtube.com/embed/KwR6u5SDo_k
 date: 2022-03-11T02:24:07.568Z
 title: Cómo ser Desarrollador Web FRONTEND - Road Map 2022
-metaDescription: 'Aprende cómo convertirte en y conseguir trabajo de Frontend
+metaDescription: "Aprende cómo convertirte en y conseguir trabajo de Frontend
   Developer. Con este Road Map tendrás un camino a seguir ordenado y práctico
-  #webdev #developer #roadmap #frontend'
+  #webdev #developer #roadmap #frontend"
 tag:
   - Programación
   - Desarrollo 101
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo convertirte en y conseguir trabajo de Frontend
-  Developer. Con este Road Map tendrás un camino a seguir ordenado y práctico '
-publicoObjetivo: ''
+introThumbnail: "Aprende cómo convertirte en y conseguir trabajo de Frontend
+  Developer. Con este Road Map tendrás un camino a seguir ordenado y práctico "
+publicoObjetivo: ""
 keyword: road map desarrollo web
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/20-road-map-frontend%2F20-roadmap-frontend.png?alt=media&token=22433f96-4919-451c-a26a-7955a606a6a2
 ---

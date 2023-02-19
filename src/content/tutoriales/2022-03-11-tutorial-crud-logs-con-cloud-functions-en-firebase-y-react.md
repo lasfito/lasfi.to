@@ -1,18 +1,18 @@
 ---
-template: tutoriales
+type: tutoriales
 url: crud-logs-firebase-cloud-functions
 enlaceyt: https://www.youtube.com/embed/eG0jOOlkyVg
 date: 2022-03-11T00:26:34.669Z
 title: Tutorial CRUD + Logs con Cloud Functions en Firebase y React
-metaDescription: 'Aprende cómo crear una aplicación CRUD con autenticación y
+metaDescription: "Aprende cómo crear una aplicación CRUD con autenticación y
   Logs con Firebase, React y Google Cloud Functions #tutorial #webdev #react
-  #firebase  #crud'
+  #firebase  #crud"
 tag:
   - Firebase
   - React
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo crear una aplicación CRUD con autenticación y Logs
-  con Firebase, React y Google Cloud Functions '
+introThumbnail: "Aprende cómo crear una aplicación CRUD con autenticación y Logs
+  con Firebase, React y Google Cloud Functions "
 keyword: firebase crud logs
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/18-crud-firebase-cloud%2F18-crud-firebase-cloud.png?alt=media&token=25a39777-94b2-4de2-b8f6-b9d1dc69644b
 ---

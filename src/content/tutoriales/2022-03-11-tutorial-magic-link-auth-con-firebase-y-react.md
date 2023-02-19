@@ -1,19 +1,19 @@
 ---
-template: tutoriales
+type: tutoriales
 url: magic-link-auth-firebase-react
 enlaceyt: https://www.youtube.com/embed/Mu4Iqqg1dTQ
 date: 2022-03-11T02:09:51.439Z
 title: Tutorial Magic Link Auth con Firebase y React
-metaDescription: 'Aprende cómo crear un sistema de autenticación con Magic
+metaDescription: "Aprende cómo crear un sistema de autenticación con Magic
   Link  (Enlace Mágico) a través de rutas con React y Firebase #tutorial #webdev
-  #react #firebase  #passwordless'
+  #react #firebase  #passwordless"
 tag:
   - Firebase
   - React
   - JavaScript
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo crear un sistema de autenticación con Magic
-  Link  (Enlace Mágico) a través de rutas con React y Firebase '
+introThumbnail: "Aprende cómo crear un sistema de autenticación con Magic
+  Link  (Enlace Mágico) a través de rutas con React y Firebase "
 keyword: magic link firebase
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/19-magic-link-firebase%2F19-magic-link-firebase.png?alt=media&token=34e259f3-c2a8-4413-be42-6d885b18b480
 ---

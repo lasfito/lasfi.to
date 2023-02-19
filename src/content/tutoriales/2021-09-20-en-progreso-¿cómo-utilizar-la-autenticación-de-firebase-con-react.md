@@ -1,9 +1,9 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-utilizar-autenticacion-firebase-react
 enlaceyt: https://www.youtube.com/embed/znf4CYedrJ4
 date: 2021-09-20T22:15:16.561Z
-title: 'Cómo utilizar la autenticación de Firebase (con React) '
+title: "Cómo utilizar la autenticación de Firebase (con React) "
 tag:
   - Firebase
   - React
@@ -65,17 +65,17 @@ Copiamos y pegamos el comando generado, y al ejecutarlo nos imprimirá en pantal
 Las credenciales que hayas pegado en el nuevo archivo - asígnalas a una constante llamada app que además lleve el prefijo export. En ese mismo archivo importa firebase y el módulo de autenticacion. Más o menos así:
 
 ```javascript
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
 
 export const app = firebase.initializeApp({
-	projectId: 'fb-auth-tutorial-2f164',
-	appId: '1:802556503334:web:cba5a927f71ed9b5d9cde7',
-	storageBucket: 'fb-auth-tutorial-2f164.appspot.com',
-	locationId: 'us-central',
-	apiKey: 'AIzaSyCsVeUq48zyoA0RrZj-fPHS-teoDyEOlGY',
-	authDomain: 'fb-auth-tutorial-2f164.firebaseapp.com',
-	messagingSenderId: '802556503334',
+  projectId: "fb-auth-tutorial-2f164",
+  appId: "1:802556503334:web:cba5a927f71ed9b5d9cde7",
+  storageBucket: "fb-auth-tutorial-2f164.appspot.com",
+  locationId: "us-central",
+  apiKey: "AIzaSyCsVeUq48zyoA0RrZj-fPHS-teoDyEOlGY",
+  authDomain: "fb-auth-tutorial-2f164.firebaseapp.com",
+  messagingSenderId: "802556503334",
 });
 ```
 
@@ -88,9 +88,9 @@ Desde app.js establecemos un **state** en el cual se guarde la sesión de los vi
 
 ```javascript
 function App() {
-	const [usuario, setUsuario] = React.useState(null);
+  const [usuario, setUsuario] = React.useState(null);
 
-	return <>{usuario ? <Home /> : <Logueo setUsuario={setUsuario} />}</>;
+  return <>{usuario ? <Home /> : <Logueo setUsuario={setUsuario} />}</>;
 }
 ```
 
@@ -103,66 +103,66 @@ Dado que en esta pantalla recibiremos a gente que inicia sesión o que se regist
 A la vez, tendremos un formulario en el cual recopilaremos correo y contraseña, mismos que serán tomados por una función "submitHandler". En esta función crearemos una cuenta en Firebase o bien, si el estado lo indica, iniciaremos sesión:
 
 ```javascript
-import React from 'react';
-import { app } from './fb';
+import React from "react";
+import {app} from "./fb";
 
-const Logueo = props => {
-	const [isRegistrando, setIsRegistrando] = React.useState(false);
+const Logueo = (props) => {
+  const [isRegistrando, setIsRegistrando] = React.useState(false);
 
-	const crearUsuario = (correo, password) => {
-		app
-			.auth()
-			.createUserWithEmailAndPassword(correo, password)
-			.then(usuarioFirebase => {
-				console.log('usuario creado:', usuarioFirebase);
-				props.setUsuario(usuarioFirebase);
-			});
-	};
+  const crearUsuario = (correo, password) => {
+    app
+      .auth()
+      .createUserWithEmailAndPassword(correo, password)
+      .then((usuarioFirebase) => {
+        console.log("usuario creado:", usuarioFirebase);
+        props.setUsuario(usuarioFirebase);
+      });
+  };
 
-	const iniciarSesion = (correo, password) => {
-		app
-			.auth()
-			.signInWithEmailAndPassword(correo, password)
-			.then(usuarioFirebase => {
-				console.log('sesión iniciada con:', usuarioFirebase.user);
-				props.setUsuario(usuarioFirebase);
-			});
-	};
+  const iniciarSesion = (correo, password) => {
+    app
+      .auth()
+      .signInWithEmailAndPassword(correo, password)
+      .then((usuarioFirebase) => {
+        console.log("sesión iniciada con:", usuarioFirebase.user);
+        props.setUsuario(usuarioFirebase);
+      });
+  };
 
-	const submitHandler = e => {
-		e.preventDefault();
-		const correo = e.target.emailField.value;
-		const password = e.target.passwordField.value;
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const correo = e.target.emailField.value;
+    const password = e.target.passwordField.value;
 
-		if (isRegistrando) {
-			crearUsuario(correo, password);
-		}
+    if (isRegistrando) {
+      crearUsuario(correo, password);
+    }
 
-		if (!isRegistrando) {
-			iniciarSesion(correo, password);
-		}
-	};
+    if (!isRegistrando) {
+      iniciarSesion(correo, password);
+    }
+  };
 
-	return (
-		<div>
-			<h1> {isRegistrando ? 'Regístrate' : 'Inicia sesión'}</h1>
-			<form onSubmit={submitHandler}>
-				<label htmlFor="emailField"> Correo </label>
-				<input type="email" id="emailField" />
-				<label htmlFor="passwordField"> Contraseña </label>
-				<input type="password" id="passwordField" />
-				<button type="submit">
-					{' '}
-					{isRegistrando ? 'Regístrate' : 'Inicia sesión'}{' '}
-				</button>
-			</form>
-			<button onClick={() => setIsRegistrando(!isRegistrando)}>
-				{isRegistrando
-					? '¿Ya tienes cuenta? ¡Inicia sesión'
-					: '¿No tienes cuenta? ¡Regístrate gratis!'}
-			</button>
-		</div>
-	);
+  return (
+    <div>
+      <h1> {isRegistrando ? "Regístrate" : "Inicia sesión"}</h1>
+      <form onSubmit={submitHandler}>
+        <label htmlFor="emailField"> Correo </label>
+        <input type="email" id="emailField" />
+        <label htmlFor="passwordField"> Contraseña </label>
+        <input type="password" id="passwordField" />
+        <button type="submit">
+          {" "}
+          {isRegistrando ? "Regístrate" : "Inicia sesión"}{" "}
+        </button>
+      </form>
+      <button onClick={() => setIsRegistrando(!isRegistrando)}>
+        {isRegistrando
+          ? "¿Ya tienes cuenta? ¡Inicia sesión"
+          : "¿No tienes cuenta? ¡Regístrate gratis!"}
+      </button>
+    </div>
+  );
 };
 
 export default Logueo;
@@ -178,10 +178,10 @@ Para solucionar esto utilizaremos un useEffect para que cada que se monte el com
 
 ```javascript
 useEffect(() => {
-	app.auth().onAuthStateChanged(usuarioFirebase => {
-		console.log('ya tienes sesión iniciada con:', usuarioFirebase);
-		setUsuario(usuarioFirebase);
-	});
+  app.auth().onAuthStateChanged((usuarioFirebase) => {
+    console.log("ya tienes sesión iniciada con:", usuarioFirebase);
+    setUsuario(usuarioFirebase);
+  });
 }, []);
 ```
 
@@ -189,16 +189,16 @@ Asimismo, añadimos un botón para poder cerrar sesión desde el componente de H
 
 ```javascript
 const Home = () => {
-	const cerrarSesion = () => {
-		app.auth().signOut();
-	};
+  const cerrarSesion = () => {
+    app.auth().signOut();
+  };
 
-	return (
-		<div>
-			<h1>Bienvenido, sesión iniciada, wapetón.</h1>
-			<button onClick={cerrarSesion}>Cerrar Sesión</button>
-		</div>
-	);
+  return (
+    <div>
+      <h1>Bienvenido, sesión iniciada, wapetón.</h1>
+      <button onClick={cerrarSesion}>Cerrar Sesión</button>
+    </div>
+  );
 };
 
 export default Home;

@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: caja-comentarios-sitio-web-github
 enlaceyt: https://youtube.com/embed/dxHTKkVtffM
 date: 2022-02-26T19:07:47.611Z

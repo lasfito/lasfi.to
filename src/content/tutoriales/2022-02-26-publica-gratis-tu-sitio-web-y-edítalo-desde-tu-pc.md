@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: publica-gratis-sitio-web-edita-pc
 enlaceyt: https://youtube.com/embed/dW7BDrJbzz0
 date: 2022-02-26T19:23:35.111Z

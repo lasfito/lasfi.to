@@ -1,0 +1,48 @@
+---
+import {getCollection} from "astro:content";
+import PageHTML from "../../layouts/PageHTML.astro";
+
+export async function getStaticPaths() {
+  const tutoriales = await getCollection("tutoriales");
+  const blogs = await getCollection("blog");
+  const tags = [
+    ...new Set([...tutoriales, ...blogs].map((post) => post.data.tag).flat()),
+  ].map((tag) => ({
+    tagName: tag.toLowerCase(),
+    related: [
+      ...tutoriales.filter((post) => post.data.tag.includes(tag)),
+      ...blogs.filter((post) => post.data.tag.includes(tag)),
+    ].map((post) => ({
+      data: post.data,
+      url: post.data.url,
+    })),
+  }));
+
+  return tags.map((tag) => ({
+    params: {tag: tag.tagName},
+    props: {tag},
+  }));
+}
+// const {tag} = Astro.params;
+const {tag} = Astro.props;
+---
+
+<PageHTML
+  title="Tutoriales"
+  description="Tutoriales sobre desarrollo web"
+  image="/placeholder-social.jpg"
+  lang="es-MX"
+  type="website"
+  date="2021-01-01"
+>
+  {
+    tag.related.map((post) => {
+      return (
+        <a href={`/${post.data.type}/${post.data.url}`}>
+          <h1>{post.data.title}</h1>
+          <p>{post.data.description}</p>
+        </a>
+      );
+    })
+  }
+</PageHTML>

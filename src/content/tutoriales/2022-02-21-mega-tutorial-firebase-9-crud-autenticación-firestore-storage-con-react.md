@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: firebase-9-crud-react
 enlaceyt: https://www.youtube.com/embed/PGPiefJK8LU
 date: 2022-02-21T23:25:44.536Z
@@ -8,8 +8,8 @@ tag:
   - React
   - Firebase
 autor: Adrián Salgado
-publicoObjetivo: 'Conocimientos básicos de JavaScript y React son necesarios
-  para este tutorial '
+publicoObjetivo: "Conocimientos básicos de JavaScript y React son necesarios
+  para este tutorial "
 keyword: tutorial firebase 9
 thumbnail: /assets/megatutorial-firebase-9.png
 ---

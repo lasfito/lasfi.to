@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: aprende-context-react-regreso-tiempo
 enlaceyt: https://youtube.com/embed/dmxVjrSdOAY
 date: 2022-04-28T22:07:18.517Z
 title: Aprende Context (React) o te regreso tu Tiempo
-metaDescription: 'Aprende de una buena vez todo sobre Context - el hook de
-  React. Si no aprendes te regreso tu tiempo :v #webdev #react #tutorial'
+metaDescription: "Aprende de una buena vez todo sobre Context - el hook de
+  React. Si no aprendes te regreso tu tiempo :v #webdev #react #tutorial"
 tag:
   - React
   - Desarrollo 101
 autor: Adrián Salgado
-introThumbnail: 'Aprende de una buena vez todo sobre Context - el hook de React.
-  Si no aprendes te regreso tu tiempo :v #webdev #react #tutorial'
+introThumbnail: "Aprende de una buena vez todo sobre Context - el hook de React.
+  Si no aprendes te regreso tu tiempo :v #webdev #react #tutorial"
 keyword: context react
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/38-context-react.png?alt=media&token=adb5fc7e-f579-45d5-931a-582ac298591c
 ---

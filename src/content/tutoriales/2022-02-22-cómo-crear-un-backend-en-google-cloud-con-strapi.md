@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: crea-backend-google-cloud-strapi
 enlaceyt: https://www.youtube.com/embed/BHly5BDJ04s
 date: 2022-02-22T00:09:02.438Z
@@ -8,7 +8,7 @@ tag:
   - Programación
   - Google Cloud
 autor: Adrián Salgado
-publicoObjetivo: ''
+publicoObjetivo: ""
 keyword: strapi google cloud
 thumbnail: /assets/11-strapi-google-cloud.png
 ---

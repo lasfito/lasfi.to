@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: js-undefined-vs-null
 date: 2021-07-06T13:55:31.554Z
 title: ¿Cuál es la diferencia entre Null y Undefined en JavaScript?

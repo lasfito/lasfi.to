@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-crear-pestanas-navegacion-react-native
 enlaceyt: https://www.youtube.com/embed/WMOPvJot0yI
 date: 2021-10-04T18:17:24.872Z
@@ -10,9 +10,9 @@ tag:
 autor: Adrián Salgado
 introThumbnail: Un clásico de la navegación móvil - ¡aprende cómo implementarla
   en tu próxima aplicación!
-publicoObjetivo: 'El siguiente artículo asume que tienes conocimientos básicos
+publicoObjetivo: "El siguiente artículo asume que tienes conocimientos básicos
   sobre React y React Native. No obstante, podrás comprender gran parte del
-  contenido si tienes experiencia con JavaScript o algún lenguaje similar. '
+  contenido si tienes experiencia con JavaScript o algún lenguaje similar. "
 keyword: navegación pestañas react native
 thumbnail: /assets/07-react-native-tabs.png
 ---
@@ -68,15 +68,15 @@ Desde el editor crearemos una carpeta llamada src y al interior crearemos dos ca
 Dentro de screens añadiremos todas las pantallas que necesitemos (4 para este tutorial).
 
 ```javascript
-import React from 'react';
-import { View, Text, Button } from 'react-native';
+import React from "react";
+import {View, Text, Button} from "react-native";
 
 const HomeScreen1 = () => {
-	return (
-		<View>
-			<Text>Este es el home 1</Text>
-		</View>
-	);
+  return (
+    <View>
+      <Text>Este es el home 1</Text>
+    </View>
+  );
 };
 
 export default HomeScreen1;
@@ -97,11 +97,11 @@ Dirijámonos a la carpeta stacks. Agruparemos nuestras 4 pantallas en 2 stacks, 
 1. Comenzaremos creando nuestro archivo _HomeStackScreen_, dentro de este archivo importamos React y React Native, también **createNativeStackNavigator** desde *"react-navigation/native-stack"\*\* y nuestras 2 *HomeScreens\*. La parte superior de nuestro archivo debería verse más o menos así:
 
 ```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen1 from '../screens/HomeScreen1';
-import HomeScreen2 from '../screens/HomeScreen2';
+import React from "react";
+import {View, Text} from "react-native";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import HomeScreen1 from "../screens/HomeScreen1";
+import HomeScreen2 from "../screens/HomeScreen2";
 ```
 
 createNativeStackNavigator es una función que nos regresa un componente vital para el funcionamiento de nustro stack. Es por ello que debemos guardar valor de esta función en alguna constante:
@@ -120,20 +120,20 @@ Y al interior de él añadiremos nuestras pantallas (screens) de la siguiente ma
 Deberías terminar con algo similar a esto:
 
 ```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen1 from '../screens/HomeScreen1';
-import HomeScreen2 from '../screens/HomeScreen2';
+import React from "react";
+import {View, Text} from "react-native";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import HomeScreen1 from "../screens/HomeScreen1";
+import HomeScreen2 from "../screens/HomeScreen2";
 
 const HomeStackScreen = () => {
-	const HomeStack = createNativeStackNavigator();
-	return (
-		<HomeStack.Navigator>
-			<HomeStack.Screen name="Home1" component={HomeScreen1} />
-			<HomeStack.Screen name="Home2" component={HomeScreen2} />
-		</HomeStack.Navigator>
-	);
+  const HomeStack = createNativeStackNavigator();
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Home1" component={HomeScreen1} />
+      <HomeStack.Screen name="Home2" component={HomeScreen2} />
+    </HomeStack.Navigator>
+  );
 };
 
 export default HomeStackScreen;
@@ -154,12 +154,12 @@ El último paso es crear un tab para cada stack. Para ello, dentro de _src_ crea
 El comienzo de Tabs.js debería verse más o menos así:
 
 ```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeStackScreen from './stacks/HomeStackScreen';
-import SettingsStackScreen from './stacks/SettingsStackScreen';
-import { NavigationContainer } from '@react-navigation/native';
+import React from "react";
+import {View, Text} from "react-native";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import HomeStackScreen from "./stacks/HomeStackScreen";
+import SettingsStackScreen from "./stacks/SettingsStackScreen";
+import {NavigationContainer} from "@react-navigation/native";
 ```
 
 De manera similar que con los stacks, llamamos la función createBottomTabNavigator y la guardamos en alguna constante como Tab.
@@ -172,23 +172,23 @@ Y también para definir qué irá asociado con el tab:
 Por último, envolvemos a <Tab.Navigator> con un <NavigationContainer></NavigationContainer>. Tu comoponente Tabs.js debiera verse más o menos así:
 
 ```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeStackScreen from './stacks/HomeStackScreen';
-import SettingsStackScreen from './stacks/SettingsStackScreen';
-import { NavigationContainer } from '@react-navigation/native';
+import React from "react";
+import {View, Text} from "react-native";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import HomeStackScreen from "./stacks/HomeStackScreen";
+import SettingsStackScreen from "./stacks/SettingsStackScreen";
+import {NavigationContainer} from "@react-navigation/native";
 
 const Tabs = () => {
-	const Tab = createBottomTabNavigator();
-	return (
-		<NavigationContainer>
-			<Tab.Navigator screenOptions={{ headerShown: false }}>
-				<Tab.Screen name="HomeMenu" component={HomeStackScreen} />
-				<Tab.Screen name="SettingsMenu" component={SettingsStackScreen} />
-			</Tab.Navigator>
-		</NavigationContainer>
-	);
+  const Tab = createBottomTabNavigator();
+  return (
+    <NavigationContainer>
+      <Tab.Navigator screenOptions={{headerShown: false}}>
+        <Tab.Screen name="HomeMenu" component={HomeStackScreen} />
+        <Tab.Screen name="SettingsMenu" component={SettingsStackScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default Tabs;
@@ -200,7 +200,7 @@ Como paso final, reemplaza el contenido de App.js e inserta nuestro componente <
 
 ```javascript
 export default function App() {
-	return <Tabs />;
+  return <Tabs />;
 }
 ```
 
@@ -221,21 +221,21 @@ Por ejemplo, añade un botón en el componente y en el atributo onPress ejcutare
 El componente de HomeScreen1 debiera verse así:
 
 ```javascript
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import React from "react";
+import {View, Text, Button} from "react-native";
+import {useNavigation} from "@react-navigation/native";
 
 const HomeScreen1 = () => {
-	const navigation = useNavigation();
-	return (
-		<View>
-			<Text>Este es el home 1</Text>
-			<Button
-				title="Ir a home 2"
-				onPress={() => navigation.navigate('Home2')}
-			/>
-		</View>
-	);
+  const navigation = useNavigation();
+  return (
+    <View>
+      <Text>Este es el home 1</Text>
+      <Button
+        title="Ir a home 2"
+        onPress={() => navigation.navigate("Home2")}
+      />
+    </View>
+  );
 };
 
 export default HomeScreen1;
@@ -246,8 +246,8 @@ Recuerda que en nuestro tutorial llamamos así a la pantalla desde nuestro archi
 
 ```javascript
 <HomeStack.Navigator>
-	<HomeStack.Screen name="Home1" component={HomeScreen1} />
-	<HomeStack.Screen name="Home2" component={HomeScreen2} />
+  <HomeStack.Screen name="Home1" component={HomeScreen1} />
+  <HomeStack.Screen name="Home2" component={HomeScreen2} />
 </HomeStack.Navigator>
 ```
 

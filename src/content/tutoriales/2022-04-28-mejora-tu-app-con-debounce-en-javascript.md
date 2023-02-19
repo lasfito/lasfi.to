@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: mejora-app-debounce-javascript
 enlaceyt: https://youtube.com/embed/W1sOOTjtfh0
 date: 2022-04-28T21:49:37.812Z

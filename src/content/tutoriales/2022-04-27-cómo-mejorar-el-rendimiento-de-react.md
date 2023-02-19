@@ -1,16 +1,16 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-mejorar-rendimiento-react
 enlaceyt: https://youtube.com/embed/AyuTxN2aj_0
 date: 2022-04-27T20:02:56.711Z
 title: Cómo mejorar el rendimiento de React
-metaDescription: 'Aprende cómo optimizar y mejorar el rendimiento de tu
-  aplicación de React #tutorial #webdev #react  '
+metaDescription: "Aprende cómo optimizar y mejorar el rendimiento de tu
+  aplicación de React #tutorial #webdev #react  "
 tag:
   - Programación
   - React
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo optimizar y mejorar el rendimiento de tu aplicación de React '
+introThumbnail: "Aprende cómo optimizar y mejorar el rendimiento de tu aplicación de React "
 keyword: mejorar rendimiento react
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/22-mejorar-rendimiento-react%2F22-mejorar-rendimiento-react.png?alt=media&token=a10c0ea6-4c74-45aa-873e-4714354b129d
 ---

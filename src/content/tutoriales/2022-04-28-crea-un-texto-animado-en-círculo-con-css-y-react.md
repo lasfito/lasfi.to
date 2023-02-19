@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: crea-texto-animado-en-círculo
 enlaceyt: https://youtube.com/embed/SxcnmmoioN8
 date: 2022-04-28T18:17:26.148Z

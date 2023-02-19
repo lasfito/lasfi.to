@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: metodos-array-javascript
 date: 2021-09-09T02:02:46.452Z
 title: Los 23 métodos de array en JavaScript que debes conocer
@@ -23,8 +23,8 @@ Tratándose de arrays, ¿qué quieres hacer?
 El método push () agrega uno o más elementos al final del array y _devuelve la nueva longitud del array_.
 
 ```javascript
-let sports = ['soccer', 'baseball'];
-let total = sports.push('football', 'swimming');
+let sports = ["soccer", "baseball"];
+let total = sports.push("football", "swimming");
 
 console.log(sports); // ['soccer', 'baseball', 'football', 'swimming']
 console.log(total); // 4
@@ -49,7 +49,7 @@ console.log(arr);
 El método pop () elimina el último elemento de un array y devuelve ese elemento. Este método cambia la longitud del array.
 
 ```javascript
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var myFish = ["angel", "clown", "mandarin", "sturgeon"];
 
 var popped = myFish.pop();
 
@@ -74,8 +74,8 @@ console.log(array1);
 El método splice () cambia el contenido de un array, eliminando o reemplazando elementos existentes y / o agregando nuevos elementos en su lugar.
 
 ```javascript
-const months = ['Jan', 'March', 'April', 'June'];
-months.splice(1, 0, 'Feb');
+const months = ["Jan", "March", "April", "June"];
+months.splice(1, 0, "Feb");
 // inserta el elemento en el primer índice
 console.log(months);
 //["Jan", "Feb", "March", "April", "June"]
@@ -142,7 +142,7 @@ El método filter() crea un nuevo array con todos los elementos que cumplan la c
 
 ```javascript
 function esSuficientementeGrande(elemento) {
-	return elemento >= 10;
+  return elemento >= 10;
 }
 var filtrados = [12, 5, 8, 130, 44].filter(esSuficientementeGrande);
 //[12, 130, 44]
@@ -155,7 +155,7 @@ var filtrados = [12, 5, 8, 130, 44].filter(esSuficientementeGrande);
 El método slice() devuelve una copia de una parte del array dentro de un nuevo array empezando por "inicio" hasta fin (sin incluirlo). El array original no se modificará.
 
 ```javascript
-var nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa'];
+var nombres = ["Rita", "Pedro", "Miguel", "Ana", "Vanesa"];
 var masculinos = nombres.slice(1, 3);
 
 //  ['Pedro','Miguel']
@@ -168,8 +168,8 @@ var masculinos = nombres.slice(1, 3);
 El método concat() se usa para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array.
 
 ```javascript
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
+const array1 = ["a", "b", "c"];
+const array2 = ["d", "e", "f"];
 const array3 = array1.concat(array2);
 
 console.log(array3);
@@ -204,10 +204,10 @@ El método flatMap() primero mapea cada elemento usando una función de mapeo, l
 ```javascript
 var arr1 = [1, 2, 3, 4];
 
-arr1.map(x => [x * 2]);
+arr1.map((x) => [x * 2]);
 // [[2], [4], [6], [8]]
 
-arr1.flatMap(x => [x * 2]);
+arr1.flatMap((x) => [x * 2]);
 // [2, 4, 6, 8]
 ```
 
@@ -230,7 +230,7 @@ El método findIndex() devuelve el índice del primer elemento de un array que c
 ```javascript
 const array1 = [5, 12, 8, 130, 44];
 
-const isLargeNumber = element => element > 13;
+const isLargeNumber = (element) => element > 13;
 
 console.log(array1.findIndex(isLargeNumber));
 // 3
@@ -245,7 +245,7 @@ El método find() devuelve el valor del primer elemento del array que cumple la 
 ```javascript
 const array1 = [5, 12, 8, 130, 44];
 
-const found = array1.find(element => element > 10);
+const found = array1.find((element) => element > 10);
 
 console.log(found);
 //  12
@@ -256,12 +256,12 @@ console.log(found);
 El método includes() determina si un array incluye un determinado elemento, devuelve true o false según corresponda.
 
 ```javascript
-const pets = ['cat', 'dog', 'bat'];
+const pets = ["cat", "dog", "bat"];
 
-console.log(pets.includes('cat'));
+console.log(pets.includes("cat"));
 // expected output: true
 
-console.log(pets.includes('at'));
+console.log(pets.includes("at"));
 // expected output: false
 ```
 
@@ -272,7 +272,7 @@ El método some() comprueba si al menos un elemento del array cumple con la cond
 ```javascript
 const array = [1, 2, 3, 4, 5];
 
-const even = element => element % 2 === 0;
+const even = (element) => element % 2 === 0;
 
 console.log(array.some(even));
 // true
@@ -284,8 +284,8 @@ Determina si todos los elementos en el array satisfacen una condición.
 Cuidado, que devolverá true si llamas este método en algún array vacío.
 
 ```javascript
-[12, 5, 8, 130, 44].every(elem => elem >= 10); // false
-[12, 54, 18, 130, 44].every(elem => elem >= 10); // true
+[12, 5, 8, 130, 44].every((elem) => elem >= 10); // false
+[12, 54, 18, 130, 44].every((elem) => elem >= 10); // true
 ```
 
 ## Crear un string
@@ -295,15 +295,15 @@ Cuidado, que devolverá true si llamas este método en algún array vacío.
 El método join() une todos los elementos de un array en una cadena (string) y devuelve esta cadena.
 
 ```javascript
-const elements = ['Fire', 'Air', 'Water'];
+const elements = ["Fire", "Air", "Water"];
 
 console.log(elements.join());
 // "Fire,Air,Water"
 
-console.log(elements.join(''));
+console.log(elements.join(""));
 // "FireAirWater"
 
-console.log(elements.join('-'));
+console.log(elements.join("-"));
 // "Fire-Air-Water"
 ```
 
@@ -331,9 +331,9 @@ console.log(array1.reduce(reducer));
 El método forEach() ejecuta la función indicada una vez por cada elemento del array.
 
 ```javascript
-const array1 = ['a', 'b', 'c'];
+const array1 = ["a", "b", "c"];
 
-array1.forEach(element => console.log(element));
+array1.forEach((element) => console.log(element));
 
 //  "a"
 //  "b"

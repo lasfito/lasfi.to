@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: crea-ventana-modal-popup-html
 enlaceyt: https://youtube.com/embed/ZMhEVSvSwwk
 date: 2022-04-28T19:17:37.924Z
 title: Crea una Ventana Modal (PopUp) con HTML
-metaDescription: 'Aprende cómo crear una ventana modal estilo pop-up responsiva
-  en unos cuántos minutos gracias a la etiqueta Dialog #html #css #javascript'
+metaDescription: "Aprende cómo crear una ventana modal estilo pop-up responsiva
+  en unos cuántos minutos gracias a la etiqueta Dialog #html #css #javascript"
 tag:
   - HTML/CSS
   - Desarrollo 101
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo crear una ventana modal estilo pop-up responsiva
-  en unos cuántos minutos gracias a la etiqueta Dialog '
+introThumbnail: "Aprende cómo crear una ventana modal estilo pop-up responsiva
+  en unos cuántos minutos gracias a la etiqueta Dialog "
 keyword: ventana modal html
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/33-ventana-modal.png?alt=media&token=3e820aba-f72c-4291-be92-e3b0cc20074b
 ---

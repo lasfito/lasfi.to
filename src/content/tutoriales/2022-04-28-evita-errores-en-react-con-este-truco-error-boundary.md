@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: truco-react-error-boundary
 enlaceyt: https://youtube.com/embed/AkFrnjI3jv0
 date: 2022-04-28T16:46:13.375Z
 title: Evita Errores en React con este Truco ( Error Boundary )
-metaDescription: 'Aprende cómo evitar que tu aplicación se rompa por un error
-  gracias a los Error Boundaries de React #tutorial #webdev #React  '
+metaDescription: "Aprende cómo evitar que tu aplicación se rompa por un error
+  gracias a los Error Boundaries de React #tutorial #webdev #React  "
 tag:
   - React
   - Desarrollo 101
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo evitar que tu aplicación se rompa por un error
-  gracias a los Error Boundaries de React '
+introThumbnail: "Aprende cómo evitar que tu aplicación se rompa por un error
+  gracias a los Error Boundaries de React "
 keyword: error boundary react
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/27-react-error-boundary%2F27-error-boundary.png?alt=media&token=e16baa8a-f4ea-40b2-a321-6db7ef4c02df
 ---

@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-enviar-correo-formulario-html
 enlaceyt: https://youtube.com/embed/zXMcoTRTswQ
 date: 2022-02-26T19:03:28.820Z

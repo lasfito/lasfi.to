@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: aprende-reglas-seguridad-firestore
 enlaceyt: https://youtube.com/embed/PQc4aVuSr48
 date: 2022-04-27T20:39:47.325Z
 title: Aprende a utilizar las Reglas de Seguridad de Firestore
-metaDescription: 'Aprende cómo configurar reglas de seguridad y proteger tu base
-  de datos de Firestore en Firebase #tutorial #firebase #firestore  '
+metaDescription: "Aprende cómo configurar reglas de seguridad y proteger tu base
+  de datos de Firestore en Firebase #tutorial #firebase #firestore  "
 tag:
   - Firebase
   - Desarrollo 101
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo configurar reglas de seguridad y proteger tu base
-  de datos de Firestore en Firebase '
+introThumbnail: "Aprende cómo configurar reglas de seguridad y proteger tu base
+  de datos de Firestore en Firebase "
 keyword: reglas seguridad firestore
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/25-reglas-seguridad-firestore%2F25-reglas-seguridad-firestore.png?alt=media&token=6d0e5b17-715d-4dd6-964a-c0ac4744cedf
 ---

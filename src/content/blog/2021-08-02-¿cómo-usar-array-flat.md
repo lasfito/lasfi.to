@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: como-usar-flat
 date: 2021-08-02T14:43:47.806Z
 title: ¿Cómo usar array flat?
@@ -79,14 +79,14 @@ Una consideración especial respecto a flatMap es que solo nos permite "aplanar"
 
 ```js
 const gente = [
-	{ name: 'Juan', favNums: [1, 2, 4] },
-	{ name: 'María', favNums: [6, 8, 9] },
+  {name: "Juan", favNums: [1, 2, 4]},
+  {name: "María", favNums: [6, 8, 9]},
 ];
-console.log(gente.map(p => p.favNums));
+console.log(gente.map((p) => p.favNums));
 // [[1, 2, 4], [6, 8, 9]]
-console.log(gente.map(p => p.favNums).flat());
+console.log(gente.map((p) => p.favNums).flat());
 // [1, 2, 4, 6, 8, 9]
-console.log(gente.flatMap(p => p.favNums));
+console.log(gente.flatMap((p) => p.favNums));
 // [1, 2, 4, 6, 8, 9]
 ```
 

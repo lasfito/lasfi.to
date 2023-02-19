@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-hospedar-react-app-firebase
 enlaceyt: https://www.youtube.com/embed/kOgZ8i2dZ7k
 date: 2021-07-27T05:01:54.100Z
@@ -22,7 +22,7 @@ Pero sin más relleno, comencemos con este tutorial.
 
 Para poder hospedar tu aplicación de React a través de Firebase hosting necesitarás una cuenta de Google. Con tu sesión iniciada, debes ir a <https://firebase.google.com/> y de ahí dirigirte a la consola de Firebase haciendo clic en alguno de los botones señalados. Aunque pensándolo bien, puedes dirigirte de manera directa a <https://console.firebase.google.com/>
 
-![](/assets/inicio-firebase.png 'Haz clic en cualquiera de estos dos botones')
+![](/assets/inicio-firebase.png "Haz clic en cualquiera de estos dos botones")
 
 ## Crear proyecto
 
@@ -32,7 +32,7 @@ Una vez en la consola de administración de Firebase, será necesario crear un p
 
 Tras haber creado el proyecto, Firebase nos redigirá hacia el panel de administración. En él, encontraremos del lado izquierdo un menú de opciones y servicios de entre los cuales, en **Compilación** encontramos el servicio de Hosting (Hospedaje) tal como se muestra en la siguiente imagen.
 
-![](/assets/panel-hosting-firebase.png 'En el panel izquierdo tendremos acceso a los servicios y configuraciones de Firebase')
+![](/assets/panel-hosting-firebase.png "En el panel izquierdo tendremos acceso a los servicios y configuraciones de Firebase")
 
 ## Configuración de Firebase Hosting
 

@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-crear-columnas-css
 enlaceyt: https://www.youtube.com/embed/QbliZCG4Rtg
 date: 2021-07-20T04:15:46.099Z
@@ -8,8 +8,8 @@ tag:
   - Desarrollo 101
   - HTML/CSS
 autor: Adrián Salgado
-introThumbnail: '¿Sabías que puedes crear columnas con tan solo 1 propiedad?
-  Spoiler alert: no se trata de flexbox ni grid. '
+introThumbnail: "¿Sabías que puedes crear columnas con tan solo 1 propiedad?
+  Spoiler alert: no se trata de flexbox ni grid. "
 keyword: columnas en css
 thumbnail: /assets/columnas-css-thumb.png
 ---
@@ -36,12 +36,12 @@ Si te encontrabas preguntándote cuál debieras elegir, no temas, puedes utiliza
 
 ```css
 .columnas {
-	column-count: 3;
-	column-width: 250px;
+  column-count: 3;
+  column-width: 250px;
 }
 
-<!--también puedes utilizar este 'shorthand' -- > .columnas {
-	columns: 3 250px;
+<!--también puedes utilizar este "shorthand" -- > .columnas {
+  columns: 3 250px;
 }
 ```
 

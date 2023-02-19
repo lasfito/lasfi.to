@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: crea-ecommerce-firebase-stripe
 enlaceyt: https://youtube.com/embed/ScJ7FdHufm8
 date: 2022-04-28T18:38:38.567Z
 title: Cómo Crear E-Commerce con Firebase y Stripe
-metaDescription: 'Aprende cómo crear una tienda e-Commerce con Firebase y Stripe
-  en cuestión de minutos #react #firebase #stripe #ecommerce'
+metaDescription: "Aprende cómo crear una tienda e-Commerce con Firebase y Stripe
+  en cuestión de minutos #react #firebase #stripe #ecommerce"
 tag:
   - Firebase
   - React
 autor: Adrián Salgado
-introThumbnail: 'Aprende cómo crear una tienda e-Commerce con Firebase y Stripe
-  en cuestión de minutos '
+introThumbnail: "Aprende cómo crear una tienda e-Commerce con Firebase y Stripe
+  en cuestión de minutos "
 keyword: e-commerce firebase stripe
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/32-ecommerce-stripe.png?alt=media&token=84d120a4-5435-4c3b-84de-b10551d1774d
 ---

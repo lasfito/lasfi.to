@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: diferencia-entre-library-y-framework
 date: 2021-08-09T13:41:22.451Z
 title: ¿Cuál es la diferencia entre library y  framework?
@@ -25,12 +25,12 @@ Por ejemplo, supongamos que tienes un programa en el que planeas trabajar con _s
 
 ```javascript
 function obtenerPalabras(str) {
-	const palabras = str.split(' ');
-	return palabras;
+  const palabras = str.split(" ");
+  return palabras;
 }
 function crearOracion(palabras) {
-	const oracion = palabras.join(' ');
-	return oracion;
+  const oracion = palabras.join(" ");
+  return oracion;
 }
 ```
 

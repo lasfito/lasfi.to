@@ -1,0 +1,33 @@
+---
+import {getCollection} from "astro:content";
+import PageHTML from "../../layouts/PageHTML.astro";
+import CollectionTemplate from "../../layouts/CollectionTemplate.astro";
+
+const tutoriales = await getCollection("tutoriales");
+const blogs = await getCollection("blog");
+
+// get all the possible tags from the collection
+
+const tags = [
+  ...new Set([...tutoriales, ...blogs].map((post) => post.data.tag).flat()),
+].map((tag) => tag.toLowerCase());
+---
+
+<PageHTML
+  title="Tutoriales"
+  description="Tutoriales sobre desarrollo web"
+  image="/placeholder-social.jpg"
+  lang="es-MX"
+  type="website"
+  date="2021-01-01"
+>
+  <ul>
+    {
+      tags.map((tag) => (
+        <li>
+          <a href={`/categorias/${tag}`}>{`Tutoriales sobre ${tag}`}</a>
+        </li>
+      ))
+    }
+  </ul>
+</PageHTML>

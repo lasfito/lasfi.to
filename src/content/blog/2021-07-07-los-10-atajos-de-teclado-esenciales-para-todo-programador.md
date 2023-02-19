@@ -1,13 +1,13 @@
 ---
-template: BlogPost
+type: blog
 url: 10-atajos-esenciales-programadores
 date: 2021-07-07T15:51:23.924Z
-title: 'Los 10 atajos de teclado esenciales para todo programador '
+title: "Los 10 atajos de teclado esenciales para todo programador "
 tag:
   - Desarrollo 101
   - Misceláneo
 autor: Adrián Salgado
-keyword: 'atajos teclado programador '
+keyword: "atajos teclado programador "
 thumbnail: /assets/atajos-programador.jpg
 ---
 

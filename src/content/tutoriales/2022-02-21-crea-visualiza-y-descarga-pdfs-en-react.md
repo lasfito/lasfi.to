@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-crear-pdf-en-react
 enlaceyt: https://www.youtube.com/embed/D05ptoe7brY
 date: 2022-02-21T23:55:43.386Z
@@ -8,7 +8,7 @@ tag:
   - React
   - Misceláneo
 autor: Adrián Salgado
-publicoObjetivo: 'Conocimientos básicos en JavaScript son necesarios para este tutorial. '
+publicoObjetivo: "Conocimientos básicos en JavaScript son necesarios para este tutorial. "
 keyword: crear pdf en react
 thumbnail: /assets/10-react-pdf.png
 ---

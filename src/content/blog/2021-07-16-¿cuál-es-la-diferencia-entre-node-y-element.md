@@ -1,5 +1,5 @@
 ---
-template: BlogPost
+type: blog
 url: diferencias-entre-node-y-element
 date: 2021-07-16T21:55:12.171Z
 title: ¿Cuál es la diferencia entre Node y Element?

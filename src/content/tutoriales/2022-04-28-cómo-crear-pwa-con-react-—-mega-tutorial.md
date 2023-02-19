@@ -1,17 +1,17 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-crear-pwa-react
 enlaceyt: https://youtube.com/embed/kMucD68rkio
 date: 2022-04-28T18:25:08.582Z
 title: Cómo Crear PWA con React — Mega Tutorial
-metaDescription: 'Aprende cómo convertir tu sitio/aplicación web en una
-  Aplicación Web Progresiva #webdev #react #tutorial #pwa'
+metaDescription: "Aprende cómo convertir tu sitio/aplicación web en una
+  Aplicación Web Progresiva #webdev #react #tutorial #pwa"
 tag:
   - React
   - Desarrollo 101
 autor: Adrián Salgado
 introThumbnail: Aprende cómo convertir tu sitio/aplicación web en una Aplicación Web Progresiva
-keyword: 'tutorial react pwa '
+keyword: "tutorial react pwa "
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/31-pwa%2F31-pwa-react.png?alt=media&token=99d5e05d-ea32-4903-97d8-8a6061576cf3
 ---
 

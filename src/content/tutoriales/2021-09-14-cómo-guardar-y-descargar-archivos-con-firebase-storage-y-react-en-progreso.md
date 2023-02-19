@@ -1,9 +1,9 @@
 ---
-template: tutoriales
+type: tutoriales
 url: guardar-firebase-storage-react
 enlaceyt: https://www.youtube.com/embed/HSA4nxlZUyg
 date: 2021-09-14T19:54:42.288Z
-title: 'Cómo guardar y descargar archivos con Firebase Storage y React '
+title: "Cómo guardar y descargar archivos con Firebase Storage y React "
 tag:
   - Firebase
   - React
@@ -74,22 +74,22 @@ Guarda la función de las credenciales una constante llamada app y expórtala co
 
 ```javascript
 export const app = firebase.initializeApp({
-	projectId: 'fir-storage-lasfito',
-	appId: '1:713168404204:web:b359856ef667ac2287efc9',
-	storageBucket: 'fir-storage-lasfito.appspot.com',
-	locationId: 'us-central',
-	apiKey: 'AIzaSyDj2SX0BXqftSsEjSw1JYz-xEiOaqdKAF8',
-	authDomain: 'fir-storage-lasfito.firebaseapp.com',
-	messagingSenderId: '713168404204',
+  projectId: "fir-storage-lasfito",
+  appId: "1:713168404204:web:b359856ef667ac2287efc9",
+  storageBucket: "fir-storage-lasfito.appspot.com",
+  locationId: "us-central",
+  apiKey: "AIzaSyDj2SX0BXqftSsEjSw1JYz-xEiOaqdKAF8",
+  authDomain: "fir-storage-lasfito.firebaseapp.com",
+  messagingSenderId: "713168404204",
 });
 ```
 
 Después, en ese mismo archivo, importa Firebase y los módulos de Firestore y Storage:
 
 ```javascript
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/storage';
-import 'firebase/compat/firestore';
+import firebase from "firebase/compat/app";
+import "firebase/compat/storage";
+import "firebase/compat/firestore";
 ```
 
 No olvides instalar firebase con:
@@ -114,9 +114,9 @@ Para cargar archivos utilizaremos una forma:
 
 ```javascript
 <form onSubmit={submitHandler}>
-	<input type="file" onChange={archivoHandler} />
-	<input type="text" name="nombre" placeholder="nombra tu archivo" />
-	<button>Enviar </button>
+  <input type="file" onChange={archivoHandler} />
+  <input type="text" name="nombre" placeholder="nombra tu archivo" />
+  <button>Enviar </button>
 </form>
 ```
 
@@ -124,14 +124,14 @@ Nota que en el input de tipo archivo tenemos una función llamada archivoHandler
 La función luce así:
 
 ```javascript
-const archivoHandler = async e => {
-	const archivo = e.target.files[0];
-	const storageRef = app.storage().ref();
-	const archivoPath = storageRef.child(archivo.name);
-	await archivoPath.put(archivo);
-	console.log('archivo cargado:', archivo.name);
-	const enlaceUrl = await archivoPath.getDownloadURL();
-	setArchivoUrl(enlaceUrl);
+const archivoHandler = async (e) => {
+  const archivo = e.target.files[0];
+  const storageRef = app.storage().ref();
+  const archivoPath = storageRef.child(archivo.name);
+  await archivoPath.put(archivo);
+  console.log("archivo cargado:", archivo.name);
+  const enlaceUrl = await archivoPath.getDownloadURL();
+  setArchivoUrl(enlaceUrl);
 };
 ```
 
@@ -150,19 +150,19 @@ Con esto ya estaremos cargando archivos a Firebase Storage. Lo siguiente es guar
 Una vez guardada la Url de los archivos en un _state_, procederemos a guardarla en nuestra base de datos junto con un nombre ingresado por el usuario. Para ello, ejecutaremos la siguiente función al momento de que el usuario haga **submit**.
 
 ```javascript
-const submitHandler = async e => {
-	e.preventDefault();
-	const nombreArchivo = e.target.nombre.value;
-	if (!nombreArchivo) {
-		alert('coloca un nombre');
-		return;
-	}
-	const coleccionRef = app.firestore().collection('archivos');
-	const docu = await coleccionRef
-		.doc(nombreArchivo)
-		.set({ nombre: nombreArchivo, url: archivoUrl });
-	console.log('archivo cargado:', nombreArchivo, 'ulr:', archivoUrl);
-	window.location = '/';
+const submitHandler = async (e) => {
+  e.preventDefault();
+  const nombreArchivo = e.target.nombre.value;
+  if (!nombreArchivo) {
+    alert("coloca un nombre");
+    return;
+  }
+  const coleccionRef = app.firestore().collection("archivos");
+  const docu = await coleccionRef
+    .doc(nombreArchivo)
+    .set({nombre: nombreArchivo, url: archivoUrl});
+  console.log("archivo cargado:", nombreArchivo, "ulr:", archivoUrl);
+  window.location = "/";
 };
 ```
 
@@ -182,8 +182,8 @@ Lo primero es obtener todos los documentos y guardarlos en un **state** con ayud
 
 ```javascript
 React.useEffect(async () => {
-	const docusList = await app.firestore().collection('archivos').get();
-	setDocus(docusList.docs.map(doc => doc.data()));
+  const docusList = await app.firestore().collection("archivos").get();
+  setDocus(docusList.docs.map((doc) => doc.data()));
 }, []);
 ```
 
@@ -191,12 +191,12 @@ Luego, en nuestra interfaz mapea los documentos y retornalos en alguna lista
 
 ```javascript
 <ul>
-	{docus.map(doc => (
-		<li>
-			<h3>{doc.nombre}</h3>
-			<img src={doc.url} height="100px" width="100px" />
-		</li>
-	))}
+  {docus.map((doc) => (
+    <li>
+      <h3>{doc.nombre}</h3>
+      <img src={doc.url} height="100px" width="100px" />
+    </li>
+  ))}
 </ul>
 ```
 

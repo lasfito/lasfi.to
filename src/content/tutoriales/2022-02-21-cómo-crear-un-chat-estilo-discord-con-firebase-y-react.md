@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: chat-estilo-discord-firebase-react
 enlaceyt: https://www.youtube.com/embed/oYiKbwLXRuA
 date: 2022-02-21T23:43:06.271Z

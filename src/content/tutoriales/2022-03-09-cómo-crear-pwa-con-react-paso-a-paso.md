@@ -1,5 +1,5 @@
 ---
-template: tutoriales
+type: tutoriales
 url: como-crear-pwa-con-react
 enlaceyt: https://www.youtube.com/embed/kMucD68rkio
 date: 2022-03-09T07:42:01.704Z
@@ -8,7 +8,7 @@ tag:
   - React
   - Desarrollo 101
 autor: Adrián Salgado
-publicoObjetivo: 'Cierto conocimiento sobre React no caería mal. '
+publicoObjetivo: "Cierto conocimiento sobre React no caería mal. "
 keyword: cómo crear pwa con react
 thumbnail: /assets/pwa-react-thumn.png
 ---
@@ -142,10 +142,10 @@ Como consejo pro, puedes estilizar tu aplicación con media queries con base en 
 
 ```css
 @media all and (display-mode: fullscreen) {
-	body {
-		margin: 0;
-		border: 5px solid black;
-	}
+  body {
+    margin: 0;
+    border: 5px solid black;
+  }
 }
 ```
 
@@ -163,8 +163,8 @@ Ejemplo:
 
 ```json
 {
-	"display_override": ["fullscreen", "minimal-ui"],
-	"display": "standalone"
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone"
 }
 ```
 
@@ -441,7 +441,7 @@ No pasa nada, podrás pensar. Es solo una imagen, ¿cierto? ¿CIERTO?
 Amígo mío (o amiga), claramente subestimas la maldad de Apple :v
 Verás, hay varios dispositivos que utilizan safari. Todos con distintas medidas de pantalla. Por ello, apple espera que proveas una imagen para cada combinación distinta de tamaño.
 
-![yamcha derrotado](https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/31-pwa%2Fyamcha-muerto.jpg?alt=media&token=7ddbf269-f6f3-4289-91a7-fda5120f8e95 'Asi termina uno con tanta etiqueta :v')
+![yamcha derrotado](https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/31-pwa%2Fyamcha-muerto.jpg?alt=media&token=7ddbf269-f6f3-4289-91a7-fda5120f8e95 "Asi termina uno con tanta etiqueta :v")
 
 Bueno, no realmente. Pero sí es tedioso.
 
@@ -453,33 +453,33 @@ Ejemplo:
 <!-- iPhone Xs Max (1242px x 2688px) -->
 
 <link
-	rel="apple-touch-startup-image"
-	media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
-	href="/apple-launch-1242x2688.png"
+  rel="apple-touch-startup-image"
+  media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+  href="/apple-launch-1242x2688.png"
 />
 <!-- iPhone Xr (828px x 1792px) -->
 <link
-	rel="apple-touch-startup-image"
-	media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
-	href="/apple-launch-828x1792.png"
+  rel="apple-touch-startup-image"
+  media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+  href="/apple-launch-828x1792.png"
 />
 <!-- iPhone X, Xs (1125px x 2436px) -->
 <link
-	rel="apple-touch-startup-image"
-	media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
-	href="/apple-launch-1125x2436.png"
+  rel="apple-touch-startup-image"
+  media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+  href="/apple-launch-1125x2436.png"
 />
 <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
 <link
-	rel="apple-touch-startup-image"
-	media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
-	href="/apple-launch-1242x2208.png"
+  rel="apple-touch-startup-image"
+  media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+  href="/apple-launch-1242x2208.png"
 />
 <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
 <link
-	rel="apple-touch-startup-image"
-	media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
-	href="/apple-launch-750x1334.png"
+  rel="apple-touch-startup-image"
+  media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+  href="/apple-launch-750x1334.png"
 />
 ```
 
@@ -506,14 +506,14 @@ Para especificar varios íconos para diferentes resoluciones de dispositivos, po
 <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png" />
 <link
-	rel="apple-touch-icon"
-	sizes="180x180"
-	href="touch-icon-iphone-retina.png"
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="touch-icon-iphone-retina.png"
 />
 <link
-	rel="apple-touch-icon"
-	sizes="167x167"
-	href="touch-icon-ipad-retina.png"
+  rel="apple-touch-icon"
+  sizes="167x167"
+  href="touch-icon-ipad-retina.png"
 />
 ```
 
@@ -562,11 +562,11 @@ Aquí es donde entran en juego. El ClientsClaim sirve para brindar control a alg
 
 ```javascript
 /* eslint-disable no-restricted-globals */
-import { clientsClaim } from 'workbox-core';
-import { ExpirationPlugin } from 'workbox-expiration';
-import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
-import { registerRoute } from 'workbox-routing';
-import { StaleWhileRevalidate } from 'workbox-strategies';
+import {clientsClaim} from "workbox-core";
+import {ExpirationPlugin} from "workbox-expiration";
+import {precacheAndRoute, createHandlerBoundToURL} from "workbox-precaching";
+import {registerRoute} from "workbox-routing";
+import {StaleWhileRevalidate} from "workbox-strategies";
 
 clientsClaim();
 ```
@@ -591,23 +591,23 @@ La "shell" de app es la mínima cantidad de HTML, CSS y JavaScript requeridos pa
 Para apps de una sola página con arquitecturas con mucho código JavaScript, una shell de app es un enfoque acertado. Este enfoque se basa en almacenar la shell agresivamente en caché (utilizando un service worker para lograr que la app funcione. Luego, el contenido dinámico carga cada página a través de JavaScript. Una shell de app es útil para enviar el HTML inicial a la pantalla en forma rápida y sin utilizar una red. </blockquote>
 
 ```javascript
-const fileExtensionRegexp = new RegExp('/[^/?]+\\.[^/]+$');
+const fileExtensionRegexp = new RegExp("/[^/?]+\\.[^/]+$");
 registerRoute(
-	// Return false to exempt requests from being fulfilled by index.html.
-	({ request, url }) => {
-		// If this isn't a navigation, skip.
-		if (request.mode !== 'navigate') {
-			return false;
-		} // If this is a URL that starts with /\_, skip.
-		if (url.pathname.startsWith('/_')) {
-			return false;
-		} // If this looks like a URL for a resource, because it contains // a file extension, skip.
-		if (url.pathname.match(fileExtensionRegexp)) {
-			return false;
-		} // Return true to signal that we want to use the handler.
-		return true;
-	},
-	createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html')
+  // Return false to exempt requests from being fulfilled by index.html.
+  ({request, url}) => {
+    // If this isn't a navigation, skip.
+    if (request.mode !== "navigate") {
+      return false;
+    } // If this is a URL that starts with /\_, skip.
+    if (url.pathname.startsWith("/_")) {
+      return false;
+    } // If this looks like a URL for a resource, because it contains // a file extension, skip.
+    if (url.pathname.match(fileExtensionRegexp)) {
+      return false;
+    } // Return true to signal that we want to use the handler.
+    return true;
+  },
+  createHandlerBoundToURL(process.env.PUBLIC_URL + "/index.html")
 );
 ```
 
@@ -617,22 +617,22 @@ Por último, nos defendemos contra rutas que no estén en caché y nos preparamo
 
 ```javascript
 registerRoute(
-	// Add in any other file extensions or routing criteria as needed.
-	({ url }) =>
-		url.origin === self.location.origin && url.pathname.endsWith('.png'), // Customize this strategy as needed, e.g., by changing to CacheFirst.
-	new StaleWhileRevalidate({
-		cacheName: 'images',
-		plugins: [
-			// Ensure that once this runtime cache reaches a maximum size the
-			// least-recently used images are removed.
-			new ExpirationPlugin({ maxEntries: 50 }),
-		],
-	})
+  // Add in any other file extensions or routing criteria as needed.
+  ({url}) =>
+    url.origin === self.location.origin && url.pathname.endsWith(".png"), // Customize this strategy as needed, e.g., by changing to CacheFirst.
+  new StaleWhileRevalidate({
+    cacheName: "images",
+    plugins: [
+      // Ensure that once this runtime cache reaches a maximum size the
+      // least-recently used images are removed.
+      new ExpirationPlugin({maxEntries: 50}),
+    ],
+  })
 );
-self.addEventListener('message', event => {
-	if (event.data && event.data.type === 'SKIP_WAITING') {
-		self.skipWaiting();
-	}
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
 });
 ```
 
@@ -648,126 +648,126 @@ Pero antes de entrar en esa decisión, hay que crear un archivo llamado _service
 
 ```javascript
 const isLocalhost = Boolean(
-	window.location.hostname === 'localhost' ||
-		// [::1] is the IPv6 localhost address.
-		window.location.hostname === '[::1]' ||
-		// 127.0.0.0/8 are considered localhost for IPv4.
-		window.location.hostname.match(
-			/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-		)
+  window.location.hostname === "localhost" ||
+    // [::1] is the IPv6 localhost address.
+    window.location.hostname === "[::1]" ||
+    // 127.0.0.0/8 are considered localhost for IPv4.
+    window.location.hostname.match(
+      /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+    )
 );
 export function register(config) {
-	if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-		// The URL constructor is available in all browsers that support SW.
-		const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
-		if (publicUrl.origin !== window.location.origin) {
-			// Our service worker won't work if PUBLIC_URL is on a different origin
-			// from what our page is served on. This might happen if a CDN is used to
-			// serve assets; see https://github.com/facebook/create-react-app/issues/2374
-			return;
-		}
-		window.addEventListener('load', () => {
-			const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+  if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
+    // The URL constructor is available in all browsers that support SW.
+    const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
+    if (publicUrl.origin !== window.location.origin) {
+      // Our service worker won't work if PUBLIC_URL is on a different origin
+      // from what our page is served on. This might happen if a CDN is used to
+      // serve assets; see https://github.com/facebook/create-react-app/issues/2374
+      return;
+    }
+    window.addEventListener("load", () => {
+      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
-			if (isLocalhost) {
-				// This is running on localhost. Let's check if a service worker still exists or not.
-				checkValidServiceWorker(swUrl, config);
-				// Add some additional logging to localhost, pointing developers to the
-				// service worker/PWA documentation.
-				navigator.serviceWorker.ready.then(() => {
-					console.log(
-						'This web app is being served cache-first by a service ' +
-							'worker. To learn more, visit https://cra.link/PWA'
-					);
-				});
-			} else {
-				// Is not localhost. Just register service worker
-				registerValidSW(swUrl, config);
-			}
-		});
-	}
+      if (isLocalhost) {
+        // This is running on localhost. Let's check if a service worker still exists or not.
+        checkValidServiceWorker(swUrl, config);
+        // Add some additional logging to localhost, pointing developers to the
+        // service worker/PWA documentation.
+        navigator.serviceWorker.ready.then(() => {
+          console.log(
+            "This web app is being served cache-first by a service " +
+              "worker. To learn more, visit https://cra.link/PWA"
+          );
+        });
+      } else {
+        // Is not localhost. Just register service worker
+        registerValidSW(swUrl, config);
+      }
+    });
+  }
 }
 function registerValidSW(swUrl, config) {
-	navigator.serviceWorker
-		.register(swUrl)
-		.then(registration => {
-			registration.onupdatefound = () => {
-				const installingWorker = registration.installing;
-				if (installingWorker == null) {
-					return;
-				}
-				installingWorker.onstatechange = () => {
-					if (installingWorker.state === 'installed') {
-						if (navigator.serviceWorker.controller) {
-							// At this point, the updated precached content has been fetched,
-							// but the previous service worker will still serve the older
-							// content until all client tabs are closed.
-							console.log(
-								'New content is available and will be used when all ' +
-									'tabs for this page are closed. See https://cra.link/PWA.'
-							);
-							// Execute callback
-							if (config && config.onUpdate) {
-								config.onUpdate(registration);
-							}
-						} else {
-							// At this point, everything has been precached.
-							// It's the perfect time to display a
-							// "Content is cached for offline use." message.
-							console.log('Content is cached for offline use.');
-							// Execute callback
-							if (config && config.onSuccess) {
-								config.onSuccess(registration);
-							}
-						}
-					}
-				};
-			};
-		})
-		.catch(error => {
-			console.error('Error during service worker registration:', error);
-		});
+  navigator.serviceWorker
+    .register(swUrl)
+    .then((registration) => {
+      registration.onupdatefound = () => {
+        const installingWorker = registration.installing;
+        if (installingWorker == null) {
+          return;
+        }
+        installingWorker.onstatechange = () => {
+          if (installingWorker.state === "installed") {
+            if (navigator.serviceWorker.controller) {
+              // At this point, the updated precached content has been fetched,
+              // but the previous service worker will still serve the older
+              // content until all client tabs are closed.
+              console.log(
+                "New content is available and will be used when all " +
+                  "tabs for this page are closed. See https://cra.link/PWA."
+              );
+              // Execute callback
+              if (config && config.onUpdate) {
+                config.onUpdate(registration);
+              }
+            } else {
+              // At this point, everything has been precached.
+              // It's the perfect time to display a
+              // "Content is cached for offline use." message.
+              console.log("Content is cached for offline use.");
+              // Execute callback
+              if (config && config.onSuccess) {
+                config.onSuccess(registration);
+              }
+            }
+          }
+        };
+      };
+    })
+    .catch((error) => {
+      console.error("Error during service worker registration:", error);
+    });
 }
 
 function checkValidServiceWorker(swUrl, config) {
-	// Check if the service worker can be found. If it can't reload the page.
-	fetch(swUrl, {
-		headers: { 'Service-Worker': 'script' },
-	})
-		.then(response => {
-			// Ensure service worker exists, and that we really are getting a JS file.
-			const contentType = response.headers.get('content-type');
-			if (
-				response.status === 404 ||
-				(contentType != null && contentType.indexOf('javascript') === -1)
-			) {
-				// No service worker found. Probably a different app. Reload the page.
-				navigator.serviceWorker.ready.then(registration => {
-					registration.unregister().then(() => {
-						window.location.reload();
-					});
-				});
-			} else {
-				// Service worker found. Proceed as normal.
-				registerValidSW(swUrl, config);
-			}
-		})
-		.catch(() => {
-			console.log(
-				'No internet connection found. App is running in offline mode.'
-			);
-		});
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl, {
+    headers: {"Service-Worker": "script"},
+  })
+    .then((response) => {
+      // Ensure service worker exists, and that we really are getting a JS file.
+      const contentType = response.headers.get("content-type");
+      if (
+        response.status === 404 ||
+        (contentType != null && contentType.indexOf("javascript") === -1)
+      ) {
+        // No service worker found. Probably a different app. Reload the page.
+        navigator.serviceWorker.ready.then((registration) => {
+          registration.unregister().then(() => {
+            window.location.reload();
+          });
+        });
+      } else {
+        // Service worker found. Proceed as normal.
+        registerValidSW(swUrl, config);
+      }
+    })
+    .catch(() => {
+      console.log(
+        "No internet connection found. App is running in offline mode."
+      );
+    });
 }
 export function unregister() {
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.ready
-			.then(registration => {
-				registration.unregister();
-			})
-			.catch(error => {
-				console.error(error.message);
-			});
-	}
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.ready
+      .then((registration) => {
+        registration.unregister();
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
+  }
 }
 ```
 
@@ -790,16 +790,16 @@ Y para la tercera:
 
 ```javascript
 serviceWorkerRegistration.register({
-	onUpdate: async registration => {
-		// Corremos este código si hay una nueva versión de nuestra app
-		// Detalles en: https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
-		if (registration && registration.waiting) {
-			await registration.unregister();
-			registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-			// Des-registramos el SW para recargar la página y obtener la nueva versión. Lo cual permite que el navegador descargue lo nuevo y que invalida la cache que tenía previamente.
-			window.location.reload();
-		}
-	},
+  onUpdate: async (registration) => {
+    // Corremos este código si hay una nueva versión de nuestra app
+    // Detalles en: https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
+    if (registration && registration.waiting) {
+      await registration.unregister();
+      registration.waiting.postMessage({type: "SKIP_WAITING"});
+      // Des-registramos el SW para recargar la página y obtener la nueva versión. Lo cual permite que el navegador descargue lo nuevo y que invalida la cache que tenía previamente.
+      window.location.reload();
+    }
+  },
 });
 ```
 
@@ -817,15 +817,15 @@ Añadimos un evento a la ventana que nos indica que la app está lista para inst
 const [isReadyForInstall, setIsReadyForInstall] = React.useState(false);
 
 useEffect(() => {
-	window.addEventListener('beforeinstallprompt', event => {
-		// Prevent the mini-infobar from appearing on mobile.
-		event.preventDefault();
-		console.log('👍', 'beforeinstallprompt', event);
-		// Stash the event so it can be triggered later.
-		window.deferredPrompt = event;
-		// Remove the 'hidden' class from the install button container.
-		setIsReadyForInstall(true);
-	});
+  window.addEventListener("beforeinstallprompt", (event) => {
+    // Prevent the mini-infobar from appearing on mobile.
+    event.preventDefault();
+    console.log("👍", "beforeinstallprompt", event);
+    // Stash the event so it can be triggered later.
+    window.deferredPrompt = event;
+    // Remove the 'hidden' class from the install button container.
+    setIsReadyForInstall(true);
+  });
 }, []);
 ```
 
@@ -835,23 +835,23 @@ Ya que guardamos el evento en el objeto de window, podemos acceder a él y sus p
 
 ```javascript
 async function downloadApp() {
-	console.log('👍', 'butInstall-clicked');
-	const promptEvent = window.deferredPrompt;
-	if (!promptEvent) {
-		// The deferred prompt isn't available.
-		console.log('oops, no prompt event guardado en window');
-		return;
-	}
-	// Show the install prompt.
-	promptEvent.prompt();
-	// Log the result
-	const result = await promptEvent.userChoice;
-	console.log('👍', 'userChoice', result);
-	// Reset the deferred prompt variable, since
-	// prompt() can only be called once.
-	window.deferredPrompt = null;
-	// Hide the install button.
-	setIsReadyForInstall(false);
+  console.log("👍", "butInstall-clicked");
+  const promptEvent = window.deferredPrompt;
+  if (!promptEvent) {
+    // The deferred prompt isn't available.
+    console.log("oops, no prompt event guardado en window");
+    return;
+  }
+  // Show the install prompt.
+  promptEvent.prompt();
+  // Log the result
+  const result = await promptEvent.userChoice;
+  console.log("👍", "userChoice", result);
+  // Reset the deferred prompt variable, since
+  // prompt() can only be called once.
+  window.deferredPrompt = null;
+  // Hide the install button.
+  setIsReadyForInstall(false);
 }
 ```
 
