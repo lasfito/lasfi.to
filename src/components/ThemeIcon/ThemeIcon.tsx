@@ -6,13 +6,22 @@ function ThemeIcon() {
   function cambiarTema() {
     document.body.classList.toggle("oscuro");
     setIsDark(!isDark);
+    setThemePreference(isDark ? "disabled" : "enabled");
+  }
+
+  function setThemePreference(value: "enabled" | "disabled") {
+    const themeStr = JSON.stringify({
+      darkMode: value,
+    });
+
+    localStorage.setItem("theme", themeStr);
   }
 
   useEffect(() => {
     document.body.classList.contains("oscuro")
       ? setIsDark(true)
       : setIsDark(false);
-  }, [isDark]);
+  }, []);
 
   return (
     <div

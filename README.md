@@ -19,9 +19,8 @@ Todos los comandos se ejecutan desde una terminal en la raíz del proyecto.
 ## Todos
 
 - [ ] Doble CSS stylesheet
-- [ ] Fix dark mode
+- [ ] Fix dark mode blinking
 - [ ] Add a search bar(?)
-- [ ] Add Discord
 - [ ] Fix mobile
 - [ ] Playwright tests
 - [ ] Unit tests (?)
@@ -30,6 +29,6 @@ Todos los comandos se ejecutan desde una terminal en la raíz del proyecto.
 - [ ] Add PWA (?)
 - [ ] Netlify CMS (?)
 - [ ] Image assets
-- [ ] Cambiar URL slug content
+- [ ] Cambiar custom slug se pierde en data de entry.
 - [ ] Dark theme prose
 - [ ] Formatear tutoriales content

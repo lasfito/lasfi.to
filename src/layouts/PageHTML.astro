@@ -29,21 +29,13 @@ const {
       <slot />
     </Layout>
     <script>
-      // get dark mode preference from local storage
-      // const prefersDark: "enabled" | "disabled" = JSON.parse(
-      //   localStorage.getItem("darkMode") || "disabled"
-      // );
+      function getSystemPreference() {
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "enabled";
+        }
 
-      function setThemePreference(value: "enabled" | "disabled") {
-        const themeStr = JSON.stringify({
-          darkMode: value,
-        });
-
-        localStorage.setItem("theme", themeStr);
+        return "disabled";
       }
-
-      setThemePreference("enabled");
-
       function getThemeFromLocalStorage() {
         const themeStr = localStorage.getItem("theme");
         if (!themeStr) {
@@ -57,39 +49,29 @@ const {
         }
       }
 
-      console.log(getThemeFromLocalStorage());
+      function enableDarkMode() {
+        document.body.classList.add("oscuro");
+        // setThemePreference("enabled");
+      }
 
-      // function userPreferesDarkMode() {
-      //   return prefersDark === "enabled";
-      // }
+      function disableDarkMode() {
+        document.body.classList.remove("oscuro");
+        // setThemePreference("disabled");
+      }
 
-      // function setThemePreference(value: "enabled" | "disabled") {
-      //   localStorage.setItem("darkMode", value || "disabled");
-      // }
+      function setThemeOnNavigation() {
+        const {darkMode} = getThemeFromLocalStorage() || getSystemPreference();
 
-      // const enableDarkMode = () => {
-      //   document.body.classList.add("oscuro");
-      // };
+        if (darkMode === "enabled") {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      }
 
-      // const disableDarkMode = () => {
-      //   document.body.classList.remove("oscuro");
-      // };
-
-      // function setTheme() {
-
-      //   if (userPreferesDarkMode()) {
-      //     console.log("userPreferesDarkMode");
-      //     enableDarkMode();
-      //   } else {
-      //     console.log("userPreferesLightMode");
-      //     disableDarkMode();
-      //   }
-      // }
-
-      // document.addEventListener("DOMContentLoaded", function (event) {
-
-      //   setTheme();
-      // });
+      document.addEventListener("DOMContentLoaded", function (event) {
+        setThemeOnNavigation();
+      });
     </script>
   </body>
 </html>
