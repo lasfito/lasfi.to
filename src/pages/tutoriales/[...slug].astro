@@ -5,7 +5,7 @@ import EntryTemplate from "../../layouts/EntryTemplate.astro";
 export async function getStaticPaths() {
   const posts = await getCollection("tutoriales");
   return posts.map((post) => ({
-    params: {slug: post.data.url},
+    params: {slug: post.slug},
     props: post,
   }));
 }
@@ -15,6 +15,6 @@ const post = Astro.props;
 const {Content} = await post.render();
 ---
 
-<EntryTemplate {...post.data} slug={post.slug}>
+<EntryTemplate {...post.data} slug={post.id}>
   <Content />
 </EntryTemplate>

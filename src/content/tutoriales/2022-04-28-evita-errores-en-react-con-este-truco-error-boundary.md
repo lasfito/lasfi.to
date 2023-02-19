@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: truco-react-error-boundary
+slug: truco-react-error-boundary
 enlaceyt: https://youtube.com/embed/AkFrnjI3jv0
 date: 2022-04-28T16:46:13.375Z
 title: Evita Errores en React con este Truco ( Error Boundary )

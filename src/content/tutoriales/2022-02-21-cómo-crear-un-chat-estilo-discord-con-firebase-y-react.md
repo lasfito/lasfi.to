@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: chat-estilo-discord-firebase-react
+slug: chat-estilo-discord-firebase-react
 enlaceyt: https://www.youtube.com/embed/oYiKbwLXRuA
 date: 2022-02-21T23:43:06.271Z
 title: Cómo crear un chat estilo Discord con Firebase y React
@@ -10,7 +10,7 @@ tag:
 autor: Adrián Salgado
 publicoObjetivo: Se requieren conocimientos mínimos sobre JavaScript y React.
 keyword: chat discord react y firebase
-thumbnail: /assets/09-chat-discord-firebase.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/09-chat-discord-firebase.png?alt=media&token=99427e58-4cd3-47c0-b96b-dc5daa04a14c"
 ---
 
 \## Transcripción automática

@@ -1,6 +1,6 @@
 ---
 type: blog
-url: metodos-array-javascript
+slug: metodos-array-javascript
 date: 2021-09-09T02:02:46.452Z
 title: Los 23 métodos de array en JavaScript que debes conocer
 tag:
@@ -8,7 +8,7 @@ tag:
   - Desarrollo 101
 autor: Adrián Salgado
 keyword: Métodos arrays javascript
-thumbnail: /assets/metodosarray.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/thinkingperson.jpeg?alt=media&token=a3467f73-8571-48e3-bbe8-c47ebe183cd1"
 ---
 
 ¿Cuán bueno dirías que eres tratándose de manipular arrays en JavaScript?

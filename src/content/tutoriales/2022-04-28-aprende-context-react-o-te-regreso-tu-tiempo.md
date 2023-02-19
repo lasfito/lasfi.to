@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: aprende-context-react-regreso-tiempo
+slug: aprende-context-react-regreso-tiempo
 enlaceyt: https://youtube.com/embed/dmxVjrSdOAY
 date: 2022-04-28T22:07:18.517Z
 title: Aprende Context (React) o te regreso tu Tiempo

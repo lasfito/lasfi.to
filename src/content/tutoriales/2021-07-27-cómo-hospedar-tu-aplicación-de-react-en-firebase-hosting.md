@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-hospedar-react-app-firebase
+slug: como-hospedar-react-app-firebase
 enlaceyt: https://www.youtube.com/embed/kOgZ8i2dZ7k
 date: 2021-07-27T05:01:54.100Z
 title: Cómo hospedar tu aplicación de react en Firebase hosting
@@ -9,7 +9,7 @@ tag:
   - React
 autor: Adrián Salgado
 keyword: hospedar aplicación react en firebase hosting
-thumbnail: /assets/thumbnail.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/thumbnail.png?alt=media&token=31379eb4-e89a-4be2-8568-b4b3892c0c5c"
 ---
 
 Así que acabas de crear el nuevo Facebook a través de React y te preguntas dónde hospedar tu maravilla de aplicación. Ciertamente, opciones hay muchas, pero el día de hoy revisaremos cómo aprovechar el servicio de hosting que nos ofrece Firebase. \

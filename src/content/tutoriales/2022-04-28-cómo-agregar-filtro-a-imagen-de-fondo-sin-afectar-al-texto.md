@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: filtro-imagen-fondo-afectar-texto
+slug: filtro-imagen-fondo-afectar-texto
 enlaceyt: https://youtube.com/embed/RUA_x_R5Eng
 date: 2022-04-28T17:01:29.635Z
 title: Cómo agregar filtro a imagen de fondo SIN afectar al texto

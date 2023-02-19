@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-crear-columnas-css
+slug: como-crear-columnas-css
 enlaceyt: https://www.youtube.com/embed/QbliZCG4Rtg
 date: 2021-07-20T04:15:46.099Z
 title: Cómo crear columnas en css sin flexbox ni grid
@@ -11,7 +11,7 @@ autor: Adrián Salgado
 introThumbnail: "¿Sabías que puedes crear columnas con tan solo 1 propiedad?
   Spoiler alert: no se trata de flexbox ni grid. "
 keyword: columnas en css
-thumbnail: /assets/columnas-css-thumb.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/columnas-css-thumb.png?alt=media&token=8d5de9d8-389f-46ff-83ce-a4e83a314dcd"
 ---
 
 Hola, en este breve tutorial te mostraré cómo puedes crear columnas de texto con CSS sin utilizar flexbox ni grid. En realidad es bastante sencillo y créeme cuando te digo que después de leer este artículo jamás volverás a sufrir cuando tengas que generar un layout de columnas.

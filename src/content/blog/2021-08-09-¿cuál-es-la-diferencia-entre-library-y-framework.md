@@ -1,6 +1,6 @@
 ---
 type: blog
-url: diferencia-entre-library-y-framework
+slug: diferencia-entre-library-y-framework
 date: 2021-08-09T13:41:22.451Z
 title: ¿Cuál es la diferencia entre library y  framework?
 tag:
@@ -8,7 +8,7 @@ tag:
   - Misceláneo
 autor: Adrián Salgado
 keyword: diferencia library y framework
-thumbnail: /assets/thinkingperson.jpeg
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/thinkingperson.jpeg?alt=media&token=a3467f73-8571-48e3-bbe8-c47ebe183cd1"
 ---
 
 Los desarrolladores a menudo usan los términos "library" y "framework" de manera intercambiable, cual si fueran términos que significan lo mismo. Y aunque son muy similares, lo cierto es que hay una diferencia.

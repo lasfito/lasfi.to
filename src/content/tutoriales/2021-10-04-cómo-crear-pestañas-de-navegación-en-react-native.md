@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-crear-pestanas-navegacion-react-native
+slug: como-crear-pestanas-navegacion-react-native
 enlaceyt: https://www.youtube.com/embed/WMOPvJot0yI
 date: 2021-10-04T18:17:24.872Z
 title: Cómo crear pestañas de navegación en React Native
@@ -14,7 +14,7 @@ publicoObjetivo: "El siguiente artículo asume que tienes conocimientos básicos
   sobre React y React Native. No obstante, podrás comprender gran parte del
   contenido si tienes experiencia con JavaScript o algún lenguaje similar. "
 keyword: navegación pestañas react native
-thumbnail: /assets/07-react-native-tabs.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/07-react-native-tabs.png?alt=media&token=92204dc5-5ebc-4e4f-ab68-0a89387a39da"
 ---
 
 Hola, el día de hoy aprenderemos cómo implementar un sistema de navegación por pestañas (tabs) en React Native/Expo.

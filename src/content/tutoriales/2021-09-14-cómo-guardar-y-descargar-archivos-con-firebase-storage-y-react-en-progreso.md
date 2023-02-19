@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: guardar-firebase-storage-react
+slug: guardar-firebase-storage-react
 enlaceyt: https://www.youtube.com/embed/HSA4nxlZUyg
 date: 2021-09-14T19:54:42.288Z
 title: "Cómo guardar y descargar archivos con Firebase Storage y React "
@@ -9,7 +9,7 @@ tag:
   - React
 autor: Adrián Salgado
 keyword: Firebase Storage react
-thumbnail: /assets/firebase-storage.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/firebase-storage.png?alt=media&token=7aa43155-6aa1-44e4-946e-b0329bd89b6d"
 ---
 
 Cada imagen o archivo que cargas en línea debe almacenarse en algún lugar. Son los proveedores de almacenamiento en la nube (como Amazon y Google Cloud) quienes se encargan de almacenar esos archivos como "objetos" en "depósitos" (o **buckets**, como se conocen en inglés).
@@ -160,7 +160,7 @@ const submitHandler = async (e) => {
   const coleccionRef = app.firestore().collection("archivos");
   const docu = await coleccionRef
     .doc(nombreArchivo)
-    .set({nombre: nombreArchivo, url: archivoUrl});
+    .set({nombre: nombreArchivo, slug: archivoUrl});
   console.log("archivo cargado:", nombreArchivo, "ulr:", archivoUrl);
   window.location = "/";
 };

@@ -28,7 +28,7 @@ const {posts, title} = Astro.props as CollectionTemplateProps;
           <FormattedDate date={post.data.date} classList="hidden md:block" />
           <a
             class="text-texto-str hover:text-primario hover:underline md:text-2xl"
-            href={`/blog/${post.data.url}/`}
+            href={`/${post.data.type}/${post.slug}/`}
           >
             {post.data.title}
           </a>

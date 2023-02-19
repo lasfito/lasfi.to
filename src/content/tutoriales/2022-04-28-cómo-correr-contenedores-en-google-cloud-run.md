@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: correr-contenedores-google-cloud-run
+slug: correr-contenedores-google-cloud-run
 enlaceyt: https://youtube.com/embed/TVm_Qaw41HU
 date: 2022-04-28T16:33:54.272Z
 title: Cómo correr contenedores en Google Cloud Run

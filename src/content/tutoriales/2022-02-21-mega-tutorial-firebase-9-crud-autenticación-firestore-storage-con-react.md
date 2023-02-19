@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: firebase-9-crud-react
+slug: firebase-9-crud-react
 enlaceyt: https://www.youtube.com/embed/PGPiefJK8LU
 date: 2022-02-21T23:25:44.536Z
 title: Mega Tutorial Firebase 9 - CRUD (Autenticación + Firestore + Storage) con React
@@ -11,7 +11,7 @@ autor: Adrián Salgado
 publicoObjetivo: "Conocimientos básicos de JavaScript y React son necesarios
   para este tutorial "
 keyword: tutorial firebase 9
-thumbnail: /assets/megatutorial-firebase-9.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/megatutorial-firebase-9.png?alt=media&token=e77e7719-6e34-4ee3-9f66-a3a5475199b1"
 ---
 
 \## Transcripción automática

@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-crear-calculadora-sin-javascript
+slug: como-crear-calculadora-sin-javascript
 enlaceyt: https://www.youtube.com/embed/kQ5PkkkYVeI
 date: 2022-02-21T23:16:04.195Z
 title: Cómo crear una calculadora web sin JavaScript
@@ -9,7 +9,7 @@ tag:
   - Misceláneo
 autor: Adrián Salgado
 keyword: calculadora sin javascript
-thumbnail: /assets/03-calculadora-sin-javascript.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/03-calculadora-sin-javascript.png?alt=media&token=08de9d71-11e7-4d5b-b94a-54ff6f6f84c3"
 ---
 
 \## Transcripción automática

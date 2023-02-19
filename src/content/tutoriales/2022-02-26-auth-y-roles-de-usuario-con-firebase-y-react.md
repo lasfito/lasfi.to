@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: auth-roles-usuarios-firebase-react
+slug: auth-roles-usuarios-firebase-react
 enlaceyt: https://youtube.com/embed/6O2yYpIG8R8
 date: 2022-02-26T19:19:26.215Z
 title: Auth y Roles de Usuario con Firebase y React
@@ -9,7 +9,7 @@ tag:
   - React
 autor: Adrián Salgado
 keyword: roles usuario firebase
-thumbnail: /assets/14-roles-usuario-firebase.jpeg
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/14-roles-usuario-firebase.jpeg?alt=media&token=b2a8f3e9-1ca9-4149-bf8b-eb69a91512ee"
 ---
 
 ## Transcripción automática:

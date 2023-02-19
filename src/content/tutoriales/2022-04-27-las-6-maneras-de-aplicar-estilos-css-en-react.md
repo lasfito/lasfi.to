@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: 6-maneras-estilos-css-react
+slug: 6-maneras-estilos-css-react
 enlaceyt: https://youtube.com/embed/J-hGXVPyT-Y
 date: 2022-04-27T19:45:36.702Z
 title: Las 6 maneras de aplicar estilos CSS en React

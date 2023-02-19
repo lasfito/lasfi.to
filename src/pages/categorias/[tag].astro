@@ -42,7 +42,7 @@ const {tag} = Astro.props;
   {
     tag.related.map((post: Blog | Tutoriales) => {
       return (
-        <a href={`/${post.data.type}/${post.data.url}`}>
+        <a href={`/${post.data.type}/${post.slug}`}>
           <h1>{post.data.title}</h1>
         </a>
       );

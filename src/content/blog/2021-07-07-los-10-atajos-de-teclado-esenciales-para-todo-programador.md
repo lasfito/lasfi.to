@@ -1,6 +1,6 @@
 ---
 type: blog
-url: 10-atajos-esenciales-programadores
+slug: 10-atajos-esenciales-programadores
 date: 2021-07-07T15:51:23.924Z
 title: "Los 10 atajos de teclado esenciales para todo programador "
 tag:
@@ -8,7 +8,7 @@ tag:
   - Misceláneo
 autor: Adrián Salgado
 keyword: "atajos teclado programador "
-thumbnail: /assets/atajos-programador.jpg
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/atajos-programador.jpg?alt=media&token=9919101b-d078-41bc-a3a2-f0432443bcde"
 ---
 
 Como programador, pasas mucho tiempo escribiendo en un teclado, bueno, eso es si no estás atrapado en reuniones todo el día 😄. Para optimizar el tiempo que pasas frente a un teclado, es mejor aprender atajos de teclado útiles que pueden ahorrarte unos segundos cada vez que los usas. Puede que no parezca mucho, pero si usas estos atajos cientos o miles de veces al día, podrías terminar **ahorrándote horas de trabajo cada semana**.

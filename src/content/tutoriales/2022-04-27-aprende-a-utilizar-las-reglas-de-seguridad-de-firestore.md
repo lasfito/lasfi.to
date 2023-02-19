@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: aprende-reglas-seguridad-firestore
+slug: aprende-reglas-seguridad-firestore
 enlaceyt: https://youtube.com/embed/PQc4aVuSr48
 date: 2022-04-27T20:39:47.325Z
 title: Aprende a utilizar las Reglas de Seguridad de Firestore

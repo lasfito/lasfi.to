@@ -4,7 +4,6 @@ const blog = defineCollection({
   // Type-check frontmatter using a schema
   schema: z.object({
     type: z.string(),
-    url: z.string(),
     date: z
       .string()
       .or(z.date())
@@ -21,7 +20,6 @@ const tutoriales = defineCollection({
   // Type-check frontmatter using a schema
   schema: z.object({
     type: z.string(),
-    url: z.string(),
     enlaceyt: z.string(),
     date: z
       .string()

@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: crea-backend-google-cloud-strapi
+slug: crea-backend-google-cloud-strapi
 enlaceyt: https://www.youtube.com/embed/BHly5BDJ04s
 date: 2022-02-22T00:09:02.438Z
 title: Cómo crear un backend en Google Cloud con Strapi
@@ -10,7 +10,7 @@ tag:
 autor: Adrián Salgado
 publicoObjetivo: ""
 keyword: strapi google cloud
-thumbnail: /assets/11-strapi-google-cloud.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/11-strapi-google-cloud.png?alt=media&token=bee8b254-890c-465c-a06d-fe3ee9e2d8c0"
 ---
 
 \## Transcripción automática

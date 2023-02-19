@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-crear-pdf-en-react
+slug: como-crear-pdf-en-react
 enlaceyt: https://www.youtube.com/embed/D05ptoe7brY
 date: 2022-02-21T23:55:43.386Z
 title: Crea, Visualiza y Descarga PDFs en React
@@ -10,7 +10,7 @@ tag:
 autor: Adrián Salgado
 publicoObjetivo: "Conocimientos básicos en JavaScript son necesarios para este tutorial. "
 keyword: crear pdf en react
-thumbnail: /assets/10-react-pdf.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/10-react-pdf.png?alt=media&token=0f9dfcf5-f8a6-4b78-b9a4-771e1234920a"
 ---
 
 \## Transcripción automática

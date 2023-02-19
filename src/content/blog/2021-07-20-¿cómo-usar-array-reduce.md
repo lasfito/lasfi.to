@@ -1,6 +1,6 @@
 ---
 type: blog
-url: como-usar-array-reduce
+slug: como-usar-array-reduce
 date: 2021-07-20T18:53:43.961Z
 title: ¿Cómo usar array reduce?
 tag:
@@ -8,7 +8,7 @@ tag:
   - Desarrollo 101
 autor: Adrián Salgado
 keyword: como array reduce
-thumbnail: /assets/reduce-array-destacada.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/reduce-array-destacada.png?alt=media&token=2d10aa5f-3dae-48d0-85bc-cb8cda828df8"
 ---
 
 El método de `reduce` de `array` es definitivamente el más confuso de todos los métodos de array de JavaScript. Es por eso que este artículo te enseñará de una vez y por todas lo que necesitas saber acerca de este método. Créeme, cuando hayas terminado de leer este artículo será un experto en el método de reducción (reduce).

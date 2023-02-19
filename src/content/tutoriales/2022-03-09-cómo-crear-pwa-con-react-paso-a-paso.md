@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-crear-pwa-con-react
+slug: como-crear-pwa-con-react
 enlaceyt: https://www.youtube.com/embed/kMucD68rkio
 date: 2022-03-09T07:42:01.704Z
 title: Cómo crear PWA con React - Paso a paso
@@ -10,7 +10,7 @@ tag:
 autor: Adrián Salgado
 publicoObjetivo: "Cierto conocimiento sobre React no caería mal. "
 keyword: cómo crear pwa con react
-thumbnail: /assets/pwa-react-thumn.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/pwa-react-thumn.png?alt=media&token=beb852ab-0f01-4be4-80dd-53d8c928fb27"
 ---
 
 # Convierte React en una PWA - paso a paso

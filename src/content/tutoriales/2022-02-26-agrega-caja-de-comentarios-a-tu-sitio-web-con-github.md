@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: caja-comentarios-sitio-web-github
+slug: caja-comentarios-sitio-web-github
 enlaceyt: https://youtube.com/embed/dxHTKkVtffM
 date: 2022-02-26T19:07:47.611Z
 title: Agrega caja de comentarios a tu sitio web con GitHub
@@ -9,7 +9,7 @@ tag:
   - Misceláneo
 autor: Adrián Salgado
 keyword: comentarios sitio web github
-thumbnail: /assets/13-comtentarios-sitioweb-github.jpeg
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/13-comtentarios-sitioweb-github.jpeg?alt=media&token=dbbe9aa4-6e68-4053-b074-a4b8b7fba7aa"
 ---
 
 ## Transcripción automática:

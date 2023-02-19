@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: magic-link-auth-firebase-react
+slug: magic-link-auth-firebase-react
 enlaceyt: https://www.youtube.com/embed/Mu4Iqqg1dTQ
 date: 2022-03-11T02:09:51.439Z
 title: Tutorial Magic Link Auth con Firebase y React

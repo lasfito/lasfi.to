@@ -1,6 +1,6 @@
 ---
 type: blog
-url: como-usar-flat
+slug: como-usar-flat
 date: 2021-08-02T14:43:47.806Z
 title: ¿Cómo usar array flat?
 tag:
@@ -8,7 +8,7 @@ tag:
   - JavaScript
 autor: Adrián Salgado
 keyword: array flat
-thumbnail: /assets/arrayflatthumbnail.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/arrayflatthumbnail.png?alt=media&token=825d8af7-c594-4c70-b180-50bcf62fd70d"
 ---
 
 El método `flat` puede parecer realmente simple a primera vista, pero lo cierto es que hay que tener siempre presente los casos en los cuales flat sobresale para poder aprovecharlo al máximo.

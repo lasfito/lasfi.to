@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-enviar-correo-formulario-html
+slug: como-enviar-correo-formulario-html
 enlaceyt: https://youtube.com/embed/zXMcoTRTswQ
 date: 2022-02-26T19:03:28.820Z
 title: 4 formas de enviar correo desde formulario HTML
@@ -9,7 +9,7 @@ tag:
   - Desarrollo 101
 autor: Adrián Salgado
 keyword: enviar correo formulario html
-thumbnail: /assets/12-formulario-html.jpeg
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/12-formulario-html.jpeg?alt=media&token=8e62468d-63cb-49ce-9f63-b5a184c9cfcc"
 ---
 
 ## Transcripción automática:

@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: resuelvo-prueba-tecnica-gringa
+slug: resuelvo-prueba-tecnica-gringa
 enlaceyt: https://youtube.com/embed/-xbe8Fw1-d0
 date: 2022-04-28T17:32:57.403Z
 title: Resuelvo Prueba Técnica Front End para empresa de EE. UU.

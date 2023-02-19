@@ -5,7 +5,7 @@ import EntryTemplate from "../../layouts/EntryTemplate.astro";
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
-    params: {slug: post.data.url},
+    params: {slug: post.slug},
     props: post,
   }));
 }
@@ -13,7 +13,6 @@ type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
 const {Content} = await post.render();
-console.log(post.slug);
 ---
 
 <EntryTemplate {...post.data} slug={post.slug}>

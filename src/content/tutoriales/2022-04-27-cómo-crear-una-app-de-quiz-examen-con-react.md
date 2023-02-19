@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: crear-app-quiz-examen-react
+slug: crear-app-quiz-examen-react
 enlaceyt: https://youtube.com/embed/8oItCrRkQU0
 date: 2022-04-27T20:12:46.854Z
 title: Cómo crear una app de quiz/examen con React

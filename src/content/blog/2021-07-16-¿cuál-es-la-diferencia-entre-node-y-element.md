@@ -1,6 +1,6 @@
 ---
 type: blog
-url: diferencias-entre-node-y-element
+slug: diferencias-entre-node-y-element
 date: 2021-07-16T21:55:12.171Z
 title: ¿Cuál es la diferencia entre Node y Element?
 metaDescription: En este artículo, repasaré estas diferencias exactas explicando
@@ -10,7 +10,7 @@ tag:
   - Desarrollo 101
 autor: Adrián Salgado
 keyword: diferencia node element
-thumbnail: /assets/diferencia-node-element.jpg
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/diferencia-node-element.jpg?alt=media&token=934b640b-3381-4fac-af57-f98bd3973bb8"
 ---
 
 Si has trabajado/manipulado el DOM en JavaScript, probablemente hayas notado que hay varias formas de acceder al mismo elemento. Por ejemplo, `nextSibling` y `nextElementSibling`. Esto es realmente confuso ya que no es obvio cuál se debe usar o incluso cuáles son las diferencias entre ellos. En este artículo, repasaré estas diferencias exactas explicando la diferencia entre nodos(node) y elementos(element).

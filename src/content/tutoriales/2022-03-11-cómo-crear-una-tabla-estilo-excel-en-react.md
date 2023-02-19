@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: como-crear-tabla-excel-react
+slug: como-crear-tabla-excel-react
 enlaceyt: https://www.youtube.com/embed/hZUwj5pz-yc
 date: 2022-03-11T00:17:03.947Z
 title: Cómo crear una tabla estilo Excel en React

@@ -1,6 +1,6 @@
 ---
 type: blog
-url: hoisting-101-para-principiantes
+slug: hoisting-101-para-principiantes
 date: 2021-07-10T03:03:53.289Z
 title: Hoisting 101 para principiantes
 tag:
@@ -8,7 +8,7 @@ tag:
   - Desarrollo 101
 autor: Adrián Salgado
 keyword: que es hoisting
-thumbnail: /assets/hoisting-101-destacada.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/hoisting-101-destacada.png?alt=media&token=b96796a0-8853-4ef6-a4a5-8d086c54a3f1"
 ---
 
 **Hoisting.** Es la palabra que todo el mundo usa cuando se habla de JavaScript, sin embargo, nadie se toma el tiempo para explicar realmente qué es el _hoisting_, cómo funciona y por qué es importante. En este artículo, explicaré todo lo que se necesita saber sobre _hoisting_ para que la próxima vez que alguien lo mencione, puedas comprender exactamente lo que significa.

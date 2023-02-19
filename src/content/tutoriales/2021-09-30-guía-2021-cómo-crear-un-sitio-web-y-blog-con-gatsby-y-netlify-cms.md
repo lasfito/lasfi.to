@@ -1,6 +1,6 @@
 ---
 type: tutoriales
-url: guia-gatsby-blog-netlify
+slug: guia-gatsby-blog-netlify
 enlaceyt: https://www.youtube.com/embed/oE9GGrdrH1U
 date: 2021-09-30T18:01:46.986Z
 title: Guía 2021 - Cómo crear un sitio web y blog con Gatsby y Netlify CMS
@@ -9,7 +9,7 @@ tag:
   - React
 autor: Adrián Salgado
 keyword: cómo crear gatsby
-thumbnail: /assets/guiagatsbythumbnail.png
+thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/guiagatsbythumbnail.png?alt=media&token=303b275e-99c4-4396-a5ab-365bbb7ba18c"
 ---
 
 Antes de comenzar, considero importante responder brevemente 2 preguntas:
@@ -126,7 +126,7 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
-    url: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
@@ -140,7 +140,7 @@ Explicación de cada campo:
    Label: La etiqueta con la cual queremos identificar a la colección dentro del cms
 2. Folder: La carpeta en la cual queremos guardar las publicaciones de esta colección. Fíjate que hemos escogido la misma que tenemos configurada con gatsby-node.
 3. Create: Refiere a si queremos permitir que se creen entradas o no.
-4. url: El formato con el cual se crearan los títulos de nuestros archivos .md (markdown).
+4. slug: El formato con el cual se crearan los títulos de nuestros archivos .md (markdown).
 5. Fields: Este es el lugar donde podremos personalizar nuestra colección. Para este caso de entradas de blog tenemos un campo de layout, título, fecha de publicación y cuerpo.
 
 Te recomiendo que eches un vistazo de todos los campos de personalización que podemos añadir. Encontrarás la lista completa, ejemplos y explicaciones en la [documentación de Netlify CMS](https://www.netlifycms.org/docs/widgets/).
