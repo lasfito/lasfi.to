@@ -8,19 +8,21 @@ import {VideoGadget} from "../components/VideoGadget";
 import {DiscordButton} from "../components/DiscordButton/";
 
 type Props = CollectionEntry<"blog">["data"] & {
-  slug: string;
+  id: string;
 };
 
 const {
   title,
   description,
+  data,
   date,
   updatedDate,
   enlaceyt,
   thumbnail,
   heroImage,
+  type,
   tag,
-  slug,
+  id,
 } = Astro.props;
 
 const acercaAutor =
@@ -52,8 +54,7 @@ const acercaAutor =
   </section>
 
   <article
-    id="blog"
-    class="prose mx-auto flex max-w-[70ch] flex-col items-stretch justify-around px-4 text-left text-xl leading-[35px]"
+    class="prose prose-pink mx-auto flex max-w-[70ch] flex-col items-stretch justify-around px-4 text-left text-xl leading-[35px]"
   >
     <slot />
   </article>
@@ -71,7 +72,7 @@ const acercaAutor =
         target="_blank"
         rel="noopener noreferrer"
         class="text-primario underline hover:text-acento"
-        href={`https://github.com/lasfito/lasfi.to/tree/master/src/content/blog/${slug}.md`}
+        href={`https://github.com/lasfito/lasfi.to/tree/master/src/content/${type}/${id}`}
       >
         levantar un pull request</a
       >

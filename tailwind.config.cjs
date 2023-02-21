@@ -18,7 +18,6 @@ module.exports = {
         /* ola: "url('/src/assets/img/oladay.png')", */
         ola: "var(--ola)",
       },
-
       keyframes: {
         ola: {
           "0%": {
@@ -53,6 +52,28 @@ module.exports = {
         cereal: "cereal linear 3s infinite",
         spin: "spin ",
       },
+      typography: ({theme}) => ({
+        pink: {
+          css: {
+            "--tw-prose-body": "var(--texto-sft)",
+            "--tw-prose-headings": "var(--texto-str)",
+            "--tw-prose-lead": theme("colors.primario"),
+            "--tw-prose-links": theme("colors.primario"),
+            "--tw-prose-bold": theme("colors.primario"),
+            "--tw-prose-counters": theme("colors.primario"),
+            "--tw-prose-bullets": theme("colors.primario"),
+            "--tw-prose-hr": theme("colors.primario"),
+            "--tw-prose-quotes": theme("colors.primario"),
+            "--tw-prose-quote-borders": theme("colors.primario"),
+            "--tw-prose-captions": theme("colors.primario"),
+            "--tw-prose-code": theme("colors.primario"),
+            "--tw-prose-pre-code": theme("colors.primario"),
+            "--tw-prose-pre-bg": theme("colors.primario"),
+            "--tw-prose-th-borders": theme("colors.primario"),
+            "--tw-prose-td-borders": theme("colors.primario"),
+          },
+        },
+      }),
     },
   },
   plugins: [

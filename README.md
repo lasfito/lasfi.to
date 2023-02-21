@@ -28,6 +28,4 @@ Todos los comandos se ejecutan desde una terminal en la raíz del proyecto.
 - [ ] Fix SEO schema
 - [ ] Add PWA (?)
 - [ ] Netlify CMS (?)
-- [ ] Cambiar custom slug se pierde en data de entry.
-- [ ] Dark theme prose
 - [ ] Formatear tutoriales content
