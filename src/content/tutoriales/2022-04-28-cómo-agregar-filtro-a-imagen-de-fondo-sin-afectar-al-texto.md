@@ -9,7 +9,7 @@ metaDescription: >
   contenido  (Hero Image) con ayuda de pseudo elements #tutorial #webdev #css
   #html
 tag:
-  - HTML/CSS
+  - HTML-CSS
   - Desarrollo 101
 autor: Adrián Salgado
 introThumbnail: Aprende cómo agregar filtro a tu background-image sin alterar el

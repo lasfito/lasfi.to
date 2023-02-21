@@ -5,7 +5,7 @@ enlaceyt: https://youtube.com/embed/zXMcoTRTswQ
 date: 2022-02-26T19:03:28.820Z
 title: 4 formas de enviar correo desde formulario HTML
 tag:
-  - HTML/CSS
+  - HTML-CSS
   - Desarrollo 101
 autor: Adrián Salgado
 keyword: enviar correo formulario html

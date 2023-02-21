@@ -8,7 +8,7 @@ metaDescription: "Conoce cómo aplicar estilos CSS en tu aplicación de
   React#tutorial #webdev #react #css "
 tag:
   - React
-  - HTML/CSS
+  - HTML-CSS
 autor: Adrián Salgado
 introThumbnail: Conoce cómo aplicar estilos CSS en tu aplicación de React
 keyword: estilos css react

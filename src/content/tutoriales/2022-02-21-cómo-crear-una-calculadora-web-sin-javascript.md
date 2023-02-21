@@ -5,7 +5,7 @@ enlaceyt: https://www.youtube.com/embed/kQ5PkkkYVeI
 date: 2022-02-21T23:16:04.195Z
 title: Cómo crear una calculadora web sin JavaScript
 tag:
-  - HTML/CSS
+  - HTML-CSS
   - Misceláneo
 autor: Adrián Salgado
 keyword: calculadora sin javascript

@@ -6,7 +6,7 @@ date: 2021-07-20T04:15:46.099Z
 title: Cómo crear columnas en css sin flexbox ni grid
 tag:
   - Desarrollo 101
-  - HTML/CSS
+  - HTML-CSS
 autor: Adrián Salgado
 introThumbnail: "¿Sabías que puedes crear columnas con tan solo 1 propiedad?
   Spoiler alert: no se trata de flexbox ni grid. "

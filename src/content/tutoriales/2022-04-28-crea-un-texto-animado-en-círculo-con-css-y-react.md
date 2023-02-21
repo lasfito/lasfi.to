@@ -9,7 +9,7 @@ metaDescription: >
   #css #tutorial
 tag:
   - React
-  - HTML/CSS
+  - HTML-CSS
 autor: Adrián Salgado
 introThumbnail: Aprende cómo darle forma de círculo a tu texto y animarlo en rotación
 keyword: texto animado css

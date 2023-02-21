@@ -7,7 +7,7 @@ title: Crea una Ventana Modal (PopUp) con HTML
 metaDescription: "Aprende cómo crear una ventana modal estilo pop-up responsiva
   en unos cuántos minutos gracias a la etiqueta Dialog #html #css #javascript"
 tag:
-  - HTML/CSS
+  - HTML-CSS
   - Desarrollo 101
 autor: Adrián Salgado
 introThumbnail: "Aprende cómo crear una ventana modal estilo pop-up responsiva
