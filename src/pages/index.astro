@@ -3,16 +3,16 @@ import {HomeHero} from "../components/HomeHero";
 import {HomeAcerca} from "../components/HomeAcerca/";
 import {HomeContacto} from "../components/HomeContacto";
 import PageHTML from "../layouts/PageHTML.astro";
-import OlaComp from "../components/OlaComp/OlaComp";
+import {SITE} from "../consts";
 ---
 
 <PageHTML
   title="Lasfito"
   description="Tutoriales de desarrollo web sin relleno."
-  image="/placeholder-social.jpg"
+  image={SITE.image}
   lang="es-MX"
   type="website"
-  date="2021-01-01"
+  date="2021-05-28"
 >
   <HomeHero client:idle />
   <HomeAcerca />

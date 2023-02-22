@@ -1,14 +1,15 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import {Layout} from "../components/Layout";
+import {SITE} from "../consts";
 
 const {
   title,
   description,
-  image = "/placeholder-social.jpg",
+  image = SITE.image,
   lang = "es-MX",
   type = "article",
-  date = "2021-01-01",
+  date,
 } = Astro.props;
 ---
 
@@ -51,12 +52,10 @@ const {
 
       function enableDarkMode() {
         document.body.classList.add("oscuro");
-        // setThemePreference("enabled");
       }
 
       function disableDarkMode() {
         document.body.classList.remove("oscuro");
-        // setThemePreference("disabled");
       }
 
       function setThemeOnNavigation() {
@@ -69,7 +68,7 @@ const {
         }
       }
 
-      document.addEventListener("DOMContentLoaded", ()=> {
+      document.addEventListener("DOMContentLoaded", () => {
         setThemeOnNavigation();
       });
     </script>

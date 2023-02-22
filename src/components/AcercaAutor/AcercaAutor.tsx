@@ -15,8 +15,8 @@ function AcercaAutor({
   body,
 }: AcercaAutorProps) {
   return (
-    <section className=" my-20 w-full bg-fondo-jr py-8">
-      <div className="mx-auto flex max-w-[1024px] items-center justify-center">
+    <section className=" my-20 w-full bg-fondo-jr px-5 py-8">
+      <div className="mx-auto flex max-w-[1024px] flex-col items-center justify-center md:flex-row">
         <div>
           <div>
             <h3 className="text-center text-xl font-bold">{title}</h3>
@@ -32,12 +32,16 @@ function AcercaAutor({
               </div>
             )}
           </div>
-          <div className="flex-row">
+          <div className="flex-row ">
             {includeNewsLetter && <NewsLetter cta="Únete al NewsLetter" />}
           </div>
         </div>
         <div>
-          <img className="h-auto w-[200px]" src={Luis} alt="Hey, soy yo"></img>
+          <img
+            className="hidden h-auto w-[200px] md:block"
+            src={Luis}
+            alt="Hey, soy yo"
+          ></img>
         </div>
       </div>
     </section>

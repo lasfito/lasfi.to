@@ -1,15 +1,16 @@
 ---
 import {AcercaAutor} from "../components/AcercaAutor";
 import PageHTML from "../layouts/PageHTML.astro";
+import {SITE} from "../consts";
 ---
 
 <PageHTML
   title="Quééé"
   description="Página no encontrada"
-  image="/placeholder-social.jpg"
+  image={SITE.image}
   lang="es-MX"
   type="website"
-  date="2021-01-01"
+  date="2021-05-28"
 >
   <AcercaAutor
     title="Quééé"

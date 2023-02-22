@@ -1,6 +1,7 @@
 ---
 import PageHTML from "../layouts/PageHTML.astro";
 import {AcercaAutor} from "../components/AcercaAutor";
+import {SITE} from "../consts";
 
 const acercaBody =
   "¡Hola! Todos los jueves envío un boletín a más de  desarrolladores web interesados en JavaScript, React, Node y tecnologías relacionadas.Cada boletín incluye 3 artículos curados por mí, 2 recursos de desarrollo y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más el spam que yo.";
@@ -9,10 +10,10 @@ const acercaBody =
 <PageHTML
   title="Senior en un dos por tres"
   description="El boletín para desarrolladores web."
-  image="/placeholder-social.jpg"
+  image={SITE.image}
   lang="es-MX"
   type="website"
-  date="2021-01-01"
+  date="2021-05-28"
 >
   <AcercaAutor title="1-2-3" body={acercaBody} />
 </PageHTML>

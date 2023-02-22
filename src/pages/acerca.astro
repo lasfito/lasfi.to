@@ -2,15 +2,16 @@
 import {FaEnvelope, FaGithub, FaLinkedinIn} from "react-icons/fa/index.js";
 import PageHTML from "../layouts/PageHTML.astro";
 import {SHORT_RESUME_ES} from "../consts";
+import {SITE} from "../consts";
 ---
 
 <PageHTML
   title="Acerca"
   description="Conoce todo acerca de Lasfito"
-  image="/placeholder-social.jpg"
+  image={SITE.image}
   lang="es-MX"
   type="website"
-  date="2021-01-01"
+  date="2021-05-28"
 >
   <section
     class="mx-auto mt-20 flex h-[90vh] max-w-[70ch] flex-col items-center justify-evenly px-10 leading-loose"

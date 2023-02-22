@@ -1,6 +1,7 @@
 ---
 import {CollectionEntry, getCollection} from "astro:content";
 import PageHTML from "../../layouts/PageHTML.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
 
 // Astro throws an error if I don't define the types here. Something about shorthand syntax. todo: fix this
 type Blog = CollectionEntry<"blog">;
@@ -39,13 +40,30 @@ const {tag} = Astro.props;
   type="website"
   date="2021-01-01"
 >
-  {
-    tag.related.map((post: Blog | Tutoriales) => {
-      return (
-        <a href={`/${post.data.type}/${post.slug}`}>
-          <h1>{post.data.title}</h1>
-        </a>
-      );
-    })
-  }
+  <main
+    class="my-10 flex w-full flex-col items-center justify-center px-5 text-center"
+  >
+    <h1 class="my-5 text-center text-3xl font-bold md:text-4xl">
+      Contenido sobre{" "}{tag.tagName}
+    </h1>
+    {
+      tag.related.map((post: Blog | Tutoriales) => {
+        return (
+          <a
+            href={`/${post.data.type}/${post.slug}`}
+            class="my-5 flex flex-col items-center justify-center "
+          >
+            <FormattedDate date={post.data.date} />
+            <h3 class="text-xl font-bold">{post.data.title}</h3>
+          </a>
+        );
+      })
+    }
+
+    <a
+      href="/categorias"
+      class="hover:pointer my-4 font-bold text-primario underline"
+      >Ver todas las categorias</a
+    >
+  </main>
 </PageHTML>

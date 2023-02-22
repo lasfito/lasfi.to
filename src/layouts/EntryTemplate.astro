@@ -11,19 +11,8 @@ type Props = CollectionEntry<"blog">["data"] & {
   id: string;
 };
 
-const {
-  title,
-  description,
-  data,
-  date,
-  updatedDate,
-  enlaceyt,
-  thumbnail,
-  heroImage,
-  type,
-  tag,
-  id,
-} = Astro.props;
+const {title, description, date, enlaceyt, thumbnail, type, tag, id} =
+  Astro.props;
 
 const acercaAutor =
   "¡Hola! Me llamo Adrián, pero todos me conocen como Lasfito. Soy desarrollador front-end y escribo artículos y tutoriales sobre JavaScript, desarrollo web y diseño.";
@@ -32,15 +21,13 @@ const acercaAutor =
 <PageHTML
   title={title}
   description={description}
-  image="/placeholder-social.jpg"
+  image={thumbnail}
   lang="es-MX"
   type="article"
   date={date}
 >
-  <section class="mx-auto flex w-screen max-w-5xl flex-col">
-    <div class="my-20"></div>
-
-    <h1 class="text-5xl text-texto-str">{title}</h1>
+  <section class="mx-auto my-5 flex w-screen max-w-5xl flex-col px-5 md:my-20">
+    <h1 class="my-2 text-4xl text-texto-str md:my-5 md:text-5xl">{title}</h1>
 
     <TagsInBlog tags={tag} />
 
@@ -60,7 +47,7 @@ const acercaAutor =
   </article>
 
   <AcercaAutor title="Acerca del autor" body={acercaAutor} />
-  <section class="mx-auto mt-20 max-w-5xl">
+  <section class="mx-auto mt-20 max-w-5xl px-5">
     <h3 class="my-5 text-center text-3xl font-bold">¿Dudas o comentarios?</h3>
 
     <DiscordButton />

@@ -4,8 +4,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "dev:output": "concurrently \"npm run dev:css\" \"astro dev\"",
+    "dev:css": "tailwindcss -w -i src/styles/tailwind.css -o public/output.css",
     "start": "astro dev",
     "build": "astro build",
+    "build:css": "tailwindcss -m -i src/styles/tailwind.css -o public/output.css",
     "preview": "astro preview",
     "astro": "astro",
     "test": "playwright test"

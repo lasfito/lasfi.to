@@ -1,6 +1,7 @@
 ---
 import {getCollection} from "astro:content";
 import PageHTML from "../../layouts/PageHTML.astro";
+import {CategoryCard} from "../../components/CategoryCard";
 
 const tutoriales = await getCollection("tutoriales");
 const blogs = await getCollection("blog");
@@ -20,13 +21,19 @@ const tags = [
   type="website"
   date="2021-01-01"
 >
-  <ul>
-    {
-      tags.map((tag) => (
-        <li>
-          <a href={`/categorias/${tag}`}>{`Tutoriales sobre ${tag}`}</a>
-        </li>
-      ))
-    }
-  </ul>
+  <main class="my-10 flex w-full flex-col items-center justify-center">
+    <h1 class="my-5 text-center text-4xl font-bold text-primario">
+      Categorias
+    </h1>
+
+    <ul class="grid max-w-[800px] grid-cols-2 gap-2 md:grid-cols-3 md:gap-4">
+      {
+        tags.map((tag) => (
+          <li class=" text-xl font-bold">
+            <CategoryCard category={tag} />
+          </li>
+        ))
+      }
+    </ul>
+  </main>
 </PageHTML>

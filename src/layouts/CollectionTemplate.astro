@@ -5,13 +5,12 @@ import FormattedDate from "../components/FormattedDate.astro";
 type BlogPosts = Array<CollectionEntry<"blog">>;
 type TutorialesPosts = Array<CollectionEntry<"tutoriales">>;
 
-interface CollectionTemplateProps {
+interface Props {
   posts: BlogPosts | TutorialesPosts;
   title: string;
 }
 
-// todo: check typing
-const {posts, title} = Astro.props as CollectionTemplateProps;
+const {posts, title} = Astro.props;
 ---
 
 <section class="mx-auto max-w-5xl px-10">

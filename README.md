@@ -18,14 +18,17 @@ Todos los comandos se ejecutan desde una terminal en la raíz del proyecto.
 
 ## Todos
 
-- [ ] Doble CSS stylesheet
+- [ ] Doble CSS stylesheet - 1-2-3 duplicate on both ...tailwind syntax and <link> tag
 - [ ] Fix dark mode blinking - turbo links (?)
 - [ ] Add a search bar(?)
 - [ ] Fix mobile
 - [ ] Playwright tests
 - [ ] Unit tests (?)
 - [ ] Image optimization
-- [ ] Fix SEO schema
 - [ ] Add PWA (?)
 - [ ] Netlify CMS (?)
 - [ ] Formatear tutoriales content
+- [ ] Embeding pen: qBXRmML by lasfito
+- [ ] Embeding pen: xxLgdWJ by lasfito
+- [ ] Embeding pen: PoKWmLZ by lasfito
+- [ ] RSS feed
