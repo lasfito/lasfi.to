@@ -13,10 +13,7 @@
     --texto-str: hsl(0, 0%, 10%);
     --texto-sft: hsl(0, 0%, 25%);
     --code: #222222;
-
-    /* misc */
     --ola: url("../assets/img/oladay.png");
-
     --scrollbar: hsl(205, 21%, 17%);
     --ola-color: var(--hermano);
     --sombras: rgba(0, 0, 0, 0.4);
@@ -25,19 +22,6 @@
     --trans: 1s;
     --check1: var(--hermano);
     --check2: var(--fondojr);
-
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
-  }
-
-  html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-  }
-
-  body.modal {
-    overflow-y: hidden;
   }
 
   body.oscuro {
@@ -58,35 +42,4 @@
     --check1: var(--ola-color);
     --check2: var(--hermano);
   }
-
-  body.oscuro img {
-    filter: brightness(0.85) contrast(1.1);
-  }
-}
-
-@layer components {
-  kbd {
-    font-size: 0.9em;
-    padding: 0.0625rem 0.5rem;
-    border-radius: 0.125rem;
-    border: 1px solid var(--primario);
-    box-shadow: 1px 1px 0 var(--primario), 2px 2px 0 var(--primario);
-    margin: 0 0.25rem;
-    color: var(--primario);
-    font-family: monospace;
-    cursor: pointer;
-  }
-
-  /*   ::-webkit-scrollbar {
-    background: var(--ola-color);
-    width: 12px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar);
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--acento);
-  }
- */
 }

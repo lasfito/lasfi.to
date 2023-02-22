@@ -98,6 +98,39 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
 
+    function ({addBase, theme}) {
+      addBase({
+        html: {
+          fontFamily:
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol'",
+          scrollPaddingTop: "5.5rem",
+          scrollBehavior: "smooth",
+        },
+        "body.modal": {
+          overflowY: "hidden",
+        },
+        "body.oscuro img": {
+          filter: "brightness(0.85) contrast(1.1)",
+        },
+      });
+    },
+
+    function ({addComponents}) {
+      addComponents({
+        kbd: {
+          fontSize: " 0.9em",
+          padding: " 0.0625rem 0.5rem",
+          borderRadius: " 0.125rem",
+          border: " 1px solid var(--primario)",
+          boxShadow: " 1px 1px 0 var(--primario), 2px 2px 0 var(--primario)",
+          margin: " 0 0.25rem",
+          color: " var(--primario)",
+          fontFamily: " monospace",
+          cursor: " pointer",
+        },
+      });
+    },
+
     function ({addUtilities}) {
       addUtilities(
         {
