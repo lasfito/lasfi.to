@@ -13,7 +13,7 @@ export default defineConfig({
     sitemap(),
     react(),
     tailwind({
-      applyBaseStyles: false,
+      applyBaseStyles: true,
     }),
     partytown({
       config: {

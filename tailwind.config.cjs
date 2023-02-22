@@ -70,6 +70,9 @@ module.exports = {
       backgroundPosition: {
         "0-100": "0% 100%",
       },
+      /* todo: fix customProperties: {
+        "--primario": " hsl(207, 68%, 50%);",
+      }, */
 
       typography: ({theme}) => ({
         pink: {
@@ -100,11 +103,49 @@ module.exports = {
 
     function ({addBase, theme}) {
       addBase({
+        ":root": {
+          "--primario": "hsl(207, 68%, 50%)",
+          "--hermano": "hsl(207, 51%, 68%)",
+          "--acento": "hsl(359, 89%, 64%)",
+          "--fondo": " hsl(0, 0%, 100%)",
+          "--fondo-jr": " hsl(0, 0%, 97%)",
+          "--texto-str": " hsl(0, 0%, 10%)",
+          "--texto-sft": " hsl(0, 0%, 25%)",
+          "--code": " #222222",
+          "--ola": " url('/src/assets/img/oladay.png')",
+          "--scrollbar": " hsl(205, 21%, 17%)",
+          "--ola-color": " var(--hermano)",
+          "--sombras": " rgba(0, 0, 0, 0.4)",
+          "--boton": " hsl(359, 59%, 64%)",
+          "--hover": " var(--texto-str)",
+          "--trans": " 1s",
+          "--check1": " var(--hermano)",
+          "--check2": " var(--fondojr)",
+        },
         html: {
           fontFamily:
             "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol'",
           scrollPaddingTop: "5.5rem",
           scrollBehavior: "smooth",
+        },
+
+        "body.oscuro": {
+          "--primario": " hsl(207, 68%, 40%)",
+          "--hermano": " hsl(207, 51%, 58%)",
+          "--acento": " hsl(359, 59%, 64%)",
+          "--fondo": " hsl(205, 31%, 12%)",
+          "--fondoOpuesto": " hsl(0, 0%, 95%)",
+          "--fondo-jr": " hsl(205, 21%, 17%)",
+          "--texto-str": " hsl(0, 0%, 95%)",
+          "--texto-sft": " hsl(0, 0%, 85%)",
+          "--code": " #5a5b72",
+          "--scrollbar": " var(--hermano)",
+          "--ola": " url('/src/assets/img/olanight.png')",
+          "--sombras": " rgba(0, 0, 0, 0.678)",
+          "--ola-color": " #cbd5f6",
+          "--hover": " var(--hermano)",
+          "--check1": " var(--ola-color)",
+          "--check2": " var(--hermano)",
         },
         "body.modal": {
           overflowY: "hidden",
