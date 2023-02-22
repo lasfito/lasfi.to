@@ -42,7 +42,7 @@ function SpinningText({
     >
       <div
         ref={circuloRef}
-        className={`absolute inset-0   `}
+        className={`absolute inset-0  animate-spin `}
         style={{
           animation: `spin ${size * (mobile ? 0.15 : 0.05)}s linear infinite`,
         }}

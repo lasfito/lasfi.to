@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -17,6 +19,8 @@ module.exports = {
       backgroundImage: {
         /* ola: "url('/src/assets/img/oladay.png')", */
         ola: "var(--ola)",
+        puntos:
+          "radial-gradient(rgba(120, 121, 151, 0.87) 1.5px, transparent 1.5px), radial-gradient(rgba(120, 121, 151, 0.87) 1.5px, var(--fondo) 1.5px)",
       },
       keyframes: {
         ola: {
@@ -44,14 +48,29 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        spin: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         ola: "ola 10s linear infinite",
         "ola-jr": "ola 10s linear infinite reverse",
         "ola-slow": "ola 20s linear infinite",
         cereal: "cereal linear 3s infinite",
-        spin: "spin ",
       },
+      backgroundSize: {
+        "0-4": "0% 4px",
+        "100-4": "100% 4px",
+      },
+      backgroundPosition: {
+        "0-100": "0% 100%",
+      },
+
       typography: ({theme}) => ({
         pink: {
           css: {
@@ -78,6 +97,76 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    // ...
+
+    function ({addUtilities}) {
+      addUtilities(
+        {
+          ".snake": {
+            "@apply bg-gradient-to-r  from-primario to-primario bg-0-4 bg-0-100 bg-no-repeat no-underline transition-all duration-300 ease-in-out hover:bg-100-4 focus:bg-100-4":
+              "",
+          },
+          ".fancy": {
+            "@apply relative z-10 cursor-pointer overflow-hidden font-bold text-pink-500":
+              "",
+          },
+          ".fancy::after": {
+            content: '""',
+            backgroundColor: "rgba(236, 64, 122, 0.25)",
+            position: "absolute",
+            left: "12px",
+            bottom: "-6px",
+            width: "calc(100% - 8px)",
+            height: "calc(100% - 8px)",
+            zIndex: 1,
+            transitionProperty: "all",
+            transitionDuration: "0.35s",
+            transitionTimingFunction: "cubic-bezier(0.25, 0.1, 0, 2.05)",
+          },
+
+          ".fancy:hover:after": {
+            left: "0",
+            bottom: "-2px",
+            width: "100%",
+            height: "100%",
+          },
+
+          ".glassmorph": {
+            background: "rgba(0, 0, 0, 0.05)",
+            boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
+            backdropFilter: "blur(15px)",
+          },
+          ".glassmorph-dark": {
+            background: "rgba(0, 0, 0, 0.45)",
+            boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
+            backdropFilter: "blur(15px)",
+          },
+          ".app-form-control": {
+            width: "100%",
+            padding: "10px 0",
+            background: "none",
+            border: "none",
+            borderBottom: "1px solid var(--hermano)",
+            color: "var(--texto-sft)",
+            fontSize: "14px",
+            textTransform: "uppercase",
+            outline: "none",
+            transition: "border-color 0.2s",
+          },
+
+          ".app-form-control::placeholder": {
+            color: "#666",
+          },
+          ".app-form-control:focus": {
+            borderBottomColor: "var(--acento)",
+          },
+          ".fondo-pts": {
+            backgroundSize: "100px 100px",
+            backgroundPosition: "0 0, 40px 40px",
+            "@apply bg-puntos": "",
+          },
+        },
+        []
+      );
+    },
   ],
 };

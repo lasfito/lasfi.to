@@ -30,12 +30,6 @@
     scroll-behavior: smooth;
   }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
   html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -65,27 +59,8 @@
     --check2: var(--hermano);
   }
 
-  .fondo-pts {
-    background-image: radial-gradient(
-        rgba(120, 121, 151, 0.87) 1.5px,
-        transparent 1.5px
-      ),
-      radial-gradient(rgba(120, 121, 151, 0.87) 1.5px, var(--fondo) 1.5px);
-    background-size: 100px 100px;
-    background-position: 0 0, 40px 40px;
-  }
-
   body.oscuro img {
     filter: brightness(0.85) contrast(1.1);
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
   }
 }
 
@@ -114,79 +89,4 @@
     background: var(--acento);
   }
  */
-}
-
-@layer utilities {
-  .fancy {
-    @apply relative z-10 cursor-pointer overflow-hidden font-bold text-pink-500;
-  }
-
-  article#blog a {
-    position: relative;
-  }
-
-  a.fancy::after,
-  article#blog a::after {
-    content: "";
-    background: rgba(236, 64, 122, 0.25);
-    position: absolute;
-    left: 12px;
-    bottom: -6px;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
-    z-index: 1;
-    transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
-  }
-  a.fancy:hover:after,
-  article#blog a:hover:after {
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 100%;
-  }
-
-  a.snake {
-    text-decoration: none;
-    background-image: linear-gradient(var(--primario), var(--primario));
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 4px;
-    transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
-  }
-  a.snake:hover,
-  a.snake:focus {
-    text-decoration: none;
-    background-size: 100% 4px;
-  }
-
-  .app-form-control {
-    width: 100%;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid var(--hermano);
-    color: var(--texto-sft);
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-
-  .app-form-control::placeholder {
-    color: #666;
-  }
-  .app-form-control:focus {
-    border-bottom-color: var(--acento);
-  }
-
-  .glassmorph {
-    background: rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-  }
-  .glassmorph-dark {
-    background: rgba(0, 0, 0, 0.45);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-  }
 }
