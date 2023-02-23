@@ -20,6 +20,7 @@ Como todo proyecto, el sitio es trabajo en progreso y siempre hay cosas que mejo
 - [ ] Corregir/actualizar CodePens embedidos: qBXRmML, xxLgdWJ, PoKWmLZ .
 - [ ] Crear RSS feed para el blog.
 - [ ] Implementar mejor Code-highlighting (previamente con Gatsby Plugin y PrismJS).
+- [ ] Limpiar configuración de TailwindConfig y purgar CSS no utilizado.
 
 ## Commandos principales
 

@@ -1,5 +1,5 @@
 {
-  "name": "lasfito-2023",
+  "name": "lasfi.to",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,9 @@
     "build:css": "tailwindcss -m -i src/styles/tailwind.css -o public/output.css",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "playwright test"
+    "test": "playwright test",
+    "prepare": "husky install",
+    "commit-check": "tsc --noEmit && lint-staged"
   },
   "dependencies": {
     "@astrojs/partytown": "^1.0.3",
@@ -30,10 +32,31 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
     "concurrently": "^7.6.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
     "postcss-custom-properties": "^13.1.4",
-    "prettier": "^2.8.4",
+    "prettier": "2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
     "tailwindcss": "^3.2.6"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write -u"
+    ],
+    "*.{css,less,scss,sass}": [
+      "prettier --write -u"
+    ]
   }
 }
