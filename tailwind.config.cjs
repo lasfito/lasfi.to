@@ -1,5 +1,5 @@
+/* eslint-disable global-require */
 /** @type {import('tailwindcss').Config} */
-require("tailwindcss/plugin");
 
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -103,7 +103,7 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
 
-    function ({addBase, theme}) {
+    function addBaseLayer({addBase}) {
       addBase({
         ":root": {
           "--primario": "hsl(207, 68%, 50%)",
@@ -160,7 +160,7 @@ module.exports = {
       });
     },
 
-    function ({addComponents}) {
+    function addComponentsLayer({addComponents}) {
       addComponents({
         kbd: {
           fontSize: " 0.9em",
@@ -176,7 +176,7 @@ module.exports = {
       });
     },
 
-    function ({addUtilities}) {
+    function addUtilitiesLayer({addUtilities}) {
       addUtilities(
         {
           ".snake": {

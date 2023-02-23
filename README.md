@@ -8,6 +8,8 @@ Echa un vistazo al código para aprender cómo he realizado ciertas cosas, o sim
 
 Como todo proyecto, el sitio es trabajo en progreso y siempre hay cosas que mejorar. Siéntete libre de abrir un PR con cualquier mejora que creas que pueda ser útil para el sitio. Asimismo, puedes tomar alguno de los problemas identificados aquí abajo y trabajar en ellos. Si tienes alguna duda, puedes abrir un issue o escribirme por [Discord](https://discord.com/invite/GQ2EKbh).
 
+No olvides revisar los lineamientos de contribución antes de abrir un PR.
+
 - [ ] Corregir parpadeo al navegar con tema oscuro. Posible solución turbolinks.
 - [ ] Modelación de datos para integración con Algolia (o similar) para búsqueda de contenido.
 - [ ] Extender pruebas e2e con Playwright.

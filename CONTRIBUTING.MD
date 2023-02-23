@@ -22,9 +22,9 @@ git >= 2.7.0
 
 #### Pasos de configuración
 
-Haz un fork y clona el repositorio en tu máquina
-Ejecuta `npm install` instalar las dependencias y configurar el proyecto.
-Crea una rama para tu PR con `git checkout -b pr/nombre-de-tu-rama`
+- Haz un fork y clona el repositorio en tu máquina
+- Ejecuta `npm install` instalar las dependencias y configurar el proyecto. Si encuentras problemas con el gestor de contenido de Astro puedes ejecutar `npx astro sync` para solucionarlo.
+- Crea una rama para tu PR con `git checkout -b pr/nombre-de-tu-rama`
 
 Consejo: Si planeas realizar distintas contribuciones es mejor manenter tu rama main/master apuntando al repositorio original. Para hacer esto, configura un "upstream" remoto y haz fetch de la rama master desde ese remote. Ejemplo:
 
@@ -44,4 +44,4 @@ Ejecuta `npm run test` para ejecutar los tests.
 
 #### Ejecución de pruebas estáticas (formateo / linting / escritura)
 
-Todo está configurado con TypeScript/Prettier/ESLint. Todo debería ejecutarse automaticamente al realizar un commit. Si no es así, puedes ejecutar `npm run commit-check` para ejecutar todas las pruebas.
+Todo está configurado con TypeScript/Prettier/ESLint. Todo debería ejecutarse automaticamente al realizar un commit. Si no es así, puedes ejecutar `npm run commit-check` antes del commit para ejecutar todas las pruebas (aségurate de haber añadido los archivos editados a staging).

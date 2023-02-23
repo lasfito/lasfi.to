@@ -10,10 +10,11 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
+    "plugin:import/typescript",
     "airbnb",
     "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "parserOptions": {
@@ -33,7 +34,10 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, {"extensions": [".jsx", ".tsx"]}],
-    "react/no-unknown-property": [1]
+    "react/no-unknown-property": [1],
+    "import/extensions": [1, "never"],
+    "import/no-unresolved": [0, {"ignore": ["^@/"]}],
+    "import/prefer-default-export": [0]
   },
   "settings": {
     "react": {

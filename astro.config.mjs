@@ -22,4 +22,5 @@ export default defineConfig({
     }),
     prefetch(),
   ],
+  /* renderers: ["@astrojs/renderer-typescript"], */
 });

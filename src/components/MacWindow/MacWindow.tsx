@@ -17,9 +17,9 @@ function MacWindow({children, id, title}: Props) {
       <div className="relative rounded-xl bg-fondo-jr shadow-2xl">
         <div className="flex items-center rounded-t-xl bg-primario-dark py-[10px] px-[20px]">
           <div className="flex-auto">
-            <div className="mr-[3px] inline-block h-2 w-2 rounded-[8px] bg-red-500"></div>
-            <div className="mr-[3px] inline-block h-2 w-2 rounded-[8px] bg-yellow-500"></div>
-            <div className="mr-[3px] inline-block h-2 w-2 rounded-[8px] bg-green-500"></div>
+            <div className="mr-[3px] inline-block h-2 w-2 rounded-[8px] bg-red-500" />
+            <div className="mr-[3px] inline-block h-2 w-2 rounded-[8px] bg-yellow-500" />
+            <div className="mr-[3px] inline-block h-2 w-2 rounded-[8px] bg-green-500" />
           </div>
           <div className="flex flex-[15_1_auto] justify-center  text-fondo-jr ">
             {title}
