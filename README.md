@@ -1,6 +1,6 @@
 # Sitio web de Lasfito
 
-Bienvenido, aquí encontrarás el código fuente de [https://lasfi.to](https://lasfi.to), mi pequeño espacio en la web. Este sitio está construido principalmente con [Astro](https://astro.build), [Tailwind](https://tailwindcss.com) y [React](https://reactjs.com).
+Bienvenido, aquí encontrarás el código fuente de [lasfi.to](https://lasfi.to), mi pequeño espacio en la web. Este sitio está construido principalmente con [Astro](https://astro.build), [Tailwind](https://tailwindcss.com) y [React](https://reactjs.com).
 
 Echa un vistazo al código para aprender cómo he realizado ciertas cosas, o simplemente para ver cómo se ve el código. Siéntete libre de usarlo como inspiración/base para tu propio proyecto respetando los lineamientos de la licencia.
 
