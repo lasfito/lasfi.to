@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       colors: {
         primario: "var(--primario)",
+        hermano: "var(--hermano)",
+        "primario-dark": "var(--primario-dark)",
         acento: "var(--acento)",
         "texto-str": "var(--texto-str)",
         "texto-sft": "var(--texto-sft)",
@@ -105,6 +107,7 @@ module.exports = {
       addBase({
         ":root": {
           "--primario": "hsl(207, 68%, 50%)",
+          "--primario-dark": "hsl(207, 68%, 40%)",
           "--hermano": "hsl(207, 51%, 68%)",
           "--acento": "hsl(359, 89%, 64%)",
           "--fondo": " hsl(0, 0%, 100%)",
@@ -131,6 +134,7 @@ module.exports = {
 
         "body.oscuro": {
           "--primario": " hsl(207, 68%, 40%)",
+          "--primario-dark": " hsl(207, 68%, 40%)",
           "--hermano": " hsl(207, 51%, 58%)",
           "--acento": " hsl(359, 59%, 64%)",
           "--fondo": " hsl(205, 31%, 12%)",

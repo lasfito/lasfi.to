@@ -1,2 +1,2 @@
-export { default as GotMilk } from "./gotMilk.png";
-export { default as Luis } from "./luisMugShot.png";
+export {default as GotMilk} from "./gotMilk.png";
+export {default as MugShot} from "./mugShot.png";

@@ -23,7 +23,7 @@ function ModalMenu({
       id="modal-menu-wrapper"
       data-testid="MODAL-MENU"
       onClick={(e) => toggleMenu(e)}
-      className={`glassmorph-dark place-items-left absolute top-0 left-0 right-0 bottom-0  z-50 grid h-screen w-screen opacity-0 transition-[1.45s]	ease-in 
+      className={`place-items-left absolute top-0 left-0 right-0 bottom-0 z-50  grid h-screen w-full opacity-0 transition-[1.45s] ease-in	glassmorph-dark 
       ${isModalShown ? "opacity-100" : " pointer-events-none"} 
       `}
       style={{top: `${scrolledY}px`}}

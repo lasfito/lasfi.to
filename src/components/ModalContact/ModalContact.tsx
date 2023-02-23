@@ -21,7 +21,7 @@ function ModalContact({
     <div
       data-testid="MODAL-CONTACT"
       onClick={(e) => toggleContact(e)}
-      className={`glassmorph-dark absolute top-0 left-0 right-0 bottom-0 z-50 grid h-screen  w-screen transform place-items-center opacity-0 transition-all duration-500 ease-in-out ${
+      className={`absolute top-0 left-0 right-0 bottom-0 z-50 grid h-screen w-full  transform place-items-center opacity-0 transition-all duration-500 ease-in-out glassmorph-dark ${
         isContactShown ? "opacity-100" : " pointer-events-none"
       }  `}
       style={{top: `${scrolledY}px`}}

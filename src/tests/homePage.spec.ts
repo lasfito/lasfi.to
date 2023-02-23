@@ -9,12 +9,12 @@ test("home page renders correctly", async ({page}) => {
 
   const heroButton = page.getByTestId("HERO-BUTTON");
   const formIntersecting = await isIntersectingViewport(page, "CONTACT-FORM");
-  console.log({formIntersecting});
+  expect(formIntersecting).not.toBeTruthy();
   expect(heroButton).toBeTruthy();
 
   const windowAcerca = page.getByTestId("ACERCA-HERO");
   const acercaIntersecting = await isIntersectingViewport(page, "HERO-BUTTON");
-  console.log({acercaIntersecting});
+  expect(acercaIntersecting).toBeTruthy();
   expect(windowAcerca).toBeTruthy();
   await heroButton.click();
 

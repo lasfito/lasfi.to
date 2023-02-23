@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {Header} from "../Header";
 
+//todo: substitute plugin
 /* import '../../styles/monokai.css'; */
 import {Footer} from "../Footer";
 import {ModalMenu} from "../ModalMenu";
@@ -22,7 +23,6 @@ const Layout = ({children}: LayoutProps) => {
 
   function toggleMenu(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     if (!(e.target instanceof HTMLElement || e.target instanceof SVGElement)) {
-      console.log("not div", e.target);
       return;
     }
     let targetId = e.target.id;
@@ -37,7 +37,7 @@ const Layout = ({children}: LayoutProps) => {
   }
 
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full">
       <ModalMenu
         isModalShown={isModalShown}
         toggleMenu={toggleMenu}

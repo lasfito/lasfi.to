@@ -1,4 +1,4 @@
-import {Luis} from "../../assets/img";
+import {MugShot} from "../../assets/img";
 import {MacWindow} from "../MacWindow";
 
 interface AcercaCardProps {
@@ -11,9 +11,11 @@ function AcercaCard({id, short = false}: AcercaCardProps) {
     <MacWindow id={id} title="Acerca de mí">
       <div className="mx-auto">
         <img
-          src={Luis}
+          src={MugShot}
           alt="Ilustración de Lasfito"
           className=" h-[150px] w-auto"
+          height={150}
+          width={150}
         />
       </div>
       <div className="py-5 text-center">

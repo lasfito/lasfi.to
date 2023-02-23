@@ -16,7 +16,11 @@ const HomeHero = () => (
         <strong>Ingeniero de Software </strong>
       </h1>
 
-      <a href="#acerca-top" data-testid="HERO-BUTTON">
+      <a
+        href="#acerca-top"
+        aria-label="leer introducción"
+        data-testid="HERO-BUTTON"
+      >
         <FaChevronCircleDown className="z-10 mt-4 animate-bounce text-5xl text-primario hover:animate-none hover:text-acento" />
       </a>
     </section>
@@ -28,6 +32,8 @@ const HomeHero = () => (
           text="Full-Stack • Software • Engineer • "
         >
           <img
+            width={250 * 0.833}
+            height={250 * 0.833}
             id="gotMilk.png"
             className="h-auto w-5/6 animate-cereal"
             src={GotMilk}
@@ -38,6 +44,8 @@ const HomeHero = () => (
       <div className="hidden md:block">
         <SpinningText size={450} text="Full-Stack • Software • Engineer • ">
           <img
+            width={450 * 0.833}
+            height={450 * 0.833}
             className="h-auto  w-5/6 animate-cereal drop-shadow-2xl"
             src={GotMilk}
             alt="Cartoon drawing of myself"

@@ -1,4 +1,4 @@
-import {Luis} from "../../assets/img";
+import {MugShot} from "../../assets/img";
 import {NewsLetter} from "../NewsLetter/";
 
 interface AcercaAutorProps {
@@ -39,8 +39,10 @@ function AcercaAutor({
         <div>
           <img
             className="hidden h-auto w-[200px] md:block"
-            src={Luis}
+            src={MugShot}
             alt="Hey, soy yo"
+            width={200}
+            height={200}
           ></img>
         </div>
       </div>
