@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@astrojs/sitemap": "^1.1.0",
-    "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/tailwind": "^3.1.0",
     "@playwright/test": "^1.31.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
