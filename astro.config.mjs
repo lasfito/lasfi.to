@@ -5,7 +5,8 @@ import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import partytown from "@astrojs/partytown";
-import prefetch from "@astrojs/prefetch";
+// todo: pending tests
+/* import prefetch from "@astrojs/prefetch"; */
 
 export default defineConfig({
   site: "https://lasfi.to",
@@ -20,7 +21,6 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
-    prefetch(),
   ],
   /* renderers: ["@astrojs/renderer-typescript"], */
 });
