@@ -35,3 +35,7 @@ Todos los comandos se ejecutan desde una terminal en la raíz del proyecto.
 | `npm run build`   | Crea una versión de prod en `./dist/`       |
 | `npm run preview` | Obtén una vista previa de la versión prod   |
 | `npm run test`    | Ejecuta las pruebas e2e con PlayWright      |
+
+## fsevent bug
+
+- npm install --no-optional

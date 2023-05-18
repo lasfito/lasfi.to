@@ -5,11 +5,14 @@ import {CategoryCard} from "../../components/CategoryCard";
 
 const tutoriales = await getCollection("tutoriales");
 const blogs = await getCollection("blog");
+const fang = await getCollection("fang");
 
 // get all the possible tags from the collection
 
 const tags = [
-  ...new Set([...tutoriales, ...blogs].map((post) => post.data.tag).flat()),
+  ...new Set(
+    [...tutoriales, ...blogs, ...fang].map((post) => post.data.tag).flat()
+  ),
 ].map((tag) => tag.toLowerCase());
 ---
 

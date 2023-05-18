@@ -10,9 +10,12 @@ type Tutoriales = CollectionEntry<"tutoriales">;
 export async function getStaticPaths() {
   const tutoriales = await getCollection("tutoriales");
   const blogs = await getCollection("blog");
+  const fang = await getCollection("fang");
 
   const uniquePublishedTags = [
-    ...new Set([...tutoriales, ...blogs].map((post) => post.data.tag).flat()),
+    ...new Set(
+      [...tutoriales, ...blogs, ...fang].map((post) => post.data.tag).flat()
+    ),
   ];
 
   const tagsAndRelated = uniquePublishedTags.map((tag) => ({
@@ -20,6 +23,7 @@ export async function getStaticPaths() {
     related: [
       ...tutoriales.filter((post) => post.data.tag.includes(tag)),
       ...blogs.filter((post) => post.data.tag.includes(tag)),
+      ...fang.filter((post) => post.data.tag.includes(tag)),
     ],
   }));
 

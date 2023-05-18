@@ -1,0 +1,20 @@
+---
+import {getCollection} from "astro:content";
+import PageHTML from "../../layouts/PageHTML.astro";
+import CollectionTemplate from "../../layouts/CollectionTemplate.astro";
+
+const posts = (await getCollection("fang")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<PageHTML
+  title="Camino a FANG - Algoritmos y Estructuras de Datos"
+  description="Resolución de problemas de Leetcode"
+  image="/placeholder-social.jpg"
+  lang="es-MX"
+  type="website"
+  date="2023-05-15"
+>
+  <CollectionTemplate title="Camino a FANG" posts={posts} />
+</PageHTML>

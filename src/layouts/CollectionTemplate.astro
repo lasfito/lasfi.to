@@ -4,9 +4,10 @@ import FormattedDate from "../components/FormattedDate.astro";
 
 type BlogPosts = Array<CollectionEntry<"blog">>;
 type TutorialesPosts = Array<CollectionEntry<"tutoriales">>;
+type FangPosts = Array<CollectionEntry<"fang">>;
 
 interface Props {
-  posts: BlogPosts | TutorialesPosts;
+  posts: BlogPosts | TutorialesPosts | FangPosts;
   title: string;
 }
 

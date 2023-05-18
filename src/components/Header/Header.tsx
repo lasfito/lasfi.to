@@ -1,10 +1,14 @@
-import {BiMenuAltRight} from "react-icons/bi/index.js";
+import {BiMenuAltRight} from "react-icons/bi/index";
 
 interface HeaderProps {
-  toggleMenu: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  toggleMenu: (
+    e:
+      | React.MouseEvent<HTMLDivElement | HTMLButtonElement, MouseEvent>
+      | React.KeyboardEvent<HTMLDivElement>
+  ) => void;
 }
 
-const Header = ({toggleMenu}: HeaderProps) => {
+function Header({toggleMenu}: HeaderProps) {
   return (
     <header
       id="header"
@@ -13,9 +17,13 @@ const Header = ({toggleMenu}: HeaderProps) => {
       <a href="/" className="text-2xl font-black   md:text-5xl">
         Lasfito
       </a>
-      <div className="z-40   md:hidden" onClick={(e) => toggleMenu(e)}>
+      <button
+        type="button"
+        className="z-40   md:hidden"
+        onClick={(e) => toggleMenu(e)}
+      >
         <BiMenuAltRight fontSize={40} className="cursor-pointer" />
-      </div>
+      </button>
       <nav className=" hidden font-bold text-texto-str md:block">
         <ul className="flex flex-row items-center justify-center gap-4 text-xl">
           <li className="hover:text-primario hover:underline">
@@ -25,12 +33,15 @@ const Header = ({toggleMenu}: HeaderProps) => {
             <a href="/blog">Blog</a>
           </li>
           <li className="hover:text-primario hover:underline">
+            <a href="/camino-a-fang">FANG</a>
+          </li>
+          <li className="hover:text-primario hover:underline">
             <a href="/tutoriales">Tutoriales</a>
           </li>
         </ul>
       </nav>
     </header>
   );
-};
+}
 
 export default Header;
