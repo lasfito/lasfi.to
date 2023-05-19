@@ -51,7 +51,7 @@ function ModalMenu({
         <a className="my-5 hover:underline" href="/blog">
           Blog
         </a>
-        <a className="my-5 hover:underline" href="/camino-a-fang">
+        <a className="my-5 hover:underline" href="/fang">
           FANG
         </a>
         <a className="my-5 hover:underline" href="/tutoriales">

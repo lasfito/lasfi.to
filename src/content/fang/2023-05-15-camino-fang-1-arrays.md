@@ -1,5 +1,5 @@
 ---
-type: camino-a-fang
+type: fang
 slug: 01-arrays
 enlaceyt: https://www.youtube.com/embed/lXwjeO4HDdg
 date: 2023-05-15T08:15:46.099Z
