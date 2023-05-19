@@ -1,7 +1,7 @@
 ---
 type: camino-a-fang
 slug: 04-arrays-stack
-enlaceyt: https://www.youtube.com/embed/VOl2g30adxI
+enlaceyt: https://www.youtube.com/embed/ytFoy2xrT4Y
 date: 2023-05-18T08:15:46.099Z
 title: Camino a FANG No. 4 - Arrays y Stack
 tag:
