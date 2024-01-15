@@ -1,0 +1,78 @@
+---
+import {HomeAcerca} from "../../components/HomeAcerca/";
+import {HomeContacto} from "../../components/HomeContacto";
+import PageHTML from "../../layouts/PageHTML.astro";
+import {SITE} from "../../consts";
+import {MacWindow} from "../../components/MacWindow";
+---
+
+<PageHTML
+  title="Lasfito"
+  description="Tutoriales de desarrollo web sin relleno."
+  image={SITE.image}
+  lang="es-MX"
+  type="website"
+  date="2021-05-28"
+>
+  <div class="max-w-1/2 mx-auto my-10 px-10 text-center">
+    <h1 class="my-5 text-xl font-bold">Data deletion</h1>
+    <h2 class="my-5 text-lg font-bold">Axo Go</h2>
+    <p>
+      If you wish your data to be deleted from AxoGo, please provide the email
+      used for the account creation and submit it through this form. The data
+      will be deleted in no more than 72 hours.
+    </p>
+  </div>
+  <section
+    class="w-ful flex min-h-screen flex-col items-center justify-center px-5"
+    id="contactame"
+  >
+    <MacWindow title="Data Deletion Request" id="CONTACT-FORM">
+      <div class="flex-1 p-4 md:p-12">
+        <form
+          data-netlify="true"
+          name="contacto-lasfito"
+          auto-complete="on"
+          method="post"
+          enc-type="application/x-www-form-urlencoded"
+          action="/gracias"
+          class=""
+        >
+          <input type="hidden" name="form-name" value="contacto-lasfito" />
+          <div>
+            <div class="my-5">
+              <label for="jsemail" id="jsemaillabel"> Email</label>
+              <input
+                type="email"
+                class="app-form-control"
+                placeholder="your email"
+                name="correo"
+                required
+                id="jsemail"
+              />
+            </div>
+
+            <div class="my-5">
+              <label for="099" id="js25"> Additional comments</label>
+              <input
+                class="app-form-control"
+                placeholder="Any additional comments"
+                id="099"
+                name="mensaje"
+              />
+            </div>
+            <div class="mb-0 text-right">
+              <button
+                type="submit"
+                class="mx-[10px] my-1 h-[3rem] w-full cursor-pointer rounded-md bg-[#b14e50] text-lg text-white outline-none transition duration-300 ease-out hover:translate-y-[15%] hover:bg-hover"
+                id="js26"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </MacWindow>
+  </section>
+</PageHTML>
