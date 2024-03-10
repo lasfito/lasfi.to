@@ -26,51 +26,33 @@ const {
   </head>
 
   <body class="w-full text-texto-sft fondo-pts">
-    <Layout client:idle>
-      <slot />
-    </Layout>
-    <script>
-      function getSystemPreference() {
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          return "enabled";
-        }
-
-        return "disabled";
-      }
-      function getThemeFromLocalStorage() {
-        const themeStr = localStorage.getItem("theme");
-        if (!themeStr) {
-          return null;
-        }
-
-        try {
-          return JSON.parse(themeStr);
-        } catch (err) {
-          return null;
-        }
-      }
-
+    <script is:inline>
+      let getThemePreference = () => {
+        const localItem =
+          typeof localStorage !== "undefined" && localStorage.getItem("theme");
+        if (localItem) return localItem;
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "enabled"
+          : "disabled";
+      };
+      const {darkMode} = JSON.parse(getThemePreference());
       function enableDarkMode() {
         document.body.classList.add("oscuro");
       }
-
       function disableDarkMode() {
         document.body.classList.remove("oscuro");
       }
-
       function setThemeOnNavigation() {
-        const {darkMode} = getThemeFromLocalStorage() || getSystemPreference();
-
         if (darkMode === "enabled") {
           enableDarkMode();
         } else {
           disableDarkMode();
         }
       }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        setThemeOnNavigation();
-      });
+      setThemeOnNavigation();
     </script>
+    <Layout client:idle>
+      <slot />
+    </Layout>
   </body>
 </html>
