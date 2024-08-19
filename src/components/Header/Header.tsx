@@ -33,9 +33,6 @@ function Header({toggleMenu}: HeaderProps) {
             <a href="/blog">Blog</a>
           </li>
           <li className="hover:text-primario hover:underline">
-            <a href="/fang">FANG</a>
-          </li>
-          <li className="hover:text-primario hover:underline">
             <a href="/tutoriales">Tutoriales</a>
           </li>
         </ul>
