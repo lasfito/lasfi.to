@@ -20,10 +20,6 @@ export const SITE = {
       text: "GitHub",
     },
     {
-      href: "https://twitter.com/lasf1to",
-      text: "Twitter",
-    },
-    {
       href: "https://youtube.com/@lasfito",
       text: "YouTube",
     },
