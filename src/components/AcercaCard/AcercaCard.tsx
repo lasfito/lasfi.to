@@ -35,29 +35,6 @@ function AcercaCard({id, short = false}: AcercaCardProps) {
           </a>
           <br />
           <br />
-          {!short && (
-            <div>
-              ¿Eres desarrollador y/o buscas mejorar tus habilidades? Entonces
-              echa un vistazo a mis{" "}
-              <a
-                href="/tutoriales"
-                target="blank"
-                rel="noopener"
-                className="fancy"
-              >
-                tutoriales{" "}
-              </a>{" "}
-              y mi canal de{" "}
-              <a
-                href="https://youtube.com/@lasfito"
-                target="_blank"
-                rel="noopener"
-                className="fancy"
-              >
-                YouTube.
-              </a>
-            </div>
-          )}
         </p>
       </div>
     </MacWindow>
