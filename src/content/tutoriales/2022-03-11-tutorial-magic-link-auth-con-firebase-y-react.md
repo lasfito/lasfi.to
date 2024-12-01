@@ -11,7 +11,7 @@ tag:
   - Firebase
   - React
   - JavaScript
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo crear un sistema de autenticación con Magic
   Link  (Enlace Mágico) a través de rutas con React y Firebase "
 keyword: magic link firebase

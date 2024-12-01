@@ -10,7 +10,7 @@ metaDescription: >
 tag:
   - Google Cloud
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo correr tus contenedores Docker en "la nube" de
   forma serverless gracias a Google Cloud Run
 keyword: contenedores google cloud run

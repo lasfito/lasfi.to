@@ -7,7 +7,7 @@ title: Cómo crear una calculadora web sin JavaScript
 tag:
   - HTML-CSS
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 keyword: calculadora sin javascript
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/03-calculadora-sin-javascript.png?alt=media&token=08de9d71-11e7-4d5b-b94a-54ff6f6f84c3"
 ---

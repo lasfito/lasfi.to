@@ -7,7 +7,7 @@ title: Cómo crear un backend en Google Cloud con Strapi
 tag:
   - Programación
   - Google Cloud
-autor: Adrián Salgado
+autor: Lasfito
 publicoObjetivo: ""
 keyword: strapi google cloud
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/11-strapi-google-cloud.png?alt=media&token=bee8b254-890c-465c-a06d-fe3ee9e2d8c0"
@@ -1467,7 +1467,7 @@ de admin para gestionar todo este asunto
 
 entonces qué vamos a registrarnos yo
 
-pondré adrián salgado o la arroba las
+pondré la arroba las
 
 fito contraseña aquí sí hay que poner
 
@@ -1595,7 +1595,7 @@ usuarios no usuarios no en personas ok
 
 vamos a crear una persona es crear tres
 
-personas el nombre completo luis salgado
+personas el nombre completo
 
 edad 26 fecha de nacimiento no se los
 
@@ -1725,7 +1725,7 @@ los transversales es una maravilla
 
 lo que aquí estamos regresemos a
 
-personas vamos a editar a luis salgado y
+personas vamos a editar  y
 
 vamos a ir que de nacionalidad queremos
 
@@ -1743,13 +1743,13 @@ algún sitio de blog aquí para jugar con
 
 categorías con temas con autores es así
 
-como funciona porque ahora luis salgado
+como funciona porque ahora 
 
 es una referencia hacia méxico y si yo
 
-aquí en méxico tuviera más datos luis
+aquí en méxico tuviera más datos
 
-salgado tendría como que una relación un
+tendría como que una relación un
 
 acceso a todos estos datos tenemos lo
 
@@ -1995,7 +1995,7 @@ jason y vamos a crear una persona
 
 obviamente no podemos escoger el aire
 
-vamos a llamarlo luis salgado júnior en
+vamos a llamarlo júnior en
 
 edad 69 y esto le pone delito esto lo
 
@@ -2021,7 +2021,7 @@ una imagen era louis juniors y si yo me
 
 regreso a la aplicación me regresó a
 
-personas aquí está luis june yo lo pude
+personas aquí está june yo lo pude
 
 crear sin haberme autenticado pero sí
 
@@ -2091,9 +2091,9 @@ fito que puede hacer consultas
 
 auténticas y para ello me voy a revisar
 
-qué bousman si lo intentó mandar a luis
+qué bousman si lo intentó mandar a 
 
-salgado júnior versión 2 como esta es
+júnior versión 2 como esta es
 
 una consulta pública sin auténtica me va
 
@@ -2217,7 +2217,7 @@ es en autorización pasarle el token le
 
 doy enviar y no ver de fourvière en me
 
-va a crear a luis salgado juniors
+va a crear a juniors
 
 versión 2 me regreso aquí a personas y
 

@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo resolver este problema técnico (algoritmos) pas
 tag:
   - Algoritmos
   - JavaScript
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo resolver este problema técnico (algoritmos) paso a
   paso y prepárate para tu próxima entrevista en Uber "
 keyword: Algoritmo Primer Positivo Faltante

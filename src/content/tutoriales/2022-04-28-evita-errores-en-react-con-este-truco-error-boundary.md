@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo evitar que tu aplicación se rompa por un error
 tag:
   - React
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo evitar que tu aplicación se rompa por un error
   gracias a los Error Boundaries de React "
 keyword: error boundary react

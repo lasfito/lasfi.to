@@ -6,7 +6,7 @@ title: Hoisting 101 para principiantes
 tag:
   - JavaScript
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 keyword: que es hoisting
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/hoisting-101-destacada.png?alt=media&token=b96796a0-8853-4ef6-a4a5-8d086c54a3f1"
 ---

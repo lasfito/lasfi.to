@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo configurar reglas de seguridad y proteger tu bas
 tag:
   - Firebase
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo configurar reglas de seguridad y proteger tu base
   de datos de Firestore en Firebase "
 keyword: reglas seguridad firestore

@@ -20,7 +20,7 @@ function AcercaCard({id, short = false}: AcercaCardProps) {
       </div>
       <div className="py-5 text-center">
         <p className="mx-auto max-w-[50ch] ">
-          Me llamo Adrián y he desarrollado software para la web y aplicaciones móviles durante más de
+          He desarrollado software para la web y aplicaciones móviles durante más de
           4 años. Poseo amplia experiencia en JavaScript, TypeScript, React,
           React Native y Node.js.
           <br />

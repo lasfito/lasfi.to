@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo convertir tu sitio/aplicación web en una
 tag:
   - React
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo convertir tu sitio/aplicación web en una Aplicación Web Progresiva
 keyword: "tutorial react pwa "
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/31-pwa%2F31-pwa-react.png?alt=media&token=99d5e05d-ea32-4903-97d8-8a6061576cf3

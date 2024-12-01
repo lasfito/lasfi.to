@@ -6,7 +6,7 @@ title: ¿Cuál es la diferencia entre Null y Undefined en JavaScript?
 tag:
   - JavaScript
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 keyword: diferencia null y undefined
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/null-undefined-destacada.png?alt=media&token=f73233b8-ffa9-4665-8b12-e34cec8bdabe"
 ---

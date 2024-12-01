@@ -8,7 +8,7 @@ metaDescription: En este artículo, repasaré estas diferencias exactas explican
 tag:
   - JavaScript
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 keyword: diferencia node element
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/diferencia-node-element.jpg?alt=media&token=934b640b-3381-4fac-af57-f98bd3973bb8"
 ---

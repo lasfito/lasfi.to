@@ -7,7 +7,7 @@ title: "Cómo utilizar la autenticación de Firebase (con React) "
 tag:
   - Firebase
   - React
-autor: Adrián Salgado
+autor: Lasfito
 keyword: autenticación firebase react
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/05-firebase-autenticacion-thumb.png?alt=media&token=8aa0f487-08a1-4099-b7e0-f7c781d7403b"
 ---

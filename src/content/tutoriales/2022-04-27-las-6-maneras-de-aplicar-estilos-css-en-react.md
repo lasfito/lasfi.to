@@ -9,7 +9,7 @@ metaDescription: "Conoce cómo aplicar estilos CSS en tu aplicación de
 tag:
   - React
   - HTML-CSS
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Conoce cómo aplicar estilos CSS en tu aplicación de React
 keyword: estilos css react
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/21-estilos-react%2F21-estilos-css-react.png?alt=media&token=17c5331d-d7bf-492a-bfff-de5a3e0b529e

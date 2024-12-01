@@ -9,7 +9,7 @@ metaDescription: "Aprende de una buena vez todo sobre Context - el hook de
 tag:
   - React
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende de una buena vez todo sobre Context - el hook de React.
   Si no aprendes te regreso tu tiempo :v #webdev #react #tutorial"
 keyword: context react

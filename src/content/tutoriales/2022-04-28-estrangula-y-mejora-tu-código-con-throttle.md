@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo optimizar tus funciones con el efecto Throttle e
 tag:
   - Programación
   - JavaScript
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo optimizar tus funciones con el efecto Throttle en JavaScript
 keyword: throttle javascript
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/37-throttle-js.png?alt=media&token=cb5cc4a5-a74c-460a-af92-b45fed423b1e

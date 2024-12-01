@@ -10,7 +10,7 @@ metaDescription: "Aprende cómo crear una aplicación CRUD con autenticación y
 tag:
   - Firebase
   - React
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo crear una aplicación CRUD con autenticación y Logs
   con Firebase, React y Google Cloud Functions "
 keyword: firebase crud logs

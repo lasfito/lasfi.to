@@ -10,7 +10,7 @@ metaDescription: "Aprende cómo convertirte en y conseguir trabajo de Frontend
 tag:
   - Programación
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo convertirte en y conseguir trabajo de Frontend
   Developer. Con este Road Map tendrás un camino a seguir ordenado y práctico "
 publicoObjetivo: ""

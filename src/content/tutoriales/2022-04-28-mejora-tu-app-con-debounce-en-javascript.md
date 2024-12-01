@@ -10,7 +10,7 @@ metaDescription: >
 tag:
   - Programación
   - JavaScript
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo optimizar tus funciones con el efecto Debounce en JavaScript
 keyword: debounce javascript
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/35-manual-javascript.png?alt=media&token=03b093aa-4485-40e1-80e9-394e3dfe2069

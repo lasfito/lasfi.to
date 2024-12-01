@@ -7,7 +7,7 @@ title: Auth y Roles de Usuario con Firebase y React
 tag:
   - Firebase
   - React
-autor: Adrián Salgado
+autor: Lasfito
 keyword: roles usuario firebase
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/14-roles-usuario-firebase.jpeg?alt=media&token=b2a8f3e9-1ca9-4149-bf8b-eb69a91512ee"
 ---

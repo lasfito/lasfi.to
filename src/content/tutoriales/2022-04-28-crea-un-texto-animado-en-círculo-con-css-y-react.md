@@ -10,7 +10,7 @@ metaDescription: >
 tag:
   - React
   - HTML-CSS
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo darle forma de círculo a tu texto y animarlo en rotación
 keyword: texto animado css
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/30-texto-animado%2F30-texto-animado.png?alt=media&token=983fbca7-971a-4a8a-9b0a-9be0b60a880a

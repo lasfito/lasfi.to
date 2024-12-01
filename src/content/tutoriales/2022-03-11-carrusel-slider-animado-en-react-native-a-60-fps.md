@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo crear un carrusel (slider) animado en React
 tag:
   - React Native
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 keyword: carrusel animado react native
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/16-carrusel-animado%2F16-carrusel-animado.png?alt=media&token=2c00d7de-d4e5-4be6-8714-c7bedc363067
 ---

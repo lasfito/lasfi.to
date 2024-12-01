@@ -10,7 +10,7 @@ metaDescription: "Aprende cómo crear una tabla / hoja de datos estilo Excel en
 tag:
   - React
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo crear una tabla / hoja de datos estilo Excel en tu
   aplicación de React con Handsontable
 keyword: tabla Excel en React

@@ -7,7 +7,7 @@ title: Camino a FANG No. 1 - Arrays
 tag:
   - Algoritmos
   - Arrays
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Practicando problemas de Arrays en LeetCode"
 keyword: arrays algoritmo leetcode
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/streaming.png?alt=media&token=98bc8ea1-905e-456c-bb86-e331db875259"

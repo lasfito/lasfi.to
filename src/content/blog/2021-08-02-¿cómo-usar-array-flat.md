@@ -6,7 +6,7 @@ title: ¿Cómo usar array flat?
 tag:
   - Desarrollo 101
   - JavaScript
-autor: Adrián Salgado
+autor: Lasfito
 keyword: array flat
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/arrayflatthumbnail.png?alt=media&token=825d8af7-c594-4c70-b180-50bcf62fd70d"
 ---

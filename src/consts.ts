@@ -12,7 +12,7 @@ export const GITHUB_URL = "https://github.com/lasfito/lasfi.to";
 export const SITE = {
   title: "Lasfito",
   description: "Tutoriales de desarrollo web en español y sin relleno",
-  image: "luisMugShot.png",
+  image: "mugShot.png",
   twitterHandle: "lasf1to",
   socialLinks: [
     {
@@ -22,10 +22,6 @@ export const SITE = {
     {
       href: "https://youtube.com/@lasfito",
       text: "YouTube",
-    },
-    {
-      href: "https://www.linkedin.com/in/lasfito",
-      text: "LinkedIn",
     },
   ],
 } as const;

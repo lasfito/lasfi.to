@@ -10,7 +10,7 @@ metaDescription: "Aprende cómo crear una aplicación de estilo examen con tiemp
 tag:
   - React
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo crear una aplicación de estilo examen con tiempo en
   cuenta regresiva y respuestas de opción múltiple
 keyword: app examen react

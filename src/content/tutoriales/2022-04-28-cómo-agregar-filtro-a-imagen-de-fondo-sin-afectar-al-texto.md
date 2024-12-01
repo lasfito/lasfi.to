@@ -11,7 +11,7 @@ metaDescription: >
 tag:
   - HTML-CSS
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo agregar filtro a tu background-image sin alterar el
   contenido  (Hero Image) con ayuda de pseudo elements
 keyword: overlay div css

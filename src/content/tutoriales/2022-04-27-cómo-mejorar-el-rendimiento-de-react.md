@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo optimizar y mejorar el rendimiento de tu
 tag:
   - Programación
   - React
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo optimizar y mejorar el rendimiento de tu aplicación de React "
 keyword: mejorar rendimiento react
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/22-mejorar-rendimiento-react%2F22-mejorar-rendimiento-react.png?alt=media&token=a10c0ea6-4c74-45aa-873e-4714354b129d

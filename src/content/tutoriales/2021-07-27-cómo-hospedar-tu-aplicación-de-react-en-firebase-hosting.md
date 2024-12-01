@@ -7,7 +7,7 @@ title: Cómo hospedar tu aplicación de react en Firebase hosting
 tag:
   - Firebase
   - React
-autor: Adrián Salgado
+autor: Lasfito
 keyword: hospedar aplicación react en firebase hosting
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/thumbnail.png?alt=media&token=31379eb4-e89a-4be2-8568-b4b3892c0c5c"
 ---

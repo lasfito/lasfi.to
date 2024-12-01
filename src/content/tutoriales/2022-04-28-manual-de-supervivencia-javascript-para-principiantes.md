@@ -9,7 +9,7 @@ metaDescription: "Aprende todo lo que necesitas saber sobre JavaScript para
 tag:
   - JavaScript
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende todo lo que necesitas saber sobre JavaScript para
   adentrarte al mundo del desarrollo
 keyword: manual javascript
@@ -2214,11 +2214,11 @@ hará lo que llevara aquí en pantalla
 
 decir sabes que el nombre es juan y la
 
-segunda el nombre es luis y la tercera
+segunda el nombre y la tercera
 
 el nombre es pancho guardo y me dice
 
-hola juan hola luis y hola pancho y
+hola juan y hola pancho y
 
 ahora esto ya funciona porque en cada
 
@@ -2498,7 +2498,7 @@ significa
 
 tan significando y como perro y gato
 
-luis y maría y éste el del pipeline es
+maría y éste el del pipeline es
 
 el operador por el significando o como
 
@@ -3286,7 +3286,7 @@ por esto no se preocupen no se preocupen
 
 que cuáles son las diferencias entre la
 
-reina luisa html collection la vez que
+html collection la vez que
 
 esto rara vez lo van a ver pero creo que
 

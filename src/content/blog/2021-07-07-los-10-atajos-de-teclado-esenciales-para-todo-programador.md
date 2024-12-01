@@ -6,7 +6,7 @@ title: "Los 10 atajos de teclado esenciales para todo programador "
 tag:
   - Desarrollo 101
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 keyword: "atajos teclado programador "
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/atajos-programador.jpg?alt=media&token=9919101b-d078-41bc-a3a2-f0432443bcde"
 ---

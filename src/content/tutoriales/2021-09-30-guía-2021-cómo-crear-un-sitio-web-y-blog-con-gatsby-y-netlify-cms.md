@@ -7,7 +7,7 @@ title: Guía 2021 - Cómo crear un sitio web y blog con Gatsby y Netlify CMS
 tag:
   - Gatsby
   - React
-autor: Adrián Salgado
+autor: Lasfito
 keyword: cómo crear gatsby
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/guiagatsbythumbnail.png?alt=media&token=303b275e-99c4-4396-a5ab-365bbb7ba18c"
 ---

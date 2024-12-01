@@ -10,7 +10,7 @@ metaDescription: "Aprende cómo publicar tu proyecto en internet (producción) y
 tag:
   - Desarrollo 101
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 publicoObjetivo: ¡Cualquiera puede seguir este tutorial!
 keyword: publicar sitio web gratis
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/15-codigo-prod%2F15-codigo-prod.png?alt=media&token=aae02a4a-66fd-4d2c-b9ea-4f02df43f7c4

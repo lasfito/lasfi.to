@@ -6,7 +6,7 @@ title: ¿Cuál es la diferencia entre library y  framework?
 tag:
   - Desarrollo 101
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 keyword: diferencia library y framework
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/thinkingperson.jpeg?alt=media&token=a3467f73-8571-48e3-bbe8-c47ebe183cd1"
 ---

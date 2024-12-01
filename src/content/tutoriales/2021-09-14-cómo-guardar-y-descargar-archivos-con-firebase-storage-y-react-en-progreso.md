@@ -7,7 +7,7 @@ title: "Cómo guardar y descargar archivos con Firebase Storage y React "
 tag:
   - Firebase
   - React
-autor: Adrián Salgado
+autor: Lasfito
 keyword: Firebase Storage react
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/firebase-storage.png?alt=media&token=7aa43155-6aa1-44e4-946e-b0329bd89b6d"
 ---

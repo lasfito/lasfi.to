@@ -8,7 +8,7 @@ tag:
   - Algoritmos
   - Arrays
   - Stack
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Practicando problemas de Arrays y Stack en LeetCode"
 keyword: arrays algoritmo leetcode stack
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/streaming%20(3).png?alt=media&token=d691709d-2053-4243-9d9e-a064fe24946b"

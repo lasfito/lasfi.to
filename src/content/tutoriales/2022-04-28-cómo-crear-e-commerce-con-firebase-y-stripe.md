@@ -9,7 +9,7 @@ metaDescription: "Aprende cómo crear una tienda e-Commerce con Firebase y Strip
 tag:
   - Firebase
   - React
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Aprende cómo crear una tienda e-Commerce con Firebase y Stripe
   en cuestión de minutos "
 keyword: e-commerce firebase stripe
@@ -1162,7 +1162,7 @@ obviamente hay que instalar como
 
 dependencia
 
-by luis en pie en esto fire veis y listo
+en pie en esto fire veis y listo
 
 podemos cerrar
 
@@ -3546,7 +3546,7 @@ sesión si es importante que sigan este
 
 nombre donde me estoy sacando este
 
-nombre nombre luisa que cuando rodríguez
+nombre nombre que cuando rodríguez
 
 sacado de la manga si se van a
 

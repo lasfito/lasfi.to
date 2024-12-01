@@ -7,7 +7,7 @@ title: Camino a FANG No. 5 - Stack
 tag:
   - Algoritmos
   - Stack
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: "Practicando problemas de Stack en LeetCode"
 keyword: algoritmo leetcode stack
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/stream5.png?alt=media&token=58bac6c7-ddf9-4207-8bee-d95b8da4a0ff"

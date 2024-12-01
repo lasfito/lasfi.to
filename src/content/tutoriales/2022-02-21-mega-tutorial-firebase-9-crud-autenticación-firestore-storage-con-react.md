@@ -7,7 +7,7 @@ title: Mega Tutorial Firebase 9 - CRUD (Autenticación + Firestore + Storage) co
 tag:
   - React
   - Firebase
-autor: Adrián Salgado
+autor: Lasfito
 publicoObjetivo: "Conocimientos básicos de JavaScript y React son necesarios
   para este tutorial "
 keyword: tutorial firebase 9

@@ -10,7 +10,7 @@ metaDescription: >
 tag:
   - React Native
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Aprende cómo realizar zoom con el gesto de pellizco (pinch) en React Native
 keyword: zoom imagen react native
 thumbnail: https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/24-react-native-imagen-zoom%2F24-pincha-zoom-react-native.png?alt=media&token=b9606c6c-8844-4551-8ffc-f604f5bb4870

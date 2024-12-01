@@ -7,7 +7,7 @@ title: Agrega caja de comentarios a tu sitio web con GitHub
 tag:
   - Desarrollo 101
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 keyword: comentarios sitio web github
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/13-comtentarios-sitioweb-github.jpeg?alt=media&token=dbbe9aa4-6e68-4053-b074-a4b8b7fba7aa"
 ---

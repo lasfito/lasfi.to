@@ -6,7 +6,7 @@ title: ¿Cómo usar array reduce?
 tag:
   - JavaScript
   - Desarrollo 101
-autor: Adrián Salgado
+autor: Lasfito
 keyword: como array reduce
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/reduce-array-destacada.png?alt=media&token=2d10aa5f-3dae-48d0-85bc-cb8cda828df8"
 ---

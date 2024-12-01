@@ -7,7 +7,7 @@ title: Crea, Visualiza y Descarga PDFs en React
 tag:
   - React
   - Misceláneo
-autor: Adrián Salgado
+autor: Lasfito
 publicoObjetivo: "Conocimientos básicos en JavaScript son necesarios para este tutorial. "
 keyword: crear pdf en react
 thumbnail: "https://firebasestorage.googleapis.com/v0/b/lasfito-blog.appspot.com/o/10-react-pdf.png?alt=media&token=0f9dfcf5-f8a6-4b78-b9a4-771e1234920a"

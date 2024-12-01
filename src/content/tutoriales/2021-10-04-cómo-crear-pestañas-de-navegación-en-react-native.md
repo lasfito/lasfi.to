@@ -7,7 +7,7 @@ title: Cómo crear pestañas de navegación en React Native
 tag:
   - React
   - JavaScript
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: Un clásico de la navegación móvil - ¡aprende cómo implementarla
   en tu próxima aplicación!
 publicoObjetivo: "El siguiente artículo asume que tienes conocimientos básicos

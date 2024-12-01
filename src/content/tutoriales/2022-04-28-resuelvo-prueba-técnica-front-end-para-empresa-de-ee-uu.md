@@ -10,7 +10,7 @@ metaDescription: 'En este video desarrollo una aplicación web con #React y
 tag:
   - Programación
   - React
-autor: Adrián Salgado
+autor: Lasfito
 introThumbnail: 'En este video desarrollo una aplicación web con #React y #Remix
   como prueba de programador para una empresa "gringa" (USA) '
 keyword: prueba técnica frontend
