@@ -1,5 +1,6 @@
 import {MugShot} from "../../assets/img";
 import {MacWindow} from "../MacWindow";
+import {SHORT_RESUME_ES} from "../../consts"
 
 interface AcercaCardProps {
   id: string;
@@ -20,9 +21,7 @@ function AcercaCard({id, short = false}: AcercaCardProps) {
       </div>
       <div className="py-5 text-center">
         <p className="mx-auto max-w-[50ch] ">
-          He desarrollado software para la web y aplicaciones móviles durante más de
-          4 años. Poseo amplia experiencia en JavaScript, TypeScript, React,
-          React Native y Node.js.
+          {SHORT_RESUME_ES}
           <br />
           <br />
           ¿Eres reclutador o buscas contratarme? Entonces puedes{" "}
