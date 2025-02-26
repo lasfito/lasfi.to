@@ -1,0 +1,58 @@
+{
+  "name": "cms-lasfito",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@firecms/core": "^3.0.0-beta",
+    "@firecms/firebase": "^3.0.0-beta",
+    "@firecms/ui": "^3.0.0-beta",
+    "firebase": "^10.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^6.26.2",
+    "react-router-dom": "^6.26.2"
+  },
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "vite build && tsc",
+    "preview": "vite build && vite preview",
+    "deploy": "vite build && firebase deploy --only hosting --project lasfito-cms"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "prosemirror-view": "1.37.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.12.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.11.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

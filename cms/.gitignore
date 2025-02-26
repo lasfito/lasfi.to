@@ -1,0 +1,5 @@
+node_modules
+.yarn
+firebase_config.ts
+.firebaserc
+firebase.json
