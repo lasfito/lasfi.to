@@ -11,9 +11,10 @@ type Props = CollectionEntry<"blog">["data"] & {
   id: string;
   description:string;
   enlaceyt:string; 
+  locale: ValidLocale
 };
 
-const {title, description, date, enlaceyt, thumbnail, type, tag, id} =
+const {title, description, date, enlaceyt, thumbnail, type, tag, id, locale = "en"} =
   Astro.props;
 
 const acercaAutor =

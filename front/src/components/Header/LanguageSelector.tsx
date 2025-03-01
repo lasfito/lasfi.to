@@ -12,7 +12,6 @@ function LanguageSelector() {
   // Get current locale from path
   const currentLocale =  typeof window === 'undefined'  ? "en" : window?.location.pathname.split('/')[1] || 'en';
 
-  console.log("language selector loaded")
 
   return (
     <div className="relative inline-block text-left cursor-pointer"> 
