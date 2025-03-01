@@ -33,7 +33,16 @@ export const fr = {
         developer_text: "Vous êtes développeur et/ou vous cherchez à améliorer vos compétences ? Alors consultez mes",
         tutorials_link: "tutoriels",
         and: "et ma chaîne",
-        youtube_link: "YouTube"
+        youtube_link: "YouTube",
+        page_title: "À propos",
+        page_description: "Tout savoir sur Lasfito",
+        who_is: "Qui est",
+        summary_title: "Résumé",
+        contact_title: "Contact",
+        linkedin_text: "Ajoutez-moi sur LinkedIn",
+        github_text: "Consultez mon profil Github",
+        email_text: "Ou envoyez-moi un email",
+        summary: "Ingénieur logiciel avec plus de 3 ans d'expérience en développement web (frontend / backend) et développement mobile. Compétent en JavaScript, TypeScript, Node, React et React Native. Actuellement en train d'apprendre Go, de construire un SaaS indépendant et de créer des tutoriels de développement en espagnol sur YouTube."
     },
     projects: {
         title: "Projets",
@@ -53,6 +62,25 @@ export const fr = {
         title: "Page non trouvée",
         description: "Désolé, la page que vous recherchez n'existe pas.",
         backHome: "Retour à l'accueil"
+    },
+    thanks: {
+        title: "Merci",
+        description: "Je vous répondrai bientôt.",
+        message: "J'ai bien reçu votre message et je vous répondrai prochainement."
+    },
+    newsletter: {
+        title: "Senior en un deux trois",
+        description: "La newsletter pour les développeurs web.",
+        body: "Bonjour ! Chaque jeudi, j'envoie une newsletter à plus de développeurs web intéressés par JavaScript, React, Node et les technologies associées. Chaque newsletter comprend 3 articles sélectionnés par mes soins, 2 ressources de développement et 1 conseil rédigé par moi. Rejoignez le groupe de développeurs curieux et obtenez des connaissances gratuites, concises et sans spam. Croyez-moi, personne ne déteste plus le spam que moi."
+    },
+    footer: {
+        copyright: "© 2021 – Aujourd'hui",
+        no_credit: "(pas de crédit, demain oui).",
+        source_code: "Voir le",
+        source_code_link: "code source",
+        on_github: "sur GitHub.",
+        built_with: "Site construit avec",
+        and_hosted: "et hébergé sur"
     }
 }
 

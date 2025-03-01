@@ -1,44 +1,26 @@
 ---
-import {getCollection} from "astro:content";
 import PageHTML from "../../../layouts/PageHTML.astro";
-import {CategoryCard} from "../../../components/CategoryCard";
+import {db} from "../../../config/firebaseAdmin"
+import { AVAILABLE_LANGS } from "../../../consts";
+const { locale } = Astro.params;
 
+// Validate locale
+if (!AVAILABLE_LANGS.includes(locale as any)) {
+  throw new Error(`Locale ${locale} is not supported. Supported locales are: ${AVAILABLE_LANGS.join(', ')}`);
+}
 
-const {locale} = Astro.params;
-const tutoriales = await getCollection("tutoriales");
-const blogs = await getCollection("blog");
-const fang = await getCollection("fang");
+const snapshot = await db.collection('blog').get();
+snapshot.forEach((doc) => {
+});
 
-// get all the possible tags from the collection
-
-const tags = [
-  ...new Set(
-    [...tutoriales, ...blogs, ...fang].map((post) => post.data.tag).flat()
-  ),
-].map((tag) => tag.toLowerCase());
 ---
 
 <PageHTML
-  title="Tutoriales"
-  description="Tutoriales sobre desarrollo web"
-  image="/placeholder-social.jpg"
+  title="Blog de lasfito"
+  description="Aquí comparto mis pensamientos :v"
   lang={locale}
   type="website"
-  date="2021-01-01"
+  date="2021-05-28"
 >
-  <main class="my-10 flex w-full flex-col items-center justify-center">
-    <h1 class="my-5 text-center text-4xl font-bold text-primario">
-      Categorias
-    </h1>
-
-    <ul class="grid max-w-[800px] grid-cols-2 gap-2 md:grid-cols-3 md:gap-4">
-      {
-        tags.map((tag) => (
-          <li class=" text-xl font-bold">
-            <CategoryCard category={tag} />
-          </li>
-        ))
-      }
-    </ul>
-  </main>
+  astroParams: {locale}
 </PageHTML>

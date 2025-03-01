@@ -15,9 +15,10 @@ import {ContactIcon} from "../ContactIcon";
 
 interface LayoutProps {
   children: React.ReactNode;
+  currentLocale:ValidLocale
 }
 
-function Layout({children}: LayoutProps) {
+function Layout({children, currentLocale = "en"}: LayoutProps) {
   const [isModalShown, setIsModalShown] = useState(false);
   const [isContactShown, setIsContactShown] = useState(false);
   const [scrolledY, setScrolledY] = useState(0);
@@ -54,13 +55,14 @@ function Layout({children}: LayoutProps) {
         toggleContact={toggleContact}
         scrolledY={scrolledY}
         setScrolledY={setScrolledY}
+        currentLocale={currentLocale}
       />
 
       <Header toggleMenu={toggleMenu} />
       {children}
       <ThemeIcon />
       <ContactIcon toggleContact={(e) => toggleContact(e)} />
-      <Footer />
+      <Footer currentLocale={currentLocale} />
     </div>
   );
 }

@@ -7,7 +7,6 @@ import { AVAILABLE_LANGS } from "../../consts";
 
 const { locale } = Astro.params;
 
-console.log("current locale en home", locale)
 
 // Validate locale
 if (!AVAILABLE_LANGS.includes(locale as any)) {
@@ -19,7 +18,7 @@ if (!AVAILABLE_LANGS.includes(locale as any)) {
 <PageHTML
   title="Lasfito"
   description="Tutoriales de desarrollo web sin relleno."
-  lang="es-MX"
+lang={locale}
   type="website"
   date="2021-05-28"
 >

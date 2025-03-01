@@ -6,6 +6,7 @@ interface ModalContactProps {
   toggleContact: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   scrolledY: number;
   setScrolledY: (scrolledY: number) => void;
+  currentLocale: ValidLocale
 }
 
 function ModalContact({
@@ -13,6 +14,7 @@ function ModalContact({
   toggleContact,
   scrolledY,
   setScrolledY,
+  currentLocale="en"
 }: ModalContactProps) {
   useEffect(() => {
     setScrolledY(window.scrollY);
@@ -30,7 +32,9 @@ function ModalContact({
         className="  modal flex h-screen w-[90vw] flex-col justify-center md:w-[33vw]"
         id="modal-contact"
       >
-        <AcercaCard id="MODAL-ACERCA" short={true} />
+        <AcercaCard id="MODAL-ACERCA" short={true}  
+        currentLocale={currentLocale}
+        />
       </div>
     </div>
   );

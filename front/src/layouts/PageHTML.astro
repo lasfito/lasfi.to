@@ -6,10 +6,12 @@ const {
   title,
   description,
   image = "mugShot.png",
-  lang = "es-MX",
+  lang = "en",
   type = "article",
   date,
 } = Astro.props;
+
+// todo: fix lang nom 
 ---
 
 <!DOCTYPE html>
@@ -50,7 +52,7 @@ const {
       }
       setThemeOnNavigation();
     </script>
-    <Layout client:only="react">
+    <Layout client:only="react" currentLocale={lang}>
       <slot />
     </Layout>
   </body>

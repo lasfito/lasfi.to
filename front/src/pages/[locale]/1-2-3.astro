@@ -1,17 +1,28 @@
 ---
 import PageHTML from "../../layouts/PageHTML.astro";
 import {AcercaAutor} from "../../components/AcercaAutor";
+import {trans} from "../../i18n/index"
+import { AVAILABLE_LANGS } from "../../consts";
 
-const acercaBody =
-  "¡Hola! Todos los jueves envío un boletín a más de  desarrolladores web interesados en JavaScript, React, Node y tecnologías relacionadas.Cada boletín incluye 3 artículos curados por mí, 2 recursos de desarrollo y 1 tip elaborado por mí. Únete al grupo de desarrolladores curiosos y obtén conocimiento gratis, conciso y sin spam. Creéme, nadie odia más el spam que yo.";
+const {locale} = Astro.params;
+
+// Validate locale
+if (!AVAILABLE_LANGS.includes(locale as any)) {
+  return Astro.redirect("/404")
+}
+
+const t = trans[locale as ValidLocale].newsletter;
 ---
 
 <PageHTML
-  title="Senior en un dos por tres"
-  description="El boletín para desarrolladores web."
-  lang="es-MX"
+  title={t.title}
+  description={t.description}
+  lang={locale}
   type="website"
   date="2021-05-28"
 >
-  <AcercaAutor title="1-2-3" body={acercaBody} />
+  <AcercaAutor 
+    title="1-2-3" 
+    body={t.body} 
+  />
 </PageHTML>

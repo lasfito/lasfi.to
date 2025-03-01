@@ -9,7 +9,7 @@ interface AcercaCardProps {
 
 function AcercaCard({id, short = false, currentLocale = "en"}: AcercaCardProps) {
 
-  console.log("got in acerca card:", currentLocale, trans[currentLocale])
+
   const t = trans[currentLocale].about;
 
   return (

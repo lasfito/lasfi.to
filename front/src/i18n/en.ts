@@ -3,7 +3,6 @@ export const en = {
     "SITE_DESCRIPTION": "¡Web Dev without fluff!",
     "BLOG_TITLE": "",
     "BLOG_DESCRIPTION": "",
-    "SHORT_RESUME": "Software Engineer with 3+ years of experience in web development (frontend / backend) and mobile development. Proficient in JavaScript, TypeScript, Node, React, and React Native. Currently learning Go, working on building an indie SaaS, and creating Spanish dev tutorials on YouTube.",
     nav: {
         about: "about",
         blog: "blog",
@@ -33,7 +32,16 @@ export const en = {
         developer_text: "Are you a developer and/or looking to improve your skills? Then check out my",
         tutorials_link: "tutorials",
         and: "and my",
-        youtube_link: "YouTube channel"
+        youtube_link: "YouTube channel",
+        summary: "Software Engineer with 3+ years of experience in web development (frontend / backend) and mobile development. Proficient in JavaScript, TypeScript, Node, React, and React Native. Currently learning Go, working on building an indie SaaS, and creating Spanish dev tutorials on YouTube.",
+        page_title: "About",
+        page_description: "Learn all about Lasfito",
+        who_is: "Who is",
+        summary_title: "Summary",
+        contact_title: "Contact",
+        linkedin_text: "Add me on LinkedIn",
+        github_text: "Check my Github profile",
+        email_text: "Or send me an email"
     },
     projects: {
         title: "Projects",
@@ -53,6 +61,25 @@ export const en = {
         title: "Page not found",
         description: "Sorry, the page you are looking for does not exist.",
         backHome: "Back to home"
+    },
+    thanks: {
+        title: "Thank you",
+        description: "I'll get back to you soon.",
+        message: "I've received your message and I'll write back to you soon."
+    },
+    newsletter: {
+        title: "Senior in 1-2-3",
+        description: "The newsletter for web developers.",
+        body: "Hi! Every Thursday I send a newsletter to more than web developers interested in JavaScript, React, Node and related technologies. Each newsletter includes 3 articles curated by me, 2 development resources and 1 tip crafted by me. Join the group of curious developers and get free, concise knowledge without spam. Trust me, no one hates spam more than I do."
+    },
+    footer: {
+        copyright: "© 2021 – Today",
+        no_credit: "(no credit, tomorrow yes).",
+        source_code: "View",
+        source_code_link: "source code",
+        on_github: "on GitHub.",
+        built_with: "Site built with",
+        and_hosted: "and hosted on"
     }
 }
 

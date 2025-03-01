@@ -1,18 +1,29 @@
 ---
 import {AcercaAutor} from "../../components/AcercaAutor";
 import PageHTML from "../../layouts/PageHTML.astro";
+import {trans} from "../../i18n/index"
+import { AVAILABLE_LANGS } from "../../consts";
+
+const {locale} = Astro.params;
+
+// Validate locale
+if (!AVAILABLE_LANGS.includes(locale as any)) {
+  return Astro.redirect("/404")
+}
+
+const t = trans[locale as ValidLocale].thanks;
 ---
 
 <PageHTML
-  title="Gracias"
-  description="Pronto me comunicaré contigo."
-  lang="es-MX"
+  title={t.title}
+  description={t.description}
+  lang={locale}
   type="website"
   date="2021-05-28"
 >
   <AcercaAutor
-    title="Gracias"
-    body={"He recibido tu mensaje y dentro de pronto te escribo de vuelta."}
+    title={t.title}
+    body={t.message}
     includeNewsLetter={false}
     backHome={true}
   />

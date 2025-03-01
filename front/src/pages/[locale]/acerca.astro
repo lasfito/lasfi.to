@@ -1,12 +1,24 @@
 ---
 import {FaEnvelope, FaGithub, FaLinkedinIn} from "react-icons/fa";
 import PageHTML from "../../layouts/PageHTML.astro";
+import {trans} from "../../i18n/index"
+import { AVAILABLE_LANGS } from "../../consts";
+
+const {locale} = Astro.params;
+
+// Validate locale
+if (!AVAILABLE_LANGS.includes(locale as any)) {
+  return Astro.redirect("/404")
+}
+
+const t = trans[locale as ValidLocale].about;
+
 ---
 
 <PageHTML
-  title="Acerca"
-  description="Conoce todo acerca de Lasfito"
-  lang="es-MX"
+  title={t.page_title}
+  description={t.page_description}
+  lang={locale}
   type="website"
   date="2021-05-28"
 >
@@ -14,15 +26,15 @@ import PageHTML from "../../layouts/PageHTML.astro";
     class="mx-auto mt-20 flex h-[90vh] max-w-[70ch] flex-col items-center justify-evenly px-10 leading-loose"
   >
     <h1 class="text-3xl text-primario">
-      ¿Quién es <strong>Lasfito</strong> ?
+      {t.who_is} <strong>Lasfito</strong> ?
     </h1>
 
-    <h2 class="my-5 text-3xl md:text-4xl">Resumen</h2>
+    <h2 class="my-5 text-3xl md:text-4xl">{t.summary_title}</h2>
     <p class="text-justify text-xl">
-      SHORT_RESUME_ES
+      {t.summary}
     </p>
 
-    <h2 class="mt-10 text-3xl md:text-4xl">Contacto</h2>
+    <h2 class="mt-10 text-3xl md:text-4xl">{t.contact_title}</h2>
 
     <div class="z-10 my-4 text-texto-sft">
       <ul class="flex flex-col text-xl no-underline">
@@ -35,7 +47,7 @@ import PageHTML from "../../layouts/PageHTML.astro";
             class="flex w-[500px] items-center"
           >
             <FaLinkedinIn />
-            Añádeme en Linkedin
+            {t.linkedin_text}
           </a>
         </li>
         <li class="my-3">
@@ -46,7 +58,7 @@ import PageHTML from "../../layouts/PageHTML.astro";
             rel="noreferrer"
           >
             <FaGithub />
-            Revisa mi perfil en Github
+            {t.github_text}
           </a>
         </li>
         <li class="my-3">
@@ -55,7 +67,8 @@ import PageHTML from "../../layouts/PageHTML.astro";
             class="snake flex items-center gap-4"
             rel="noreferrer"
           >
-            <FaEnvelope />O envíame un correo
+            <FaEnvelope />
+            {t.email_text}
           </a>
         </li>
       </ul>

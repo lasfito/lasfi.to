@@ -1,18 +1,26 @@
 ---
 import {AcercaAutor} from "../components/AcercaAutor";
 import PageHTML from "../layouts/PageHTML.astro";
+import {trans} from "../i18n/index"
+import { AVAILABLE_LANGS } from "../consts";
+
+// For 404, we'll default to English
+const { locale } = Astro.params;
+const locale404 = AVAILABLE_LANGS.includes(locale as any) ? locale : "en"
+ 
+const t =  trans[locale404 as ValidLocale]["404"];
 ---
 
 <PageHTML
-  title="Quééé"
-  description="Página no encontrada"
-  lang="es-MX"
+  title={t.title}
+  description={t.description}
+lang={locale}
   type="website"
   date="2021-05-28"
 >
   <AcercaAutor
-    title="Quééé"
-    body={"No encontramos lo que buscabas, pero puedes regresar a la página principal."}
+    title={t.title}
+    body={t.description}
     includeNewsLetter={false}
     backHome={true}
   />

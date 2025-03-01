@@ -38,7 +38,7 @@ function AcercaAutor({
         <div>
           <img
             className="hidden h-auto w-[200px] md:block"
-            src={"/mugshot.webp"}
+            src={"/mugShot.webp"}
             alt="Hey, soy yo"
             width={200}
             height={200}
