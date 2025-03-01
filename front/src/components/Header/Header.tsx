@@ -1,6 +1,7 @@
 import {BiMenuAltRight} from "react-icons/bi";
-import { IoLanguage } from "react-icons/io5";
-
+import LanguageSelector from "./LanguageSelector"
+import { AVAILABLE_LANGS } from "../../consts";
+import { trans } from "../../i18n";
 
 interface HeaderProps {
   toggleMenu: (
@@ -11,12 +12,25 @@ interface HeaderProps {
 }
 
 function Header({toggleMenu}: HeaderProps) {
+  const getValidLocale = (locale: string): ValidLocale => {
+    // todo 
+    return AVAILABLE_LANGS.includes(locale as any) ? locale as ValidLocale : 'en';
+  };
+
+  const currentLocale = getValidLocale(
+    typeof window === 'undefined' 
+      ? 'en' 
+      : window?.location.pathname.split('/')[1] || 'en'
+  );
+
+  const t = trans[currentLocale].nav;
+
   return (
     <header
       id="header"
       className="b-2 flex w-full items-center justify-between px-5 py-3 md:px-10 md:py-5 "
     >
-      <a href="/" className="text-2xl font-black   md:text-5xl">
+      <a href={`/${currentLocale}`} className="text-2xl font-black   md:text-5xl">
         Lasfito
       </a>
       <button
@@ -29,33 +43,19 @@ function Header({toggleMenu}: HeaderProps) {
       <nav className=" hidden font-bold text-texto-str md:block">
         <ul className="flex flex-row items-center justify-center gap-4 text-xl">
           <li className="hover:text-primario hover:underline">
-            <a href="/acerca">Acerca</a>
+            <a href={`/${currentLocale}/acerca`}>{t.about}</a>
           </li>
           <li className="hover:text-primario hover:underline">
-            <a href="/blog">Blog</a>
+            <a href={`/${currentLocale}/blog`}>{t.blog }</a>
           </li>
           <li className="hover:text-primario hover:underline">
-            <a href="/fang">FANG</a>
+            <a href={`/${currentLocale}/fang`}>{t.fang }</a>
           </li>
           <li className="hover:text-primario hover:underline">
-            <a href="/tutoriales">Tutoriales</a>
+            <a href={`/${currentLocale}/tutoriales`}>{t.tutorials }</a>
           </li>
           <li>
-            <button
-            onClick={() => {
-              const currPath = window.location.pathname;
-
-
-              const locale = currPath.startsWith("/en") ? "es" : "en";
-              const newPath = currPath.replace(/^\/(en|es)/, `/${locale}`);
-
-              window.location = newPath;
-            }}
-            
-            >
-              <IoLanguage />
-
-            </button>
+            <LanguageSelector  />
           </li>
         </ul>
       </nav>

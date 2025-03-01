@@ -1,0 +1,1 @@
+type ValidLocale = "es" | "en" | "pt" | "fr" | "it" | "jp" | "ru";

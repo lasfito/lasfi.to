@@ -3,6 +3,17 @@ import {HomeHero} from "../../components/HomeHero";
 import {HomeAcerca} from "../../components/HomeAcerca";
 import {HomeContacto} from "../../components/HomeContacto";
 import PageHTML from "../../layouts/PageHTML.astro";
+import { AVAILABLE_LANGS } from "../../consts";
+
+const { locale } = Astro.params;
+
+console.log("current locale en home", locale)
+
+// Validate locale
+if (!AVAILABLE_LANGS.includes(locale as any)) {
+  return Astro.redirect("/404")
+  throw new Error(`Locale ${locale} is not supported. Supported locales are: ${AVAILABLE_LANGS.join(', ')}`);
+}
 ---
 
 <PageHTML
@@ -12,7 +23,7 @@ import PageHTML from "../../layouts/PageHTML.astro";
   type="website"
   date="2021-05-28"
 >
-  <HomeHero client:idle />
-  <HomeAcerca />
-  <HomeContacto />
+  <HomeHero currentLocale={locale as ValidLocale}  client:load />
+  <HomeAcerca currentLocale={locale as ValidLocale}  client:load/>
+  <HomeContacto currentLocale={locale as ValidLocale} client:load /> 
 </PageHTML>

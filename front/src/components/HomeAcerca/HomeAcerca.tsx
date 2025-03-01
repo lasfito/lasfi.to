@@ -1,9 +1,14 @@
 import {AcercaCard} from "../AcercaCard";
 
-const Acerca = () => (
+interface HomeAcercaProps {
+  currentLocale: ValidLocale;
+}
+
+
+const Acerca = ({currentLocale}:HomeAcercaProps) => (
   <section className="w-full ">
     <div className="bg-ola-color px-5" id="acerca-top">
-      <AcercaCard id="ACERCA-HERO" />
+      <AcercaCard id="ACERCA-HERO" currentLocale={currentLocale}/>
     </div>
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">

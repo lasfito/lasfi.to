@@ -17,11 +17,11 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: true,
     }),
-    partytown({
+    /* partytown({
       config: {
         forward: ["dataLayer.push"],
       },
-    }),
+    }), */
   ],
   output: "server",
   adapter: netlify(),

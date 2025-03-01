@@ -1,4 +1,3 @@
-import {MugShot} from "../../assets/img";
 import {NewsLetter} from "../NewsLetter";
 
 interface AcercaAutorProps {
@@ -39,7 +38,7 @@ function AcercaAutor({
         <div>
           <img
             className="hidden h-auto w-[200px] md:block"
-            src={MugShot}
+            src={"/mugshot.webp"}
             alt="Hey, soy yo"
             width={200}
             height={200}

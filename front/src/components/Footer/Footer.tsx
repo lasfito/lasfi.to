@@ -1,4 +1,4 @@
-import {GITHUB_URL} from "../../consts";
+import {SOCIAL_LINKS} from "../../consts";
 import OlaComp from "../OlaComp/OlaComp";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
         <p className="my-1">
           Ver{" "}
-          <a href={GITHUB_URL} className="fancy" target="_blank" rel="noopener">
+          <a href={SOCIAL_LINKS.GitHub} className="fancy" target="_blank" rel="noopener">
             código fuente
           </a>{" "}
           en GitHub.

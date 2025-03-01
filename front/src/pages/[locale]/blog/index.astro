@@ -5,7 +5,7 @@ import { AVAILABLE_LANGS } from "../../../consts";
 const { locale } = Astro.params;
 
 // Validate locale
-if (!AVAILABLE_LANGS.includes(String(locale))) {
+if (!AVAILABLE_LANGS.includes(locale as any)) {
   throw new Error(`Locale ${locale} is not supported. Supported locales are: ${AVAILABLE_LANGS.join(', ')}`);
 }
 

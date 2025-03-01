@@ -1,18 +1,23 @@
-import {MugShot} from "../../assets/img";
 import {MacWindow} from "../MacWindow";
+import {trans} from "../../i18n/index"
 
 interface AcercaCardProps {
   id: string;
   short?: boolean;
+  currentLocale: ValidLocale;
 }
 
-function AcercaCard({id, short = false}: AcercaCardProps) {
+function AcercaCard({id, short = false, currentLocale = "en"}: AcercaCardProps) {
+
+  console.log("got in acerca card:", currentLocale, trans[currentLocale])
+  const t = trans[currentLocale].about;
+
   return (
-    <MacWindow id={id} title="Acerca de mí">
+    <MacWindow id={id} title={t.title}>
       <div className="mx-auto">
         <img
-          src={MugShot}
-          alt="Ilustración de Lasfito"
+          src={"/mugShot.webp"}
+          alt={t.avatar_alt}
           className=" h-[150px] w-auto"
           height={150}
           width={150}
@@ -20,41 +25,38 @@ function AcercaCard({id, short = false}: AcercaCardProps) {
       </div>
       <div className="py-5 text-center">
         <p className="mx-auto max-w-[50ch] ">
-          Me llamo Adrián y he desarrollado software para la web durante más de
-          3 años. Poseo amplia experiencia en JavaScript, TypeScript, React,
-          React Native y Node.js.
+          {t.intro_text}
           <br />
           <br />
-          ¿Eres reclutador o buscas contratarme? Entonces puedes{" "}
+          {t.recruiter_text}{" "}
           <a href="/#contactame" className="fancy">
-            contactarme
+            {t.contact_link}
           </a>{" "}
-          o leer mi{" "}
+          {t.or}{" "}
           <a href="/acerca" className="fancy">
-            bio.
+            {t.bio_link}
           </a>
           <br />
           <br />
           {!short && (
             <div>
-              ¿Eres desarrollador y/o buscas mejorar tus habilidades? Entonces
-              echa un vistazo a mis{" "}
+              {t.developer_text}{" "}
               <a
                 href="/tutoriales"
                 target="blank"
                 rel="noopener"
                 className="fancy"
               >
-                tutoriales{" "}
+                {t.tutorials_link}{" "}
               </a>{" "}
-              y mi canal de{" "}
+              {t.and}{" "}
               <a
                 href="https://youtube.com/@lasfito"
                 target="_blank"
                 rel="noopener"
                 className="fancy"
               >
-                YouTube.
+                {t.youtube_link}
               </a>
             </div>
           )}
